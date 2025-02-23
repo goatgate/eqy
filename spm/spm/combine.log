@@ -1,0 +1,3258 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.41+108 (git sha1 557968567, aarch64-apple-darwin21.4-clang++ 14.0.0-1ubuntu1.1 -fPIC -Os)
+
+-- Executing script file `spm/combine.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: spm/gold.il
+
+2. Executing UNIQUIFY pass (creating unique copies of modules).
+Creating module spm.tcmp from TCMP.
+Creating module spm.genblk1[9].csa from CSADD.
+Creating module spm.genblk1[8].csa from CSADD.
+Creating module spm.genblk1[7].csa from CSADD.
+Creating module spm.genblk1[6].csa from CSADD.
+Creating module spm.genblk1[5].csa from CSADD.
+Creating module spm.genblk1[4].csa from CSADD.
+Creating module spm.genblk1[3].csa from CSADD.
+Creating module spm.genblk1[30].csa from CSADD.
+Creating module spm.genblk1[2].csa from CSADD.
+Creating module spm.genblk1[29].csa from CSADD.
+Creating module spm.genblk1[28].csa from CSADD.
+Creating module spm.genblk1[27].csa from CSADD.
+Creating module spm.genblk1[26].csa from CSADD.
+Creating module spm.genblk1[25].csa from CSADD.
+Creating module spm.genblk1[24].csa from CSADD.
+Creating module spm.genblk1[23].csa from CSADD.
+Creating module spm.genblk1[22].csa from CSADD.
+Creating module spm.genblk1[21].csa from CSADD.
+Creating module spm.genblk1[20].csa from CSADD.
+Creating module spm.genblk1[1].csa from CSADD.
+Creating module spm.genblk1[19].csa from CSADD.
+Creating module spm.genblk1[18].csa from CSADD.
+Creating module spm.genblk1[17].csa from CSADD.
+Creating module spm.genblk1[16].csa from CSADD.
+Creating module spm.genblk1[15].csa from CSADD.
+Creating module spm.genblk1[14].csa from CSADD.
+Creating module spm.genblk1[13].csa from CSADD.
+Creating module spm.genblk1[12].csa from CSADD.
+Creating module spm.genblk1[11].csa from CSADD.
+Creating module spm.genblk1[10].csa from CSADD.
+Creating module spm.csa0 from CSADD.
+Created 32 unique modules.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \spm.tcmp
+Used module:     \spm.genblk1[9].csa
+Used module:     \spm.genblk1[8].csa
+Used module:     \spm.genblk1[7].csa
+Used module:     \spm.genblk1[6].csa
+Used module:     \spm.genblk1[5].csa
+Used module:     \spm.genblk1[4].csa
+Used module:     \spm.genblk1[3].csa
+Used module:     \spm.genblk1[30].csa
+Used module:     \spm.genblk1[2].csa
+Used module:     \spm.genblk1[29].csa
+Used module:     \spm.genblk1[28].csa
+Used module:     \spm.genblk1[27].csa
+Used module:     \spm.genblk1[26].csa
+Used module:     \spm.genblk1[25].csa
+Used module:     \spm.genblk1[24].csa
+Used module:     \spm.genblk1[23].csa
+Used module:     \spm.genblk1[22].csa
+Used module:     \spm.genblk1[21].csa
+Used module:     \spm.genblk1[20].csa
+Used module:     \spm.genblk1[1].csa
+Used module:     \spm.genblk1[19].csa
+Used module:     \spm.genblk1[18].csa
+Used module:     \spm.genblk1[17].csa
+Used module:     \spm.genblk1[16].csa
+Used module:     \spm.genblk1[15].csa
+Used module:     \spm.genblk1[14].csa
+Used module:     \spm.genblk1[13].csa
+Used module:     \spm.genblk1[12].csa
+Used module:     \spm.genblk1[11].csa
+Used module:     \spm.genblk1[10].csa
+Used module:     \spm.csa0
+
+3.2. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \spm.tcmp
+Used module:     \spm.genblk1[9].csa
+Used module:     \spm.genblk1[8].csa
+Used module:     \spm.genblk1[7].csa
+Used module:     \spm.genblk1[6].csa
+Used module:     \spm.genblk1[5].csa
+Used module:     \spm.genblk1[4].csa
+Used module:     \spm.genblk1[3].csa
+Used module:     \spm.genblk1[30].csa
+Used module:     \spm.genblk1[2].csa
+Used module:     \spm.genblk1[29].csa
+Used module:     \spm.genblk1[28].csa
+Used module:     \spm.genblk1[27].csa
+Used module:     \spm.genblk1[26].csa
+Used module:     \spm.genblk1[25].csa
+Used module:     \spm.genblk1[24].csa
+Used module:     \spm.genblk1[23].csa
+Used module:     \spm.genblk1[22].csa
+Used module:     \spm.genblk1[21].csa
+Used module:     \spm.genblk1[20].csa
+Used module:     \spm.genblk1[1].csa
+Used module:     \spm.genblk1[19].csa
+Used module:     \spm.genblk1[18].csa
+Used module:     \spm.genblk1[17].csa
+Used module:     \spm.genblk1[16].csa
+Used module:     \spm.genblk1[15].csa
+Used module:     \spm.genblk1[14].csa
+Used module:     \spm.genblk1[13].csa
+Used module:     \spm.genblk1[12].csa
+Used module:     \spm.genblk1[11].csa
+Used module:     \spm.genblk1[10].csa
+Used module:     \spm.csa0
+Removing unused module `\TCMP'.
+Removing unused module `\CSADD'.
+Removed 2 unused modules.
+
+4. Executing RTLIL frontend.
+Input filename: spm/gate_recoded.il
+
+5. Executing UNIQUIFY pass (creating unique copies of modules).
+Creating module spm.output35 from sky130_fd_sc_hd__buf_2.
+Creating module spm.input9 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input8 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input7 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input6 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input5 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input4 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input34 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input33 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input32 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input31 from sky130_fd_sc_hd__dlymetal6s2s_1.
+Creating module spm.input30 from sky130_fd_sc_hd__dlymetal6s2s_1.
+Creating module spm.input3 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input29 from sky130_fd_sc_hd__dlymetal6s2s_1.
+Creating module spm.input28 from sky130_fd_sc_hd__dlymetal6s2s_1.
+Creating module spm.input27 from sky130_fd_sc_hd__dlymetal6s2s_1.
+Creating module spm.input26 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input25 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input24 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input23 from sky130_fd_sc_hd__dlymetal6s2s_1.
+Creating module spm.input22 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input21 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input20 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input2 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input19 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input18 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input17 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input16 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input15 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input14 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input13 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input12 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input11 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input10 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.input1 from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm.clkbuf_3_7__f_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm.clkbuf_3_6__f_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm.clkbuf_3_5__f_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm.clkbuf_3_4__f_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm.clkbuf_3_3__f_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm.clkbuf_3_2__f_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm.clkbuf_3_1__f_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm.clkbuf_3_0__f_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm.clkbuf_0_clk from sky130_fd_sc_hd__clkbuf_16.
+Creating module spm._506_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._505_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._504_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._503_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._502_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._501_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._500_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._499_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._498_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._497_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._496_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._495_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._494_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._493_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._492_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._491_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._490_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._489_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._488_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._487_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._486_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._485_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._484_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._483_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._482_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._481_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._480_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._479_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._478_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._477_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._476_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._475_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._474_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._473_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._472_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._471_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._470_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._469_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._468_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._467_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._466_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._465_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._464_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._463_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._462_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._461_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._460_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._459_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._458_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._457_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._456_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._455_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._454_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._453_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._452_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._451_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._450_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._449_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._448_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._447_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._446_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._445_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._444_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._443_ from sky130_fd_sc_hd__dfrtp_1.
+Creating module spm._442_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._441_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._440_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._439_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._438_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._437_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._436_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._435_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._434_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._433_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._432_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._431_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._430_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._429_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._428_ from sky130_fd_sc_hd__buf_4.
+Creating module spm._427_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._426_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._425_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._424_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._423_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._422_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._421_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._420_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._419_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._418_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._417_ from sky130_fd_sc_hd__buf_4.
+Creating module spm._416_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._415_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._414_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._413_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._412_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._411_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._410_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._409_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._408_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._407_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._406_ from sky130_fd_sc_hd__buf_4.
+Creating module spm._405_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._404_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._403_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._402_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._401_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._400_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._399_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._398_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._397_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._396_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._395_ from sky130_fd_sc_hd__buf_4.
+Creating module spm._394_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._393_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._392_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._391_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._390_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._389_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._388_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._387_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._386_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._385_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._384_ from sky130_fd_sc_hd__buf_4.
+Creating module spm._383_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._382_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._381_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._380_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._379_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._378_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._377_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._376_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._375_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._374_ from sky130_fd_sc_hd__inv_2.
+Creating module spm._373_ from sky130_fd_sc_hd__buf_4.
+Creating module spm._372_ from sky130_fd_sc_hd__buf_4.
+Creating module spm._371_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._370_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._369_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._368_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._367_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._366_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._365_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._364_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._363_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._362_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._361_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._360_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._359_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._358_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._357_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._356_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._355_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._354_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._353_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._352_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._351_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._350_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._349_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._348_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._347_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._346_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._345_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._344_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._343_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._342_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._341_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._340_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._339_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._338_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._337_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._336_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._335_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._334_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._333_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._332_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._331_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._330_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._329_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._328_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._327_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._326_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._325_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._324_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._323_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._322_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._321_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._320_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._319_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._318_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._317_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._316_ from sky130_fd_sc_hd__clkbuf_4.
+Creating module spm._315_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._314_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._313_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._312_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._311_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._310_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._309_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._308_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._307_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._306_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._305_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._304_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._303_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._302_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._301_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._300_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._299_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._298_ from sky130_fd_sc_hd__buf_2.
+Creating module spm._297_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._296_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._295_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._294_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._293_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._292_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._291_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._290_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._289_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._288_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._287_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._286_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._285_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._284_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._283_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._282_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._281_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._280_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._279_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._278_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._277_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._276_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._275_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._274_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._273_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._272_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._271_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._270_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._269_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._268_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._267_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._266_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._265_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._264_ from sky130_fd_sc_hd__buf_2.
+Creating module spm._263_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._262_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._261_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._260_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._259_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._258_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._257_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._256_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._255_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._254_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._253_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._252_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._251_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._250_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._249_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._248_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._247_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._246_ from sky130_fd_sc_hd__clkbuf_4.
+Creating module spm._245_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._244_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._243_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._242_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._241_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._240_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._239_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._238_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._237_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._236_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._235_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._234_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._233_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._232_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._231_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._230_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._229_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._228_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._227_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._226_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._225_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._224_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._223_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._222_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._221_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._220_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._219_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._218_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._217_ from sky130_fd_sc_hd__clkbuf_1.
+Creating module spm._216_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._215_ from sky130_fd_sc_hd__nand3_1.
+Creating module spm._214_ from sky130_fd_sc_hd__a21o_1.
+Creating module spm._213_ from sky130_fd_sc_hd__xnor2_1.
+Creating module spm._212_ from sky130_fd_sc_hd__nand2_1.
+Creating module spm._211_ from sky130_fd_sc_hd__a31o_1.
+Creating module spm._210_ from sky130_fd_sc_hd__and2_1.
+Creating module spm._209_ from sky130_fd_sc_hd__xor2_1.
+Creating module spm._208_ from sky130_fd_sc_hd__buf_2.
+Creating module spm._207_ from sky130_fd_sc_hd__clkbuf_4.
+Creating module spm._206_ from sky130_fd_sc_hd__clkbuf_4.
+Creating module spm._206_.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm._207_.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm._208_.base from sky130_fd_sc_hd__buf.
+Creating module spm._209_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._210_.base from sky130_fd_sc_hd__and2.
+Creating module spm._211_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._212_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._213_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._214_.base from sky130_fd_sc_hd__a21o.
+Creating module spm._215_.base from sky130_fd_sc_hd__nand3.
+Creating module spm._216_.base from sky130_fd_sc_hd__and2.
+Creating module spm._217_.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm._218_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._219_.base from sky130_fd_sc_hd__and2.
+Creating module spm._220_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._221_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._222_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._223_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._224_.base from sky130_fd_sc_hd__and2.
+Creating module spm._225_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._226_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._227_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._228_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._229_.base from sky130_fd_sc_hd__and2.
+Creating module spm._230_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._231_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._232_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._233_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._234_.base from sky130_fd_sc_hd__and2.
+Creating module spm._235_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._236_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._237_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._238_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._239_.base from sky130_fd_sc_hd__and2.
+Creating module spm._240_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._241_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._242_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._243_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._244_.base from sky130_fd_sc_hd__and2.
+Creating module spm._245_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._246_.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm._247_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._248_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._249_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._250_.base from sky130_fd_sc_hd__and2.
+Creating module spm._251_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._252_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._253_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._254_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._255_.base from sky130_fd_sc_hd__and2.
+Creating module spm._256_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._257_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._258_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._259_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._260_.base from sky130_fd_sc_hd__and2.
+Creating module spm._261_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._262_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._263_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._264_.base from sky130_fd_sc_hd__buf.
+Creating module spm._265_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._266_.base from sky130_fd_sc_hd__and2.
+Creating module spm._267_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._268_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._269_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._270_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._271_.base from sky130_fd_sc_hd__and2.
+Creating module spm._272_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._273_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._274_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._275_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._276_.base from sky130_fd_sc_hd__and2.
+Creating module spm._277_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._278_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._279_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._280_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._281_.base from sky130_fd_sc_hd__and2.
+Creating module spm._282_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._283_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._284_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._285_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._286_.base from sky130_fd_sc_hd__and2.
+Creating module spm._287_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._288_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._289_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._290_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._291_.base from sky130_fd_sc_hd__and2.
+Creating module spm._292_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._293_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._294_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._295_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._296_.base from sky130_fd_sc_hd__and2.
+Creating module spm._297_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._298_.base from sky130_fd_sc_hd__buf.
+Creating module spm._299_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._300_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._301_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._302_.base from sky130_fd_sc_hd__and2.
+Creating module spm._303_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._304_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._305_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._306_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._307_.base from sky130_fd_sc_hd__and2.
+Creating module spm._308_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._309_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._310_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._311_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._312_.base from sky130_fd_sc_hd__and2.
+Creating module spm._313_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._314_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._315_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._316_.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm._317_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._318_.base from sky130_fd_sc_hd__and2.
+Creating module spm._319_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._320_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._321_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._322_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._323_.base from sky130_fd_sc_hd__and2.
+Creating module spm._324_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._325_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._326_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._327_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._328_.base from sky130_fd_sc_hd__and2.
+Creating module spm._329_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._330_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._331_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._332_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._333_.base from sky130_fd_sc_hd__and2.
+Creating module spm._334_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._335_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._336_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._337_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._338_.base from sky130_fd_sc_hd__and2.
+Creating module spm._339_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._340_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._341_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._342_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._343_.base from sky130_fd_sc_hd__and2.
+Creating module spm._344_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._345_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._346_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._347_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._348_.base from sky130_fd_sc_hd__and2.
+Creating module spm._349_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._350_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._351_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._352_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._353_.base from sky130_fd_sc_hd__and2.
+Creating module spm._354_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._355_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._356_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._357_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._358_.base from sky130_fd_sc_hd__and2.
+Creating module spm._359_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._360_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._361_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._362_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._363_.base from sky130_fd_sc_hd__and2.
+Creating module spm._364_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._365_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._366_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._367_.base from sky130_fd_sc_hd__xor2.
+Creating module spm._368_.base from sky130_fd_sc_hd__and2.
+Creating module spm._369_.base from sky130_fd_sc_hd__a31o.
+Creating module spm._370_.base from sky130_fd_sc_hd__nand2.
+Creating module spm._371_.base from sky130_fd_sc_hd__xnor2.
+Creating module spm._372_.base from sky130_fd_sc_hd__buf.
+Creating module spm._373_.base from sky130_fd_sc_hd__buf.
+Creating module spm._374_.base from sky130_fd_sc_hd__inv.
+Creating module spm._375_.base from sky130_fd_sc_hd__inv.
+Creating module spm._376_.base from sky130_fd_sc_hd__inv.
+Creating module spm._377_.base from sky130_fd_sc_hd__inv.
+Creating module spm._378_.base from sky130_fd_sc_hd__inv.
+Creating module spm._379_.base from sky130_fd_sc_hd__inv.
+Creating module spm._380_.base from sky130_fd_sc_hd__inv.
+Creating module spm._381_.base from sky130_fd_sc_hd__inv.
+Creating module spm._382_.base from sky130_fd_sc_hd__inv.
+Creating module spm._383_.base from sky130_fd_sc_hd__inv.
+Creating module spm._384_.base from sky130_fd_sc_hd__buf.
+Creating module spm._385_.base from sky130_fd_sc_hd__inv.
+Creating module spm._386_.base from sky130_fd_sc_hd__inv.
+Creating module spm._387_.base from sky130_fd_sc_hd__inv.
+Creating module spm._388_.base from sky130_fd_sc_hd__inv.
+Creating module spm._389_.base from sky130_fd_sc_hd__inv.
+Creating module spm._390_.base from sky130_fd_sc_hd__inv.
+Creating module spm._391_.base from sky130_fd_sc_hd__inv.
+Creating module spm._392_.base from sky130_fd_sc_hd__inv.
+Creating module spm._393_.base from sky130_fd_sc_hd__inv.
+Creating module spm._394_.base from sky130_fd_sc_hd__inv.
+Creating module spm._395_.base from sky130_fd_sc_hd__buf.
+Creating module spm._396_.base from sky130_fd_sc_hd__inv.
+Creating module spm._397_.base from sky130_fd_sc_hd__inv.
+Creating module spm._398_.base from sky130_fd_sc_hd__inv.
+Creating module spm._399_.base from sky130_fd_sc_hd__inv.
+Creating module spm._400_.base from sky130_fd_sc_hd__inv.
+Creating module spm._401_.base from sky130_fd_sc_hd__inv.
+Creating module spm._402_.base from sky130_fd_sc_hd__inv.
+Creating module spm._403_.base from sky130_fd_sc_hd__inv.
+Creating module spm._404_.base from sky130_fd_sc_hd__inv.
+Creating module spm._405_.base from sky130_fd_sc_hd__inv.
+Creating module spm._406_.base from sky130_fd_sc_hd__buf.
+Creating module spm._407_.base from sky130_fd_sc_hd__inv.
+Creating module spm._408_.base from sky130_fd_sc_hd__inv.
+Creating module spm._409_.base from sky130_fd_sc_hd__inv.
+Creating module spm._410_.base from sky130_fd_sc_hd__inv.
+Creating module spm._411_.base from sky130_fd_sc_hd__inv.
+Creating module spm._412_.base from sky130_fd_sc_hd__inv.
+Creating module spm._413_.base from sky130_fd_sc_hd__inv.
+Creating module spm._414_.base from sky130_fd_sc_hd__inv.
+Creating module spm._415_.base from sky130_fd_sc_hd__inv.
+Creating module spm._416_.base from sky130_fd_sc_hd__inv.
+Creating module spm._417_.base from sky130_fd_sc_hd__buf.
+Creating module spm._418_.base from sky130_fd_sc_hd__inv.
+Creating module spm._419_.base from sky130_fd_sc_hd__inv.
+Creating module spm._420_.base from sky130_fd_sc_hd__inv.
+Creating module spm._421_.base from sky130_fd_sc_hd__inv.
+Creating module spm._422_.base from sky130_fd_sc_hd__inv.
+Creating module spm._423_.base from sky130_fd_sc_hd__inv.
+Creating module spm._424_.base from sky130_fd_sc_hd__inv.
+Creating module spm._425_.base from sky130_fd_sc_hd__inv.
+Creating module spm._426_.base from sky130_fd_sc_hd__inv.
+Creating module spm._427_.base from sky130_fd_sc_hd__inv.
+Creating module spm._428_.base from sky130_fd_sc_hd__buf.
+Creating module spm._429_.base from sky130_fd_sc_hd__inv.
+Creating module spm._430_.base from sky130_fd_sc_hd__inv.
+Creating module spm._431_.base from sky130_fd_sc_hd__inv.
+Creating module spm._432_.base from sky130_fd_sc_hd__inv.
+Creating module spm._433_.base from sky130_fd_sc_hd__inv.
+Creating module spm._434_.base from sky130_fd_sc_hd__inv.
+Creating module spm._435_.base from sky130_fd_sc_hd__inv.
+Creating module spm._436_.base from sky130_fd_sc_hd__inv.
+Creating module spm._437_.base from sky130_fd_sc_hd__inv.
+Creating module spm._438_.base from sky130_fd_sc_hd__inv.
+Creating module spm._439_.base from sky130_fd_sc_hd__inv.
+Creating module spm._440_.base from sky130_fd_sc_hd__inv.
+Creating module spm._441_.base from sky130_fd_sc_hd__inv.
+Creating module spm._442_.base from sky130_fd_sc_hd__inv.
+Creating module spm._443_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._444_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._445_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._446_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._447_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._448_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._449_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._450_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._451_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._452_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._453_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._454_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._455_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._456_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._457_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._458_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._459_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._460_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._461_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._462_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._463_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._464_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._465_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._466_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._467_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._468_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._469_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._470_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._471_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._472_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._473_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._474_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._475_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._476_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._477_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._478_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._479_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._480_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._481_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._482_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._483_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._484_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._485_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._486_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._487_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._488_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._489_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._490_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._491_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._492_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._493_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._494_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._495_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._496_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._497_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._498_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._499_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._500_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._501_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._502_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._503_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._504_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._505_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm._506_.base from sky130_fd_sc_hd__dfrtp.
+Creating module spm.clkbuf_0_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.clkbuf_3_0__f_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.clkbuf_3_1__f_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.clkbuf_3_2__f_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.clkbuf_3_3__f_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.clkbuf_3_4__f_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.clkbuf_3_5__f_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.clkbuf_3_6__f_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.clkbuf_3_7__f_clk.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input1.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input10.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input11.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input12.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input13.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input14.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input15.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input16.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input17.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input18.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input19.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input2.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input20.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input21.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input22.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input23.base from sky130_fd_sc_hd__dlymetal6s2s.
+Creating module spm.input24.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input25.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input26.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input27.base from sky130_fd_sc_hd__dlymetal6s2s.
+Creating module spm.input28.base from sky130_fd_sc_hd__dlymetal6s2s.
+Creating module spm.input29.base from sky130_fd_sc_hd__dlymetal6s2s.
+Creating module spm.input3.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input30.base from sky130_fd_sc_hd__dlymetal6s2s.
+Creating module spm.input31.base from sky130_fd_sc_hd__dlymetal6s2s.
+Creating module spm.input32.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input33.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input34.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input4.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input5.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input6.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input7.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input8.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.input9.base from sky130_fd_sc_hd__clkbuf.
+Creating module spm.output35.base from sky130_fd_sc_hd__buf.
+Creating module spm._506_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._505_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._504_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._503_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._502_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._501_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._500_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._499_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._498_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._497_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._496_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._495_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._494_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._493_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._492_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._491_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._490_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._489_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._488_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._487_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._486_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._485_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._484_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._483_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._482_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._481_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._480_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._479_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._478_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._477_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._476_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._475_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._474_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._473_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._472_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._471_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._470_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._469_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._468_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._467_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._466_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._465_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._464_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._463_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._462_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._461_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._460_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._459_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._458_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._457_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._456_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._455_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._454_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._453_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._452_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._451_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._450_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._449_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._448_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._447_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._446_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._445_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._444_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Creating module spm._443_.base.dff0 from sky130_fd_sc_hd__udp_dff$PR.
+Created 754 unique modules.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \spm.output35
+Used module:         \spm.output35.base
+Used module:     \spm.input9
+Used module:         \spm.input9.base
+Used module:     \spm.input8
+Used module:         \spm.input8.base
+Used module:     \spm.input7
+Used module:         \spm.input7.base
+Used module:     \spm.input6
+Used module:         \spm.input6.base
+Used module:     \spm.input5
+Used module:         \spm.input5.base
+Used module:     \spm.input4
+Used module:         \spm.input4.base
+Used module:     \spm.input34
+Used module:         \spm.input34.base
+Used module:     \spm.input33
+Used module:         \spm.input33.base
+Used module:     \spm.input32
+Used module:         \spm.input32.base
+Used module:     \spm.input31
+Used module:         \spm.input31.base
+Used module:     \spm.input30
+Used module:         \spm.input30.base
+Used module:     \spm.input3
+Used module:         \spm.input3.base
+Used module:     \spm.input29
+Used module:         \spm.input29.base
+Used module:     \spm.input28
+Used module:         \spm.input28.base
+Used module:     \spm.input27
+Used module:         \spm.input27.base
+Used module:     \spm.input26
+Used module:         \spm.input26.base
+Used module:     \spm.input25
+Used module:         \spm.input25.base
+Used module:     \spm.input24
+Used module:         \spm.input24.base
+Used module:     \spm.input23
+Used module:         \spm.input23.base
+Used module:     \spm.input22
+Used module:         \spm.input22.base
+Used module:     \spm.input21
+Used module:         \spm.input21.base
+Used module:     \spm.input20
+Used module:         \spm.input20.base
+Used module:     \spm.input2
+Used module:         \spm.input2.base
+Used module:     \spm.input19
+Used module:         \spm.input19.base
+Used module:     \spm.input18
+Used module:         \spm.input18.base
+Used module:     \spm.input17
+Used module:         \spm.input17.base
+Used module:     \spm.input16
+Used module:         \spm.input16.base
+Used module:     \spm.input15
+Used module:         \spm.input15.base
+Used module:     \spm.input14
+Used module:         \spm.input14.base
+Used module:     \spm.input13
+Used module:         \spm.input13.base
+Used module:     \spm.input12
+Used module:         \spm.input12.base
+Used module:     \spm.input11
+Used module:         \spm.input11.base
+Used module:     \spm.input10
+Used module:         \spm.input10.base
+Used module:     \spm.input1
+Used module:         \spm.input1.base
+Used module:     \spm.clkbuf_3_7__f_clk
+Used module:         \spm.clkbuf_3_7__f_clk.base
+Used module:     \spm.clkbuf_3_6__f_clk
+Used module:         \spm.clkbuf_3_6__f_clk.base
+Used module:     \spm.clkbuf_3_5__f_clk
+Used module:         \spm.clkbuf_3_5__f_clk.base
+Used module:     \spm.clkbuf_3_4__f_clk
+Used module:         \spm.clkbuf_3_4__f_clk.base
+Used module:     \spm.clkbuf_3_3__f_clk
+Used module:         \spm.clkbuf_3_3__f_clk.base
+Used module:     \spm.clkbuf_3_2__f_clk
+Used module:         \spm.clkbuf_3_2__f_clk.base
+Used module:     \spm.clkbuf_3_1__f_clk
+Used module:         \spm.clkbuf_3_1__f_clk.base
+Used module:     \spm.clkbuf_3_0__f_clk
+Used module:         \spm.clkbuf_3_0__f_clk.base
+Used module:     \spm.clkbuf_0_clk
+Used module:         \spm.clkbuf_0_clk.base
+Used module:     \spm._506_
+Used module:         \spm._506_.base
+Used module:             \spm._506_.base.dff0
+Used module:     \spm._505_
+Used module:         \spm._505_.base
+Used module:             \spm._505_.base.dff0
+Used module:     \spm._504_
+Used module:         \spm._504_.base
+Used module:             \spm._504_.base.dff0
+Used module:     \spm._503_
+Used module:         \spm._503_.base
+Used module:             \spm._503_.base.dff0
+Used module:     \spm._502_
+Used module:         \spm._502_.base
+Used module:             \spm._502_.base.dff0
+Used module:     \spm._501_
+Used module:         \spm._501_.base
+Used module:             \spm._501_.base.dff0
+Used module:     \spm._500_
+Used module:         \spm._500_.base
+Used module:             \spm._500_.base.dff0
+Used module:     \spm._499_
+Used module:         \spm._499_.base
+Used module:             \spm._499_.base.dff0
+Used module:     \spm._498_
+Used module:         \spm._498_.base
+Used module:             \spm._498_.base.dff0
+Used module:     \spm._497_
+Used module:         \spm._497_.base
+Used module:             \spm._497_.base.dff0
+Used module:     \spm._496_
+Used module:         \spm._496_.base
+Used module:             \spm._496_.base.dff0
+Used module:     \spm._495_
+Used module:         \spm._495_.base
+Used module:             \spm._495_.base.dff0
+Used module:     \spm._494_
+Used module:         \spm._494_.base
+Used module:             \spm._494_.base.dff0
+Used module:     \spm._493_
+Used module:         \spm._493_.base
+Used module:             \spm._493_.base.dff0
+Used module:     \spm._492_
+Used module:         \spm._492_.base
+Used module:             \spm._492_.base.dff0
+Used module:     \spm._491_
+Used module:         \spm._491_.base
+Used module:             \spm._491_.base.dff0
+Used module:     \spm._490_
+Used module:         \spm._490_.base
+Used module:             \spm._490_.base.dff0
+Used module:     \spm._489_
+Used module:         \spm._489_.base
+Used module:             \spm._489_.base.dff0
+Used module:     \spm._488_
+Used module:         \spm._488_.base
+Used module:             \spm._488_.base.dff0
+Used module:     \spm._487_
+Used module:         \spm._487_.base
+Used module:             \spm._487_.base.dff0
+Used module:     \spm._486_
+Used module:         \spm._486_.base
+Used module:             \spm._486_.base.dff0
+Used module:     \spm._485_
+Used module:         \spm._485_.base
+Used module:             \spm._485_.base.dff0
+Used module:     \spm._484_
+Used module:         \spm._484_.base
+Used module:             \spm._484_.base.dff0
+Used module:     \spm._483_
+Used module:         \spm._483_.base
+Used module:             \spm._483_.base.dff0
+Used module:     \spm._482_
+Used module:         \spm._482_.base
+Used module:             \spm._482_.base.dff0
+Used module:     \spm._481_
+Used module:         \spm._481_.base
+Used module:             \spm._481_.base.dff0
+Used module:     \spm._480_
+Used module:         \spm._480_.base
+Used module:             \spm._480_.base.dff0
+Used module:     \spm._479_
+Used module:         \spm._479_.base
+Used module:             \spm._479_.base.dff0
+Used module:     \spm._478_
+Used module:         \spm._478_.base
+Used module:             \spm._478_.base.dff0
+Used module:     \spm._477_
+Used module:         \spm._477_.base
+Used module:             \spm._477_.base.dff0
+Used module:     \spm._476_
+Used module:         \spm._476_.base
+Used module:             \spm._476_.base.dff0
+Used module:     \spm._475_
+Used module:         \spm._475_.base
+Used module:             \spm._475_.base.dff0
+Used module:     \spm._474_
+Used module:         \spm._474_.base
+Used module:             \spm._474_.base.dff0
+Used module:     \spm._473_
+Used module:         \spm._473_.base
+Used module:             \spm._473_.base.dff0
+Used module:     \spm._472_
+Used module:         \spm._472_.base
+Used module:             \spm._472_.base.dff0
+Used module:     \spm._471_
+Used module:         \spm._471_.base
+Used module:             \spm._471_.base.dff0
+Used module:     \spm._470_
+Used module:         \spm._470_.base
+Used module:             \spm._470_.base.dff0
+Used module:     \spm._469_
+Used module:         \spm._469_.base
+Used module:             \spm._469_.base.dff0
+Used module:     \spm._468_
+Used module:         \spm._468_.base
+Used module:             \spm._468_.base.dff0
+Used module:     \spm._467_
+Used module:         \spm._467_.base
+Used module:             \spm._467_.base.dff0
+Used module:     \spm._466_
+Used module:         \spm._466_.base
+Used module:             \spm._466_.base.dff0
+Used module:     \spm._465_
+Used module:         \spm._465_.base
+Used module:             \spm._465_.base.dff0
+Used module:     \spm._464_
+Used module:         \spm._464_.base
+Used module:             \spm._464_.base.dff0
+Used module:     \spm._463_
+Used module:         \spm._463_.base
+Used module:             \spm._463_.base.dff0
+Used module:     \spm._462_
+Used module:         \spm._462_.base
+Used module:             \spm._462_.base.dff0
+Used module:     \spm._461_
+Used module:         \spm._461_.base
+Used module:             \spm._461_.base.dff0
+Used module:     \spm._460_
+Used module:         \spm._460_.base
+Used module:             \spm._460_.base.dff0
+Used module:     \spm._459_
+Used module:         \spm._459_.base
+Used module:             \spm._459_.base.dff0
+Used module:     \spm._458_
+Used module:         \spm._458_.base
+Used module:             \spm._458_.base.dff0
+Used module:     \spm._457_
+Used module:         \spm._457_.base
+Used module:             \spm._457_.base.dff0
+Used module:     \spm._456_
+Used module:         \spm._456_.base
+Used module:             \spm._456_.base.dff0
+Used module:     \spm._455_
+Used module:         \spm._455_.base
+Used module:             \spm._455_.base.dff0
+Used module:     \spm._454_
+Used module:         \spm._454_.base
+Used module:             \spm._454_.base.dff0
+Used module:     \spm._453_
+Used module:         \spm._453_.base
+Used module:             \spm._453_.base.dff0
+Used module:     \spm._452_
+Used module:         \spm._452_.base
+Used module:             \spm._452_.base.dff0
+Used module:     \spm._451_
+Used module:         \spm._451_.base
+Used module:             \spm._451_.base.dff0
+Used module:     \spm._450_
+Used module:         \spm._450_.base
+Used module:             \spm._450_.base.dff0
+Used module:     \spm._449_
+Used module:         \spm._449_.base
+Used module:             \spm._449_.base.dff0
+Used module:     \spm._448_
+Used module:         \spm._448_.base
+Used module:             \spm._448_.base.dff0
+Used module:     \spm._447_
+Used module:         \spm._447_.base
+Used module:             \spm._447_.base.dff0
+Used module:     \spm._446_
+Used module:         \spm._446_.base
+Used module:             \spm._446_.base.dff0
+Used module:     \spm._445_
+Used module:         \spm._445_.base
+Used module:             \spm._445_.base.dff0
+Used module:     \spm._444_
+Used module:         \spm._444_.base
+Used module:             \spm._444_.base.dff0
+Used module:     \spm._443_
+Used module:         \spm._443_.base
+Used module:             \spm._443_.base.dff0
+Used module:     \spm._442_
+Used module:         \spm._442_.base
+Used module:     \spm._441_
+Used module:         \spm._441_.base
+Used module:     \spm._440_
+Used module:         \spm._440_.base
+Used module:     \spm._439_
+Used module:         \spm._439_.base
+Used module:     \spm._438_
+Used module:         \spm._438_.base
+Used module:     \spm._437_
+Used module:         \spm._437_.base
+Used module:     \spm._436_
+Used module:         \spm._436_.base
+Used module:     \spm._435_
+Used module:         \spm._435_.base
+Used module:     \spm._434_
+Used module:         \spm._434_.base
+Used module:     \spm._433_
+Used module:         \spm._433_.base
+Used module:     \spm._432_
+Used module:         \spm._432_.base
+Used module:     \spm._431_
+Used module:         \spm._431_.base
+Used module:     \spm._430_
+Used module:         \spm._430_.base
+Used module:     \spm._429_
+Used module:         \spm._429_.base
+Used module:     \spm._428_
+Used module:         \spm._428_.base
+Used module:     \spm._427_
+Used module:         \spm._427_.base
+Used module:     \spm._426_
+Used module:         \spm._426_.base
+Used module:     \spm._425_
+Used module:         \spm._425_.base
+Used module:     \spm._424_
+Used module:         \spm._424_.base
+Used module:     \spm._423_
+Used module:         \spm._423_.base
+Used module:     \spm._422_
+Used module:         \spm._422_.base
+Used module:     \spm._421_
+Used module:         \spm._421_.base
+Used module:     \spm._420_
+Used module:         \spm._420_.base
+Used module:     \spm._419_
+Used module:         \spm._419_.base
+Used module:     \spm._418_
+Used module:         \spm._418_.base
+Used module:     \spm._417_
+Used module:         \spm._417_.base
+Used module:     \spm._416_
+Used module:         \spm._416_.base
+Used module:     \spm._415_
+Used module:         \spm._415_.base
+Used module:     \spm._414_
+Used module:         \spm._414_.base
+Used module:     \spm._413_
+Used module:         \spm._413_.base
+Used module:     \spm._412_
+Used module:         \spm._412_.base
+Used module:     \spm._411_
+Used module:         \spm._411_.base
+Used module:     \spm._410_
+Used module:         \spm._410_.base
+Used module:     \spm._409_
+Used module:         \spm._409_.base
+Used module:     \spm._408_
+Used module:         \spm._408_.base
+Used module:     \spm._407_
+Used module:         \spm._407_.base
+Used module:     \spm._406_
+Used module:         \spm._406_.base
+Used module:     \spm._405_
+Used module:         \spm._405_.base
+Used module:     \spm._404_
+Used module:         \spm._404_.base
+Used module:     \spm._403_
+Used module:         \spm._403_.base
+Used module:     \spm._402_
+Used module:         \spm._402_.base
+Used module:     \spm._401_
+Used module:         \spm._401_.base
+Used module:     \spm._400_
+Used module:         \spm._400_.base
+Used module:     \spm._399_
+Used module:         \spm._399_.base
+Used module:     \spm._398_
+Used module:         \spm._398_.base
+Used module:     \spm._397_
+Used module:         \spm._397_.base
+Used module:     \spm._396_
+Used module:         \spm._396_.base
+Used module:     \spm._395_
+Used module:         \spm._395_.base
+Used module:     \spm._394_
+Used module:         \spm._394_.base
+Used module:     \spm._393_
+Used module:         \spm._393_.base
+Used module:     \spm._392_
+Used module:         \spm._392_.base
+Used module:     \spm._391_
+Used module:         \spm._391_.base
+Used module:     \spm._390_
+Used module:         \spm._390_.base
+Used module:     \spm._389_
+Used module:         \spm._389_.base
+Used module:     \spm._388_
+Used module:         \spm._388_.base
+Used module:     \spm._387_
+Used module:         \spm._387_.base
+Used module:     \spm._386_
+Used module:         \spm._386_.base
+Used module:     \spm._385_
+Used module:         \spm._385_.base
+Used module:     \spm._384_
+Used module:         \spm._384_.base
+Used module:     \spm._383_
+Used module:         \spm._383_.base
+Used module:     \spm._382_
+Used module:         \spm._382_.base
+Used module:     \spm._381_
+Used module:         \spm._381_.base
+Used module:     \spm._380_
+Used module:         \spm._380_.base
+Used module:     \spm._379_
+Used module:         \spm._379_.base
+Used module:     \spm._378_
+Used module:         \spm._378_.base
+Used module:     \spm._377_
+Used module:         \spm._377_.base
+Used module:     \spm._376_
+Used module:         \spm._376_.base
+Used module:     \spm._375_
+Used module:         \spm._375_.base
+Used module:     \spm._374_
+Used module:         \spm._374_.base
+Used module:     \spm._373_
+Used module:         \spm._373_.base
+Used module:     \spm._372_
+Used module:         \spm._372_.base
+Used module:     \spm._371_
+Used module:         \spm._371_.base
+Used module:     \spm._370_
+Used module:         \spm._370_.base
+Used module:     \spm._369_
+Used module:         \spm._369_.base
+Used module:     \spm._368_
+Used module:         \spm._368_.base
+Used module:     \spm._367_
+Used module:         \spm._367_.base
+Used module:     \spm._366_
+Used module:         \spm._366_.base
+Used module:     \spm._365_
+Used module:         \spm._365_.base
+Used module:     \spm._364_
+Used module:         \spm._364_.base
+Used module:     \spm._363_
+Used module:         \spm._363_.base
+Used module:     \spm._362_
+Used module:         \spm._362_.base
+Used module:     \spm._361_
+Used module:         \spm._361_.base
+Used module:     \spm._360_
+Used module:         \spm._360_.base
+Used module:     \spm._359_
+Used module:         \spm._359_.base
+Used module:     \spm._358_
+Used module:         \spm._358_.base
+Used module:     \spm._357_
+Used module:         \spm._357_.base
+Used module:     \spm._356_
+Used module:         \spm._356_.base
+Used module:     \spm._355_
+Used module:         \spm._355_.base
+Used module:     \spm._354_
+Used module:         \spm._354_.base
+Used module:     \spm._353_
+Used module:         \spm._353_.base
+Used module:     \spm._352_
+Used module:         \spm._352_.base
+Used module:     \spm._351_
+Used module:         \spm._351_.base
+Used module:     \spm._350_
+Used module:         \spm._350_.base
+Used module:     \spm._349_
+Used module:         \spm._349_.base
+Used module:     \spm._348_
+Used module:         \spm._348_.base
+Used module:     \spm._347_
+Used module:         \spm._347_.base
+Used module:     \spm._346_
+Used module:         \spm._346_.base
+Used module:     \spm._345_
+Used module:         \spm._345_.base
+Used module:     \spm._344_
+Used module:         \spm._344_.base
+Used module:     \spm._343_
+Used module:         \spm._343_.base
+Used module:     \spm._342_
+Used module:         \spm._342_.base
+Used module:     \spm._341_
+Used module:         \spm._341_.base
+Used module:     \spm._340_
+Used module:         \spm._340_.base
+Used module:     \spm._339_
+Used module:         \spm._339_.base
+Used module:     \spm._338_
+Used module:         \spm._338_.base
+Used module:     \spm._337_
+Used module:         \spm._337_.base
+Used module:     \spm._336_
+Used module:         \spm._336_.base
+Used module:     \spm._335_
+Used module:         \spm._335_.base
+Used module:     \spm._334_
+Used module:         \spm._334_.base
+Used module:     \spm._333_
+Used module:         \spm._333_.base
+Used module:     \spm._332_
+Used module:         \spm._332_.base
+Used module:     \spm._331_
+Used module:         \spm._331_.base
+Used module:     \spm._330_
+Used module:         \spm._330_.base
+Used module:     \spm._329_
+Used module:         \spm._329_.base
+Used module:     \spm._328_
+Used module:         \spm._328_.base
+Used module:     \spm._327_
+Used module:         \spm._327_.base
+Used module:     \spm._326_
+Used module:         \spm._326_.base
+Used module:     \spm._325_
+Used module:         \spm._325_.base
+Used module:     \spm._324_
+Used module:         \spm._324_.base
+Used module:     \spm._323_
+Used module:         \spm._323_.base
+Used module:     \spm._322_
+Used module:         \spm._322_.base
+Used module:     \spm._321_
+Used module:         \spm._321_.base
+Used module:     \spm._320_
+Used module:         \spm._320_.base
+Used module:     \spm._319_
+Used module:         \spm._319_.base
+Used module:     \spm._318_
+Used module:         \spm._318_.base
+Used module:     \spm._317_
+Used module:         \spm._317_.base
+Used module:     \spm._316_
+Used module:         \spm._316_.base
+Used module:     \spm._315_
+Used module:         \spm._315_.base
+Used module:     \spm._314_
+Used module:         \spm._314_.base
+Used module:     \spm._313_
+Used module:         \spm._313_.base
+Used module:     \spm._312_
+Used module:         \spm._312_.base
+Used module:     \spm._311_
+Used module:         \spm._311_.base
+Used module:     \spm._310_
+Used module:         \spm._310_.base
+Used module:     \spm._309_
+Used module:         \spm._309_.base
+Used module:     \spm._308_
+Used module:         \spm._308_.base
+Used module:     \spm._307_
+Used module:         \spm._307_.base
+Used module:     \spm._306_
+Used module:         \spm._306_.base
+Used module:     \spm._305_
+Used module:         \spm._305_.base
+Used module:     \spm._304_
+Used module:         \spm._304_.base
+Used module:     \spm._303_
+Used module:         \spm._303_.base
+Used module:     \spm._302_
+Used module:         \spm._302_.base
+Used module:     \spm._301_
+Used module:         \spm._301_.base
+Used module:     \spm._300_
+Used module:         \spm._300_.base
+Used module:     \spm._299_
+Used module:         \spm._299_.base
+Used module:     \spm._298_
+Used module:         \spm._298_.base
+Used module:     \spm._297_
+Used module:         \spm._297_.base
+Used module:     \spm._296_
+Used module:         \spm._296_.base
+Used module:     \spm._295_
+Used module:         \spm._295_.base
+Used module:     \spm._294_
+Used module:         \spm._294_.base
+Used module:     \spm._293_
+Used module:         \spm._293_.base
+Used module:     \spm._292_
+Used module:         \spm._292_.base
+Used module:     \spm._291_
+Used module:         \spm._291_.base
+Used module:     \spm._290_
+Used module:         \spm._290_.base
+Used module:     \spm._289_
+Used module:         \spm._289_.base
+Used module:     \spm._288_
+Used module:         \spm._288_.base
+Used module:     \spm._287_
+Used module:         \spm._287_.base
+Used module:     \spm._286_
+Used module:         \spm._286_.base
+Used module:     \spm._285_
+Used module:         \spm._285_.base
+Used module:     \spm._284_
+Used module:         \spm._284_.base
+Used module:     \spm._283_
+Used module:         \spm._283_.base
+Used module:     \spm._282_
+Used module:         \spm._282_.base
+Used module:     \spm._281_
+Used module:         \spm._281_.base
+Used module:     \spm._280_
+Used module:         \spm._280_.base
+Used module:     \spm._279_
+Used module:         \spm._279_.base
+Used module:     \spm._278_
+Used module:         \spm._278_.base
+Used module:     \spm._277_
+Used module:         \spm._277_.base
+Used module:     \spm._276_
+Used module:         \spm._276_.base
+Used module:     \spm._275_
+Used module:         \spm._275_.base
+Used module:     \spm._274_
+Used module:         \spm._274_.base
+Used module:     \spm._273_
+Used module:         \spm._273_.base
+Used module:     \spm._272_
+Used module:         \spm._272_.base
+Used module:     \spm._271_
+Used module:         \spm._271_.base
+Used module:     \spm._270_
+Used module:         \spm._270_.base
+Used module:     \spm._269_
+Used module:         \spm._269_.base
+Used module:     \spm._268_
+Used module:         \spm._268_.base
+Used module:     \spm._267_
+Used module:         \spm._267_.base
+Used module:     \spm._266_
+Used module:         \spm._266_.base
+Used module:     \spm._265_
+Used module:         \spm._265_.base
+Used module:     \spm._264_
+Used module:         \spm._264_.base
+Used module:     \spm._263_
+Used module:         \spm._263_.base
+Used module:     \spm._262_
+Used module:         \spm._262_.base
+Used module:     \spm._261_
+Used module:         \spm._261_.base
+Used module:     \spm._260_
+Used module:         \spm._260_.base
+Used module:     \spm._259_
+Used module:         \spm._259_.base
+Used module:     \spm._258_
+Used module:         \spm._258_.base
+Used module:     \spm._257_
+Used module:         \spm._257_.base
+Used module:     \spm._256_
+Used module:         \spm._256_.base
+Used module:     \spm._255_
+Used module:         \spm._255_.base
+Used module:     \spm._254_
+Used module:         \spm._254_.base
+Used module:     \spm._253_
+Used module:         \spm._253_.base
+Used module:     \spm._252_
+Used module:         \spm._252_.base
+Used module:     \spm._251_
+Used module:         \spm._251_.base
+Used module:     \spm._250_
+Used module:         \spm._250_.base
+Used module:     \spm._249_
+Used module:         \spm._249_.base
+Used module:     \spm._248_
+Used module:         \spm._248_.base
+Used module:     \spm._247_
+Used module:         \spm._247_.base
+Used module:     \spm._246_
+Used module:         \spm._246_.base
+Used module:     \spm._245_
+Used module:         \spm._245_.base
+Used module:     \spm._244_
+Used module:         \spm._244_.base
+Used module:     \spm._243_
+Used module:         \spm._243_.base
+Used module:     \spm._242_
+Used module:         \spm._242_.base
+Used module:     \spm._241_
+Used module:         \spm._241_.base
+Used module:     \spm._240_
+Used module:         \spm._240_.base
+Used module:     \spm._239_
+Used module:         \spm._239_.base
+Used module:     \spm._238_
+Used module:         \spm._238_.base
+Used module:     \spm._237_
+Used module:         \spm._237_.base
+Used module:     \spm._236_
+Used module:         \spm._236_.base
+Used module:     \spm._235_
+Used module:         \spm._235_.base
+Used module:     \spm._234_
+Used module:         \spm._234_.base
+Used module:     \spm._233_
+Used module:         \spm._233_.base
+Used module:     \spm._232_
+Used module:         \spm._232_.base
+Used module:     \spm._231_
+Used module:         \spm._231_.base
+Used module:     \spm._230_
+Used module:         \spm._230_.base
+Used module:     \spm._229_
+Used module:         \spm._229_.base
+Used module:     \spm._228_
+Used module:         \spm._228_.base
+Used module:     \spm._227_
+Used module:         \spm._227_.base
+Used module:     \spm._226_
+Used module:         \spm._226_.base
+Used module:     \spm._225_
+Used module:         \spm._225_.base
+Used module:     \spm._224_
+Used module:         \spm._224_.base
+Used module:     \spm._223_
+Used module:         \spm._223_.base
+Used module:     \spm._222_
+Used module:         \spm._222_.base
+Used module:     \spm._221_
+Used module:         \spm._221_.base
+Used module:     \spm._220_
+Used module:         \spm._220_.base
+Used module:     \spm._219_
+Used module:         \spm._219_.base
+Used module:     \spm._218_
+Used module:         \spm._218_.base
+Used module:     \spm._217_
+Used module:         \spm._217_.base
+Used module:     \spm._216_
+Used module:         \spm._216_.base
+Used module:     \spm._215_
+Used module:         \spm._215_.base
+Used module:     \spm._214_
+Used module:         \spm._214_.base
+Used module:     \spm._213_
+Used module:         \spm._213_.base
+Used module:     \spm._212_
+Used module:         \spm._212_.base
+Used module:     \spm._211_
+Used module:         \spm._211_.base
+Used module:     \spm._210_
+Used module:         \spm._210_.base
+Used module:     \spm._209_
+Used module:         \spm._209_.base
+Used module:     \spm._208_
+Used module:         \spm._208_.base
+Used module:     \spm._207_
+Used module:         \spm._207_.base
+Used module:     \spm._206_
+Used module:         \spm._206_.base
+
+6.2. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \spm.output35
+Used module:         \spm.output35.base
+Used module:     \spm.input9
+Used module:         \spm.input9.base
+Used module:     \spm.input8
+Used module:         \spm.input8.base
+Used module:     \spm.input7
+Used module:         \spm.input7.base
+Used module:     \spm.input6
+Used module:         \spm.input6.base
+Used module:     \spm.input5
+Used module:         \spm.input5.base
+Used module:     \spm.input4
+Used module:         \spm.input4.base
+Used module:     \spm.input34
+Used module:         \spm.input34.base
+Used module:     \spm.input33
+Used module:         \spm.input33.base
+Used module:     \spm.input32
+Used module:         \spm.input32.base
+Used module:     \spm.input31
+Used module:         \spm.input31.base
+Used module:     \spm.input30
+Used module:         \spm.input30.base
+Used module:     \spm.input3
+Used module:         \spm.input3.base
+Used module:     \spm.input29
+Used module:         \spm.input29.base
+Used module:     \spm.input28
+Used module:         \spm.input28.base
+Used module:     \spm.input27
+Used module:         \spm.input27.base
+Used module:     \spm.input26
+Used module:         \spm.input26.base
+Used module:     \spm.input25
+Used module:         \spm.input25.base
+Used module:     \spm.input24
+Used module:         \spm.input24.base
+Used module:     \spm.input23
+Used module:         \spm.input23.base
+Used module:     \spm.input22
+Used module:         \spm.input22.base
+Used module:     \spm.input21
+Used module:         \spm.input21.base
+Used module:     \spm.input20
+Used module:         \spm.input20.base
+Used module:     \spm.input2
+Used module:         \spm.input2.base
+Used module:     \spm.input19
+Used module:         \spm.input19.base
+Used module:     \spm.input18
+Used module:         \spm.input18.base
+Used module:     \spm.input17
+Used module:         \spm.input17.base
+Used module:     \spm.input16
+Used module:         \spm.input16.base
+Used module:     \spm.input15
+Used module:         \spm.input15.base
+Used module:     \spm.input14
+Used module:         \spm.input14.base
+Used module:     \spm.input13
+Used module:         \spm.input13.base
+Used module:     \spm.input12
+Used module:         \spm.input12.base
+Used module:     \spm.input11
+Used module:         \spm.input11.base
+Used module:     \spm.input10
+Used module:         \spm.input10.base
+Used module:     \spm.input1
+Used module:         \spm.input1.base
+Used module:     \spm.clkbuf_3_7__f_clk
+Used module:         \spm.clkbuf_3_7__f_clk.base
+Used module:     \spm.clkbuf_3_6__f_clk
+Used module:         \spm.clkbuf_3_6__f_clk.base
+Used module:     \spm.clkbuf_3_5__f_clk
+Used module:         \spm.clkbuf_3_5__f_clk.base
+Used module:     \spm.clkbuf_3_4__f_clk
+Used module:         \spm.clkbuf_3_4__f_clk.base
+Used module:     \spm.clkbuf_3_3__f_clk
+Used module:         \spm.clkbuf_3_3__f_clk.base
+Used module:     \spm.clkbuf_3_2__f_clk
+Used module:         \spm.clkbuf_3_2__f_clk.base
+Used module:     \spm.clkbuf_3_1__f_clk
+Used module:         \spm.clkbuf_3_1__f_clk.base
+Used module:     \spm.clkbuf_3_0__f_clk
+Used module:         \spm.clkbuf_3_0__f_clk.base
+Used module:     \spm.clkbuf_0_clk
+Used module:         \spm.clkbuf_0_clk.base
+Used module:     \spm._506_
+Used module:         \spm._506_.base
+Used module:             \spm._506_.base.dff0
+Used module:     \spm._505_
+Used module:         \spm._505_.base
+Used module:             \spm._505_.base.dff0
+Used module:     \spm._504_
+Used module:         \spm._504_.base
+Used module:             \spm._504_.base.dff0
+Used module:     \spm._503_
+Used module:         \spm._503_.base
+Used module:             \spm._503_.base.dff0
+Used module:     \spm._502_
+Used module:         \spm._502_.base
+Used module:             \spm._502_.base.dff0
+Used module:     \spm._501_
+Used module:         \spm._501_.base
+Used module:             \spm._501_.base.dff0
+Used module:     \spm._500_
+Used module:         \spm._500_.base
+Used module:             \spm._500_.base.dff0
+Used module:     \spm._499_
+Used module:         \spm._499_.base
+Used module:             \spm._499_.base.dff0
+Used module:     \spm._498_
+Used module:         \spm._498_.base
+Used module:             \spm._498_.base.dff0
+Used module:     \spm._497_
+Used module:         \spm._497_.base
+Used module:             \spm._497_.base.dff0
+Used module:     \spm._496_
+Used module:         \spm._496_.base
+Used module:             \spm._496_.base.dff0
+Used module:     \spm._495_
+Used module:         \spm._495_.base
+Used module:             \spm._495_.base.dff0
+Used module:     \spm._494_
+Used module:         \spm._494_.base
+Used module:             \spm._494_.base.dff0
+Used module:     \spm._493_
+Used module:         \spm._493_.base
+Used module:             \spm._493_.base.dff0
+Used module:     \spm._492_
+Used module:         \spm._492_.base
+Used module:             \spm._492_.base.dff0
+Used module:     \spm._491_
+Used module:         \spm._491_.base
+Used module:             \spm._491_.base.dff0
+Used module:     \spm._490_
+Used module:         \spm._490_.base
+Used module:             \spm._490_.base.dff0
+Used module:     \spm._489_
+Used module:         \spm._489_.base
+Used module:             \spm._489_.base.dff0
+Used module:     \spm._488_
+Used module:         \spm._488_.base
+Used module:             \spm._488_.base.dff0
+Used module:     \spm._487_
+Used module:         \spm._487_.base
+Used module:             \spm._487_.base.dff0
+Used module:     \spm._486_
+Used module:         \spm._486_.base
+Used module:             \spm._486_.base.dff0
+Used module:     \spm._485_
+Used module:         \spm._485_.base
+Used module:             \spm._485_.base.dff0
+Used module:     \spm._484_
+Used module:         \spm._484_.base
+Used module:             \spm._484_.base.dff0
+Used module:     \spm._483_
+Used module:         \spm._483_.base
+Used module:             \spm._483_.base.dff0
+Used module:     \spm._482_
+Used module:         \spm._482_.base
+Used module:             \spm._482_.base.dff0
+Used module:     \spm._481_
+Used module:         \spm._481_.base
+Used module:             \spm._481_.base.dff0
+Used module:     \spm._480_
+Used module:         \spm._480_.base
+Used module:             \spm._480_.base.dff0
+Used module:     \spm._479_
+Used module:         \spm._479_.base
+Used module:             \spm._479_.base.dff0
+Used module:     \spm._478_
+Used module:         \spm._478_.base
+Used module:             \spm._478_.base.dff0
+Used module:     \spm._477_
+Used module:         \spm._477_.base
+Used module:             \spm._477_.base.dff0
+Used module:     \spm._476_
+Used module:         \spm._476_.base
+Used module:             \spm._476_.base.dff0
+Used module:     \spm._475_
+Used module:         \spm._475_.base
+Used module:             \spm._475_.base.dff0
+Used module:     \spm._474_
+Used module:         \spm._474_.base
+Used module:             \spm._474_.base.dff0
+Used module:     \spm._473_
+Used module:         \spm._473_.base
+Used module:             \spm._473_.base.dff0
+Used module:     \spm._472_
+Used module:         \spm._472_.base
+Used module:             \spm._472_.base.dff0
+Used module:     \spm._471_
+Used module:         \spm._471_.base
+Used module:             \spm._471_.base.dff0
+Used module:     \spm._470_
+Used module:         \spm._470_.base
+Used module:             \spm._470_.base.dff0
+Used module:     \spm._469_
+Used module:         \spm._469_.base
+Used module:             \spm._469_.base.dff0
+Used module:     \spm._468_
+Used module:         \spm._468_.base
+Used module:             \spm._468_.base.dff0
+Used module:     \spm._467_
+Used module:         \spm._467_.base
+Used module:             \spm._467_.base.dff0
+Used module:     \spm._466_
+Used module:         \spm._466_.base
+Used module:             \spm._466_.base.dff0
+Used module:     \spm._465_
+Used module:         \spm._465_.base
+Used module:             \spm._465_.base.dff0
+Used module:     \spm._464_
+Used module:         \spm._464_.base
+Used module:             \spm._464_.base.dff0
+Used module:     \spm._463_
+Used module:         \spm._463_.base
+Used module:             \spm._463_.base.dff0
+Used module:     \spm._462_
+Used module:         \spm._462_.base
+Used module:             \spm._462_.base.dff0
+Used module:     \spm._461_
+Used module:         \spm._461_.base
+Used module:             \spm._461_.base.dff0
+Used module:     \spm._460_
+Used module:         \spm._460_.base
+Used module:             \spm._460_.base.dff0
+Used module:     \spm._459_
+Used module:         \spm._459_.base
+Used module:             \spm._459_.base.dff0
+Used module:     \spm._458_
+Used module:         \spm._458_.base
+Used module:             \spm._458_.base.dff0
+Used module:     \spm._457_
+Used module:         \spm._457_.base
+Used module:             \spm._457_.base.dff0
+Used module:     \spm._456_
+Used module:         \spm._456_.base
+Used module:             \spm._456_.base.dff0
+Used module:     \spm._455_
+Used module:         \spm._455_.base
+Used module:             \spm._455_.base.dff0
+Used module:     \spm._454_
+Used module:         \spm._454_.base
+Used module:             \spm._454_.base.dff0
+Used module:     \spm._453_
+Used module:         \spm._453_.base
+Used module:             \spm._453_.base.dff0
+Used module:     \spm._452_
+Used module:         \spm._452_.base
+Used module:             \spm._452_.base.dff0
+Used module:     \spm._451_
+Used module:         \spm._451_.base
+Used module:             \spm._451_.base.dff0
+Used module:     \spm._450_
+Used module:         \spm._450_.base
+Used module:             \spm._450_.base.dff0
+Used module:     \spm._449_
+Used module:         \spm._449_.base
+Used module:             \spm._449_.base.dff0
+Used module:     \spm._448_
+Used module:         \spm._448_.base
+Used module:             \spm._448_.base.dff0
+Used module:     \spm._447_
+Used module:         \spm._447_.base
+Used module:             \spm._447_.base.dff0
+Used module:     \spm._446_
+Used module:         \spm._446_.base
+Used module:             \spm._446_.base.dff0
+Used module:     \spm._445_
+Used module:         \spm._445_.base
+Used module:             \spm._445_.base.dff0
+Used module:     \spm._444_
+Used module:         \spm._444_.base
+Used module:             \spm._444_.base.dff0
+Used module:     \spm._443_
+Used module:         \spm._443_.base
+Used module:             \spm._443_.base.dff0
+Used module:     \spm._442_
+Used module:         \spm._442_.base
+Used module:     \spm._441_
+Used module:         \spm._441_.base
+Used module:     \spm._440_
+Used module:         \spm._440_.base
+Used module:     \spm._439_
+Used module:         \spm._439_.base
+Used module:     \spm._438_
+Used module:         \spm._438_.base
+Used module:     \spm._437_
+Used module:         \spm._437_.base
+Used module:     \spm._436_
+Used module:         \spm._436_.base
+Used module:     \spm._435_
+Used module:         \spm._435_.base
+Used module:     \spm._434_
+Used module:         \spm._434_.base
+Used module:     \spm._433_
+Used module:         \spm._433_.base
+Used module:     \spm._432_
+Used module:         \spm._432_.base
+Used module:     \spm._431_
+Used module:         \spm._431_.base
+Used module:     \spm._430_
+Used module:         \spm._430_.base
+Used module:     \spm._429_
+Used module:         \spm._429_.base
+Used module:     \spm._428_
+Used module:         \spm._428_.base
+Used module:     \spm._427_
+Used module:         \spm._427_.base
+Used module:     \spm._426_
+Used module:         \spm._426_.base
+Used module:     \spm._425_
+Used module:         \spm._425_.base
+Used module:     \spm._424_
+Used module:         \spm._424_.base
+Used module:     \spm._423_
+Used module:         \spm._423_.base
+Used module:     \spm._422_
+Used module:         \spm._422_.base
+Used module:     \spm._421_
+Used module:         \spm._421_.base
+Used module:     \spm._420_
+Used module:         \spm._420_.base
+Used module:     \spm._419_
+Used module:         \spm._419_.base
+Used module:     \spm._418_
+Used module:         \spm._418_.base
+Used module:     \spm._417_
+Used module:         \spm._417_.base
+Used module:     \spm._416_
+Used module:         \spm._416_.base
+Used module:     \spm._415_
+Used module:         \spm._415_.base
+Used module:     \spm._414_
+Used module:         \spm._414_.base
+Used module:     \spm._413_
+Used module:         \spm._413_.base
+Used module:     \spm._412_
+Used module:         \spm._412_.base
+Used module:     \spm._411_
+Used module:         \spm._411_.base
+Used module:     \spm._410_
+Used module:         \spm._410_.base
+Used module:     \spm._409_
+Used module:         \spm._409_.base
+Used module:     \spm._408_
+Used module:         \spm._408_.base
+Used module:     \spm._407_
+Used module:         \spm._407_.base
+Used module:     \spm._406_
+Used module:         \spm._406_.base
+Used module:     \spm._405_
+Used module:         \spm._405_.base
+Used module:     \spm._404_
+Used module:         \spm._404_.base
+Used module:     \spm._403_
+Used module:         \spm._403_.base
+Used module:     \spm._402_
+Used module:         \spm._402_.base
+Used module:     \spm._401_
+Used module:         \spm._401_.base
+Used module:     \spm._400_
+Used module:         \spm._400_.base
+Used module:     \spm._399_
+Used module:         \spm._399_.base
+Used module:     \spm._398_
+Used module:         \spm._398_.base
+Used module:     \spm._397_
+Used module:         \spm._397_.base
+Used module:     \spm._396_
+Used module:         \spm._396_.base
+Used module:     \spm._395_
+Used module:         \spm._395_.base
+Used module:     \spm._394_
+Used module:         \spm._394_.base
+Used module:     \spm._393_
+Used module:         \spm._393_.base
+Used module:     \spm._392_
+Used module:         \spm._392_.base
+Used module:     \spm._391_
+Used module:         \spm._391_.base
+Used module:     \spm._390_
+Used module:         \spm._390_.base
+Used module:     \spm._389_
+Used module:         \spm._389_.base
+Used module:     \spm._388_
+Used module:         \spm._388_.base
+Used module:     \spm._387_
+Used module:         \spm._387_.base
+Used module:     \spm._386_
+Used module:         \spm._386_.base
+Used module:     \spm._385_
+Used module:         \spm._385_.base
+Used module:     \spm._384_
+Used module:         \spm._384_.base
+Used module:     \spm._383_
+Used module:         \spm._383_.base
+Used module:     \spm._382_
+Used module:         \spm._382_.base
+Used module:     \spm._381_
+Used module:         \spm._381_.base
+Used module:     \spm._380_
+Used module:         \spm._380_.base
+Used module:     \spm._379_
+Used module:         \spm._379_.base
+Used module:     \spm._378_
+Used module:         \spm._378_.base
+Used module:     \spm._377_
+Used module:         \spm._377_.base
+Used module:     \spm._376_
+Used module:         \spm._376_.base
+Used module:     \spm._375_
+Used module:         \spm._375_.base
+Used module:     \spm._374_
+Used module:         \spm._374_.base
+Used module:     \spm._373_
+Used module:         \spm._373_.base
+Used module:     \spm._372_
+Used module:         \spm._372_.base
+Used module:     \spm._371_
+Used module:         \spm._371_.base
+Used module:     \spm._370_
+Used module:         \spm._370_.base
+Used module:     \spm._369_
+Used module:         \spm._369_.base
+Used module:     \spm._368_
+Used module:         \spm._368_.base
+Used module:     \spm._367_
+Used module:         \spm._367_.base
+Used module:     \spm._366_
+Used module:         \spm._366_.base
+Used module:     \spm._365_
+Used module:         \spm._365_.base
+Used module:     \spm._364_
+Used module:         \spm._364_.base
+Used module:     \spm._363_
+Used module:         \spm._363_.base
+Used module:     \spm._362_
+Used module:         \spm._362_.base
+Used module:     \spm._361_
+Used module:         \spm._361_.base
+Used module:     \spm._360_
+Used module:         \spm._360_.base
+Used module:     \spm._359_
+Used module:         \spm._359_.base
+Used module:     \spm._358_
+Used module:         \spm._358_.base
+Used module:     \spm._357_
+Used module:         \spm._357_.base
+Used module:     \spm._356_
+Used module:         \spm._356_.base
+Used module:     \spm._355_
+Used module:         \spm._355_.base
+Used module:     \spm._354_
+Used module:         \spm._354_.base
+Used module:     \spm._353_
+Used module:         \spm._353_.base
+Used module:     \spm._352_
+Used module:         \spm._352_.base
+Used module:     \spm._351_
+Used module:         \spm._351_.base
+Used module:     \spm._350_
+Used module:         \spm._350_.base
+Used module:     \spm._349_
+Used module:         \spm._349_.base
+Used module:     \spm._348_
+Used module:         \spm._348_.base
+Used module:     \spm._347_
+Used module:         \spm._347_.base
+Used module:     \spm._346_
+Used module:         \spm._346_.base
+Used module:     \spm._345_
+Used module:         \spm._345_.base
+Used module:     \spm._344_
+Used module:         \spm._344_.base
+Used module:     \spm._343_
+Used module:         \spm._343_.base
+Used module:     \spm._342_
+Used module:         \spm._342_.base
+Used module:     \spm._341_
+Used module:         \spm._341_.base
+Used module:     \spm._340_
+Used module:         \spm._340_.base
+Used module:     \spm._339_
+Used module:         \spm._339_.base
+Used module:     \spm._338_
+Used module:         \spm._338_.base
+Used module:     \spm._337_
+Used module:         \spm._337_.base
+Used module:     \spm._336_
+Used module:         \spm._336_.base
+Used module:     \spm._335_
+Used module:         \spm._335_.base
+Used module:     \spm._334_
+Used module:         \spm._334_.base
+Used module:     \spm._333_
+Used module:         \spm._333_.base
+Used module:     \spm._332_
+Used module:         \spm._332_.base
+Used module:     \spm._331_
+Used module:         \spm._331_.base
+Used module:     \spm._330_
+Used module:         \spm._330_.base
+Used module:     \spm._329_
+Used module:         \spm._329_.base
+Used module:     \spm._328_
+Used module:         \spm._328_.base
+Used module:     \spm._327_
+Used module:         \spm._327_.base
+Used module:     \spm._326_
+Used module:         \spm._326_.base
+Used module:     \spm._325_
+Used module:         \spm._325_.base
+Used module:     \spm._324_
+Used module:         \spm._324_.base
+Used module:     \spm._323_
+Used module:         \spm._323_.base
+Used module:     \spm._322_
+Used module:         \spm._322_.base
+Used module:     \spm._321_
+Used module:         \spm._321_.base
+Used module:     \spm._320_
+Used module:         \spm._320_.base
+Used module:     \spm._319_
+Used module:         \spm._319_.base
+Used module:     \spm._318_
+Used module:         \spm._318_.base
+Used module:     \spm._317_
+Used module:         \spm._317_.base
+Used module:     \spm._316_
+Used module:         \spm._316_.base
+Used module:     \spm._315_
+Used module:         \spm._315_.base
+Used module:     \spm._314_
+Used module:         \spm._314_.base
+Used module:     \spm._313_
+Used module:         \spm._313_.base
+Used module:     \spm._312_
+Used module:         \spm._312_.base
+Used module:     \spm._311_
+Used module:         \spm._311_.base
+Used module:     \spm._310_
+Used module:         \spm._310_.base
+Used module:     \spm._309_
+Used module:         \spm._309_.base
+Used module:     \spm._308_
+Used module:         \spm._308_.base
+Used module:     \spm._307_
+Used module:         \spm._307_.base
+Used module:     \spm._306_
+Used module:         \spm._306_.base
+Used module:     \spm._305_
+Used module:         \spm._305_.base
+Used module:     \spm._304_
+Used module:         \spm._304_.base
+Used module:     \spm._303_
+Used module:         \spm._303_.base
+Used module:     \spm._302_
+Used module:         \spm._302_.base
+Used module:     \spm._301_
+Used module:         \spm._301_.base
+Used module:     \spm._300_
+Used module:         \spm._300_.base
+Used module:     \spm._299_
+Used module:         \spm._299_.base
+Used module:     \spm._298_
+Used module:         \spm._298_.base
+Used module:     \spm._297_
+Used module:         \spm._297_.base
+Used module:     \spm._296_
+Used module:         \spm._296_.base
+Used module:     \spm._295_
+Used module:         \spm._295_.base
+Used module:     \spm._294_
+Used module:         \spm._294_.base
+Used module:     \spm._293_
+Used module:         \spm._293_.base
+Used module:     \spm._292_
+Used module:         \spm._292_.base
+Used module:     \spm._291_
+Used module:         \spm._291_.base
+Used module:     \spm._290_
+Used module:         \spm._290_.base
+Used module:     \spm._289_
+Used module:         \spm._289_.base
+Used module:     \spm._288_
+Used module:         \spm._288_.base
+Used module:     \spm._287_
+Used module:         \spm._287_.base
+Used module:     \spm._286_
+Used module:         \spm._286_.base
+Used module:     \spm._285_
+Used module:         \spm._285_.base
+Used module:     \spm._284_
+Used module:         \spm._284_.base
+Used module:     \spm._283_
+Used module:         \spm._283_.base
+Used module:     \spm._282_
+Used module:         \spm._282_.base
+Used module:     \spm._281_
+Used module:         \spm._281_.base
+Used module:     \spm._280_
+Used module:         \spm._280_.base
+Used module:     \spm._279_
+Used module:         \spm._279_.base
+Used module:     \spm._278_
+Used module:         \spm._278_.base
+Used module:     \spm._277_
+Used module:         \spm._277_.base
+Used module:     \spm._276_
+Used module:         \spm._276_.base
+Used module:     \spm._275_
+Used module:         \spm._275_.base
+Used module:     \spm._274_
+Used module:         \spm._274_.base
+Used module:     \spm._273_
+Used module:         \spm._273_.base
+Used module:     \spm._272_
+Used module:         \spm._272_.base
+Used module:     \spm._271_
+Used module:         \spm._271_.base
+Used module:     \spm._270_
+Used module:         \spm._270_.base
+Used module:     \spm._269_
+Used module:         \spm._269_.base
+Used module:     \spm._268_
+Used module:         \spm._268_.base
+Used module:     \spm._267_
+Used module:         \spm._267_.base
+Used module:     \spm._266_
+Used module:         \spm._266_.base
+Used module:     \spm._265_
+Used module:         \spm._265_.base
+Used module:     \spm._264_
+Used module:         \spm._264_.base
+Used module:     \spm._263_
+Used module:         \spm._263_.base
+Used module:     \spm._262_
+Used module:         \spm._262_.base
+Used module:     \spm._261_
+Used module:         \spm._261_.base
+Used module:     \spm._260_
+Used module:         \spm._260_.base
+Used module:     \spm._259_
+Used module:         \spm._259_.base
+Used module:     \spm._258_
+Used module:         \spm._258_.base
+Used module:     \spm._257_
+Used module:         \spm._257_.base
+Used module:     \spm._256_
+Used module:         \spm._256_.base
+Used module:     \spm._255_
+Used module:         \spm._255_.base
+Used module:     \spm._254_
+Used module:         \spm._254_.base
+Used module:     \spm._253_
+Used module:         \spm._253_.base
+Used module:     \spm._252_
+Used module:         \spm._252_.base
+Used module:     \spm._251_
+Used module:         \spm._251_.base
+Used module:     \spm._250_
+Used module:         \spm._250_.base
+Used module:     \spm._249_
+Used module:         \spm._249_.base
+Used module:     \spm._248_
+Used module:         \spm._248_.base
+Used module:     \spm._247_
+Used module:         \spm._247_.base
+Used module:     \spm._246_
+Used module:         \spm._246_.base
+Used module:     \spm._245_
+Used module:         \spm._245_.base
+Used module:     \spm._244_
+Used module:         \spm._244_.base
+Used module:     \spm._243_
+Used module:         \spm._243_.base
+Used module:     \spm._242_
+Used module:         \spm._242_.base
+Used module:     \spm._241_
+Used module:         \spm._241_.base
+Used module:     \spm._240_
+Used module:         \spm._240_.base
+Used module:     \spm._239_
+Used module:         \spm._239_.base
+Used module:     \spm._238_
+Used module:         \spm._238_.base
+Used module:     \spm._237_
+Used module:         \spm._237_.base
+Used module:     \spm._236_
+Used module:         \spm._236_.base
+Used module:     \spm._235_
+Used module:         \spm._235_.base
+Used module:     \spm._234_
+Used module:         \spm._234_.base
+Used module:     \spm._233_
+Used module:         \spm._233_.base
+Used module:     \spm._232_
+Used module:         \spm._232_.base
+Used module:     \spm._231_
+Used module:         \spm._231_.base
+Used module:     \spm._230_
+Used module:         \spm._230_.base
+Used module:     \spm._229_
+Used module:         \spm._229_.base
+Used module:     \spm._228_
+Used module:         \spm._228_.base
+Used module:     \spm._227_
+Used module:         \spm._227_.base
+Used module:     \spm._226_
+Used module:         \spm._226_.base
+Used module:     \spm._225_
+Used module:         \spm._225_.base
+Used module:     \spm._224_
+Used module:         \spm._224_.base
+Used module:     \spm._223_
+Used module:         \spm._223_.base
+Used module:     \spm._222_
+Used module:         \spm._222_.base
+Used module:     \spm._221_
+Used module:         \spm._221_.base
+Used module:     \spm._220_
+Used module:         \spm._220_.base
+Used module:     \spm._219_
+Used module:         \spm._219_.base
+Used module:     \spm._218_
+Used module:         \spm._218_.base
+Used module:     \spm._217_
+Used module:         \spm._217_.base
+Used module:     \spm._216_
+Used module:         \spm._216_.base
+Used module:     \spm._215_
+Used module:         \spm._215_.base
+Used module:     \spm._214_
+Used module:         \spm._214_.base
+Used module:     \spm._213_
+Used module:         \spm._213_.base
+Used module:     \spm._212_
+Used module:         \spm._212_.base
+Used module:     \spm._211_
+Used module:         \spm._211_.base
+Used module:     \spm._210_
+Used module:         \spm._210_.base
+Used module:     \spm._209_
+Used module:         \spm._209_.base
+Used module:     \spm._208_
+Used module:         \spm._208_.base
+Used module:     \spm._207_
+Used module:         \spm._207_.base
+Used module:     \spm._206_
+Used module:         \spm._206_.base
+Removing unused module `\sky130_fd_sc_hd__xor2_1'.
+Removing unused module `\sky130_fd_sc_hd__xor2'.
+Removing unused module `\sky130_fd_sc_hd__xnor2_1'.
+Removing unused module `\sky130_fd_sc_hd__xnor2'.
+Removing unused module `\sky130_fd_sc_hd__udp_dff$PR'.
+Removing unused module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Removing unused module `\sky130_fd_sc_hd__tapvpwrvgnd'.
+Removing unused module `\sky130_fd_sc_hd__nand3_1'.
+Removing unused module `\sky130_fd_sc_hd__nand3'.
+Removing unused module `\sky130_fd_sc_hd__nand2_1'.
+Removing unused module `\sky130_fd_sc_hd__nand2'.
+Removing unused module `\sky130_fd_sc_hd__inv_2'.
+Removing unused module `\sky130_fd_sc_hd__inv'.
+Removing unused module `\sky130_fd_sc_hd__fill_2'.
+Removing unused module `\sky130_fd_sc_hd__fill_1'.
+Removing unused module `\sky130_fd_sc_hd__fill'.
+Removing unused module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Removing unused module `\sky130_fd_sc_hd__dlymetal6s2s'.
+Removing unused module `\sky130_fd_sc_hd__dfrtp_1'.
+Removing unused module `\sky130_fd_sc_hd__dfrtp'.
+Removing unused module `\sky130_fd_sc_hd__decap_8'.
+Removing unused module `\sky130_fd_sc_hd__decap_6'.
+Removing unused module `\sky130_fd_sc_hd__decap_4'.
+Removing unused module `\sky130_fd_sc_hd__decap_3'.
+Removing unused module `\sky130_fd_sc_hd__decap_12'.
+Removing unused module `\sky130_fd_sc_hd__decap'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf_4'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf_16'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf_1'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf'.
+Removing unused module `\sky130_fd_sc_hd__buf_4'.
+Removing unused module `\sky130_fd_sc_hd__buf_2'.
+Removing unused module `\sky130_fd_sc_hd__buf'.
+Removing unused module `\sky130_fd_sc_hd__and2_1'.
+Removing unused module `\sky130_fd_sc_hd__and2'.
+Removing unused module `\sky130_fd_sc_hd__a31o_1'.
+Removing unused module `\sky130_fd_sc_hd__a31o'.
+Removing unused module `\sky130_fd_sc_hd__a21o_1'.
+Removing unused module `\sky130_fd_sc_hd__a21o'.
+Removed 39 unused modules.
+
+7. Executing FLATTEN pass (flatten design).
+<suppressed ~32 debug messages>
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \spm
+
+8.2. Analyzing design hierarchy..
+Top module:  \spm
+Removing unused module `\spm.genblk1[10].csa'.
+Removing unused module `\spm.csa0'.
+Removing unused module `\spm.tcmp'.
+Removing unused module `\spm.genblk1[9].csa'.
+Removing unused module `\spm.genblk1[8].csa'.
+Removing unused module `\spm.genblk1[7].csa'.
+Removing unused module `\spm.genblk1[6].csa'.
+Removing unused module `\spm.genblk1[5].csa'.
+Removing unused module `\spm.genblk1[4].csa'.
+Removing unused module `\spm.genblk1[3].csa'.
+Removing unused module `\spm.genblk1[30].csa'.
+Removing unused module `\spm.genblk1[2].csa'.
+Removing unused module `\spm.genblk1[29].csa'.
+Removing unused module `\spm.genblk1[28].csa'.
+Removing unused module `\spm.genblk1[27].csa'.
+Removing unused module `\spm.genblk1[26].csa'.
+Removing unused module `\spm.genblk1[25].csa'.
+Removing unused module `\spm.genblk1[24].csa'.
+Removing unused module `\spm.genblk1[23].csa'.
+Removing unused module `\spm.genblk1[22].csa'.
+Removing unused module `\spm.genblk1[21].csa'.
+Removing unused module `\spm.genblk1[20].csa'.
+Removing unused module `\spm.genblk1[1].csa'.
+Removing unused module `\spm.genblk1[19].csa'.
+Removing unused module `\spm.genblk1[18].csa'.
+Removing unused module `\spm.genblk1[17].csa'.
+Removing unused module `\spm.genblk1[16].csa'.
+Removing unused module `\spm.genblk1[15].csa'.
+Removing unused module `\spm.genblk1[14].csa'.
+Removing unused module `\spm.genblk1[13].csa'.
+Removing unused module `\spm.genblk1[12].csa'.
+Removing unused module `\spm.genblk1[11].csa'.
+Removed 32 unused modules.
+
+9. Executing FLATTEN pass (flatten design).
+<suppressed ~754 debug messages>
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+
+10.1. Analyzing design hierarchy..
+Top module:  \spm
+
+10.2. Analyzing design hierarchy..
+Top module:  \spm
+Removing unused module `\spm._481_.base.dff0'.
+Removing unused module `\spm._480_.base.dff0'.
+Removing unused module `\spm._479_.base.dff0'.
+Removing unused module `\spm._478_.base.dff0'.
+Removing unused module `\spm._477_.base.dff0'.
+Removing unused module `\spm._476_.base.dff0'.
+Removing unused module `\spm._475_.base.dff0'.
+Removing unused module `\spm._474_.base.dff0'.
+Removing unused module `\spm._473_.base.dff0'.
+Removing unused module `\spm._472_.base.dff0'.
+Removing unused module `\spm._471_.base.dff0'.
+Removing unused module `\spm._470_.base.dff0'.
+Removing unused module `\spm._469_.base.dff0'.
+Removing unused module `\spm._468_.base.dff0'.
+Removing unused module `\spm._467_.base.dff0'.
+Removing unused module `\spm._466_.base.dff0'.
+Removing unused module `\spm._465_.base.dff0'.
+Removing unused module `\spm._464_.base.dff0'.
+Removing unused module `\spm._463_.base.dff0'.
+Removing unused module `\spm._462_.base.dff0'.
+Removing unused module `\spm._461_.base.dff0'.
+Removing unused module `\spm._460_.base.dff0'.
+Removing unused module `\spm._459_.base.dff0'.
+Removing unused module `\spm._458_.base.dff0'.
+Removing unused module `\spm._457_.base.dff0'.
+Removing unused module `\spm._456_.base.dff0'.
+Removing unused module `\spm._455_.base.dff0'.
+Removing unused module `\spm._454_.base.dff0'.
+Removing unused module `\spm._453_.base.dff0'.
+Removing unused module `\spm._452_.base.dff0'.
+Removing unused module `\spm._451_.base.dff0'.
+Removing unused module `\spm._450_.base.dff0'.
+Removing unused module `\spm._449_.base.dff0'.
+Removing unused module `\spm._448_.base.dff0'.
+Removing unused module `\spm._447_.base.dff0'.
+Removing unused module `\spm._446_.base.dff0'.
+Removing unused module `\spm._445_.base.dff0'.
+Removing unused module `\spm._444_.base.dff0'.
+Removing unused module `\spm._443_.base.dff0'.
+Removing unused module `\spm.output35'.
+Removing unused module `\spm.input9'.
+Removing unused module `\spm.input8'.
+Removing unused module `\spm.input7'.
+Removing unused module `\spm.input6'.
+Removing unused module `\spm.input5'.
+Removing unused module `\spm.input4'.
+Removing unused module `\spm.input34'.
+Removing unused module `\spm.input33'.
+Removing unused module `\spm.input32'.
+Removing unused module `\spm.input31'.
+Removing unused module `\spm.input30'.
+Removing unused module `\spm.input3'.
+Removing unused module `\spm.input29'.
+Removing unused module `\spm.input28'.
+Removing unused module `\spm.input27'.
+Removing unused module `\spm.input26'.
+Removing unused module `\spm.input25'.
+Removing unused module `\spm.input24'.
+Removing unused module `\spm.input23'.
+Removing unused module `\spm.input22'.
+Removing unused module `\spm.input21'.
+Removing unused module `\spm.input20'.
+Removing unused module `\spm.input2'.
+Removing unused module `\spm.input19'.
+Removing unused module `\spm.input18'.
+Removing unused module `\spm.input17'.
+Removing unused module `\spm.input16'.
+Removing unused module `\spm.input15'.
+Removing unused module `\spm.input14'.
+Removing unused module `\spm.input13'.
+Removing unused module `\spm.input12'.
+Removing unused module `\spm.input11'.
+Removing unused module `\spm.input10'.
+Removing unused module `\spm.input1'.
+Removing unused module `\spm.clkbuf_3_7__f_clk'.
+Removing unused module `\spm.clkbuf_3_6__f_clk'.
+Removing unused module `\spm.clkbuf_3_5__f_clk'.
+Removing unused module `\spm.clkbuf_3_4__f_clk'.
+Removing unused module `\spm.clkbuf_3_3__f_clk'.
+Removing unused module `\spm.clkbuf_3_2__f_clk'.
+Removing unused module `\spm.clkbuf_3_1__f_clk'.
+Removing unused module `\spm.clkbuf_3_0__f_clk'.
+Removing unused module `\spm.clkbuf_0_clk'.
+Removing unused module `\spm._506_'.
+Removing unused module `\spm._505_'.
+Removing unused module `\spm._504_'.
+Removing unused module `\spm._503_'.
+Removing unused module `\spm._502_'.
+Removing unused module `\spm._501_'.
+Removing unused module `\spm._500_'.
+Removing unused module `\spm._499_'.
+Removing unused module `\spm._498_'.
+Removing unused module `\spm._497_'.
+Removing unused module `\spm._496_'.
+Removing unused module `\spm._495_'.
+Removing unused module `\spm._494_'.
+Removing unused module `\spm._493_'.
+Removing unused module `\spm._492_'.
+Removing unused module `\spm._491_'.
+Removing unused module `\spm._490_'.
+Removing unused module `\spm._489_'.
+Removing unused module `\spm._488_'.
+Removing unused module `\spm._487_'.
+Removing unused module `\spm._486_'.
+Removing unused module `\spm._485_'.
+Removing unused module `\spm._484_'.
+Removing unused module `\spm._483_'.
+Removing unused module `\spm._482_'.
+Removing unused module `\spm._481_'.
+Removing unused module `\spm._480_'.
+Removing unused module `\spm._479_'.
+Removing unused module `\spm._478_'.
+Removing unused module `\spm._477_'.
+Removing unused module `\spm._476_'.
+Removing unused module `\spm._475_'.
+Removing unused module `\spm._474_'.
+Removing unused module `\spm._473_'.
+Removing unused module `\spm._472_'.
+Removing unused module `\spm._471_'.
+Removing unused module `\spm._470_'.
+Removing unused module `\spm._469_'.
+Removing unused module `\spm._468_'.
+Removing unused module `\spm._467_'.
+Removing unused module `\spm._466_'.
+Removing unused module `\spm._465_'.
+Removing unused module `\spm._464_'.
+Removing unused module `\spm._463_'.
+Removing unused module `\spm._462_'.
+Removing unused module `\spm._461_'.
+Removing unused module `\spm._460_'.
+Removing unused module `\spm._459_'.
+Removing unused module `\spm._458_'.
+Removing unused module `\spm._457_'.
+Removing unused module `\spm._456_'.
+Removing unused module `\spm._455_'.
+Removing unused module `\spm._454_'.
+Removing unused module `\spm._453_'.
+Removing unused module `\spm._452_'.
+Removing unused module `\spm._451_'.
+Removing unused module `\spm._450_'.
+Removing unused module `\spm._449_'.
+Removing unused module `\spm._448_'.
+Removing unused module `\spm._447_'.
+Removing unused module `\spm._446_'.
+Removing unused module `\spm._445_'.
+Removing unused module `\spm._444_'.
+Removing unused module `\spm._443_'.
+Removing unused module `\spm._442_'.
+Removing unused module `\spm._441_'.
+Removing unused module `\spm._440_'.
+Removing unused module `\spm._439_'.
+Removing unused module `\spm._438_'.
+Removing unused module `\spm._437_'.
+Removing unused module `\spm._436_'.
+Removing unused module `\spm._435_'.
+Removing unused module `\spm._434_'.
+Removing unused module `\spm._433_'.
+Removing unused module `\spm._432_'.
+Removing unused module `\spm._431_'.
+Removing unused module `\spm._430_'.
+Removing unused module `\spm._429_'.
+Removing unused module `\spm._428_'.
+Removing unused module `\spm._427_'.
+Removing unused module `\spm._426_'.
+Removing unused module `\spm._425_'.
+Removing unused module `\spm._424_'.
+Removing unused module `\spm._423_'.
+Removing unused module `\spm._422_'.
+Removing unused module `\spm._421_'.
+Removing unused module `\spm._420_'.
+Removing unused module `\spm._419_'.
+Removing unused module `\spm._418_'.
+Removing unused module `\spm._417_'.
+Removing unused module `\spm._416_'.
+Removing unused module `\spm._415_'.
+Removing unused module `\spm._414_'.
+Removing unused module `\spm._413_'.
+Removing unused module `\spm._412_'.
+Removing unused module `\spm._411_'.
+Removing unused module `\spm._410_'.
+Removing unused module `\spm._409_'.
+Removing unused module `\spm._408_'.
+Removing unused module `\spm._407_'.
+Removing unused module `\spm._406_'.
+Removing unused module `\spm._405_'.
+Removing unused module `\spm._404_'.
+Removing unused module `\spm._403_'.
+Removing unused module `\spm._402_'.
+Removing unused module `\spm._401_'.
+Removing unused module `\spm._400_'.
+Removing unused module `\spm._399_'.
+Removing unused module `\spm._398_'.
+Removing unused module `\spm._397_'.
+Removing unused module `\spm._396_'.
+Removing unused module `\spm._395_'.
+Removing unused module `\spm._394_'.
+Removing unused module `\spm._393_'.
+Removing unused module `\spm._392_'.
+Removing unused module `\spm._391_'.
+Removing unused module `\spm._390_'.
+Removing unused module `\spm._389_'.
+Removing unused module `\spm._388_'.
+Removing unused module `\spm._387_'.
+Removing unused module `\spm._386_'.
+Removing unused module `\spm._385_'.
+Removing unused module `\spm._384_'.
+Removing unused module `\spm._383_'.
+Removing unused module `\spm._382_'.
+Removing unused module `\spm._381_'.
+Removing unused module `\spm._380_'.
+Removing unused module `\spm._379_'.
+Removing unused module `\spm._378_'.
+Removing unused module `\spm._377_'.
+Removing unused module `\spm._376_'.
+Removing unused module `\spm._375_'.
+Removing unused module `\spm._374_'.
+Removing unused module `\spm._373_'.
+Removing unused module `\spm._372_'.
+Removing unused module `\spm._371_'.
+Removing unused module `\spm._370_'.
+Removing unused module `\spm._369_'.
+Removing unused module `\spm._368_'.
+Removing unused module `\spm._367_'.
+Removing unused module `\spm._366_'.
+Removing unused module `\spm._365_'.
+Removing unused module `\spm._364_'.
+Removing unused module `\spm._363_'.
+Removing unused module `\spm._362_'.
+Removing unused module `\spm._361_'.
+Removing unused module `\spm._360_'.
+Removing unused module `\spm._359_'.
+Removing unused module `\spm._358_'.
+Removing unused module `\spm._357_'.
+Removing unused module `\spm._356_'.
+Removing unused module `\spm._355_'.
+Removing unused module `\spm._354_'.
+Removing unused module `\spm._353_'.
+Removing unused module `\spm._352_'.
+Removing unused module `\spm._351_'.
+Removing unused module `\spm._350_'.
+Removing unused module `\spm._349_'.
+Removing unused module `\spm._348_'.
+Removing unused module `\spm._347_'.
+Removing unused module `\spm._346_'.
+Removing unused module `\spm._345_'.
+Removing unused module `\spm._344_'.
+Removing unused module `\spm._343_'.
+Removing unused module `\spm._342_'.
+Removing unused module `\spm._341_'.
+Removing unused module `\spm._340_'.
+Removing unused module `\spm._339_'.
+Removing unused module `\spm._338_'.
+Removing unused module `\spm._337_'.
+Removing unused module `\spm._336_'.
+Removing unused module `\spm._335_'.
+Removing unused module `\spm._334_'.
+Removing unused module `\spm._333_'.
+Removing unused module `\spm._332_'.
+Removing unused module `\spm._331_'.
+Removing unused module `\spm._330_'.
+Removing unused module `\spm._329_'.
+Removing unused module `\spm._328_'.
+Removing unused module `\spm._327_'.
+Removing unused module `\spm._326_'.
+Removing unused module `\spm._325_'.
+Removing unused module `\spm._324_'.
+Removing unused module `\spm._323_'.
+Removing unused module `\spm._322_'.
+Removing unused module `\spm._321_'.
+Removing unused module `\spm._320_'.
+Removing unused module `\spm._319_'.
+Removing unused module `\spm._318_'.
+Removing unused module `\spm._317_'.
+Removing unused module `\spm._316_'.
+Removing unused module `\spm._315_'.
+Removing unused module `\spm._314_'.
+Removing unused module `\spm._313_'.
+Removing unused module `\spm._312_'.
+Removing unused module `\spm._311_'.
+Removing unused module `\spm._310_'.
+Removing unused module `\spm._309_'.
+Removing unused module `\spm._308_'.
+Removing unused module `\spm._307_'.
+Removing unused module `\spm._306_'.
+Removing unused module `\spm._305_'.
+Removing unused module `\spm._304_'.
+Removing unused module `\spm._303_'.
+Removing unused module `\spm._302_'.
+Removing unused module `\spm._301_'.
+Removing unused module `\spm._300_'.
+Removing unused module `\spm._299_'.
+Removing unused module `\spm._298_'.
+Removing unused module `\spm._297_'.
+Removing unused module `\spm._296_'.
+Removing unused module `\spm._295_'.
+Removing unused module `\spm._294_'.
+Removing unused module `\spm._293_'.
+Removing unused module `\spm._292_'.
+Removing unused module `\spm._291_'.
+Removing unused module `\spm._290_'.
+Removing unused module `\spm._289_'.
+Removing unused module `\spm._288_'.
+Removing unused module `\spm._287_'.
+Removing unused module `\spm._286_'.
+Removing unused module `\spm._285_'.
+Removing unused module `\spm._284_'.
+Removing unused module `\spm._283_'.
+Removing unused module `\spm._282_'.
+Removing unused module `\spm._281_'.
+Removing unused module `\spm._280_'.
+Removing unused module `\spm._279_'.
+Removing unused module `\spm._278_'.
+Removing unused module `\spm._277_'.
+Removing unused module `\spm._276_'.
+Removing unused module `\spm._275_'.
+Removing unused module `\spm._274_'.
+Removing unused module `\spm._273_'.
+Removing unused module `\spm._272_'.
+Removing unused module `\spm._271_'.
+Removing unused module `\spm._270_'.
+Removing unused module `\spm._269_'.
+Removing unused module `\spm._268_'.
+Removing unused module `\spm._267_'.
+Removing unused module `\spm._266_'.
+Removing unused module `\spm._265_'.
+Removing unused module `\spm._264_'.
+Removing unused module `\spm._263_'.
+Removing unused module `\spm._262_'.
+Removing unused module `\spm._261_'.
+Removing unused module `\spm._260_'.
+Removing unused module `\spm._259_'.
+Removing unused module `\spm._258_'.
+Removing unused module `\spm._257_'.
+Removing unused module `\spm._256_'.
+Removing unused module `\spm._255_'.
+Removing unused module `\spm._254_'.
+Removing unused module `\spm._253_'.
+Removing unused module `\spm._252_'.
+Removing unused module `\spm._251_'.
+Removing unused module `\spm._250_'.
+Removing unused module `\spm._249_'.
+Removing unused module `\spm._248_'.
+Removing unused module `\spm._247_'.
+Removing unused module `\spm._246_'.
+Removing unused module `\spm._245_'.
+Removing unused module `\spm._244_'.
+Removing unused module `\spm._243_'.
+Removing unused module `\spm._242_'.
+Removing unused module `\spm._241_'.
+Removing unused module `\spm._240_'.
+Removing unused module `\spm._239_'.
+Removing unused module `\spm._238_'.
+Removing unused module `\spm._237_'.
+Removing unused module `\spm._236_'.
+Removing unused module `\spm._235_'.
+Removing unused module `\spm._234_'.
+Removing unused module `\spm._233_'.
+Removing unused module `\spm._232_'.
+Removing unused module `\spm._231_'.
+Removing unused module `\spm._230_'.
+Removing unused module `\spm._229_'.
+Removing unused module `\spm._228_'.
+Removing unused module `\spm._227_'.
+Removing unused module `\spm._226_'.
+Removing unused module `\spm._225_'.
+Removing unused module `\spm._224_'.
+Removing unused module `\spm._223_'.
+Removing unused module `\spm._222_'.
+Removing unused module `\spm._221_'.
+Removing unused module `\spm._220_'.
+Removing unused module `\spm._219_'.
+Removing unused module `\spm._218_'.
+Removing unused module `\spm._217_'.
+Removing unused module `\spm._216_'.
+Removing unused module `\spm._215_'.
+Removing unused module `\spm._214_'.
+Removing unused module `\spm._213_'.
+Removing unused module `\spm._212_'.
+Removing unused module `\spm._211_'.
+Removing unused module `\spm._210_'.
+Removing unused module `\spm._209_'.
+Removing unused module `\spm._208_'.
+Removing unused module `\spm._207_'.
+Removing unused module `\spm._206_'.
+Removing unused module `\spm._206_.base'.
+Removing unused module `\spm._207_.base'.
+Removing unused module `\spm._208_.base'.
+Removing unused module `\spm._209_.base'.
+Removing unused module `\spm._210_.base'.
+Removing unused module `\spm._211_.base'.
+Removing unused module `\spm._212_.base'.
+Removing unused module `\spm._213_.base'.
+Removing unused module `\spm._214_.base'.
+Removing unused module `\spm._215_.base'.
+Removing unused module `\spm._216_.base'.
+Removing unused module `\spm._217_.base'.
+Removing unused module `\spm._218_.base'.
+Removing unused module `\spm._219_.base'.
+Removing unused module `\spm._220_.base'.
+Removing unused module `\spm._221_.base'.
+Removing unused module `\spm._222_.base'.
+Removing unused module `\spm._223_.base'.
+Removing unused module `\spm._224_.base'.
+Removing unused module `\spm._225_.base'.
+Removing unused module `\spm._226_.base'.
+Removing unused module `\spm._227_.base'.
+Removing unused module `\spm._228_.base'.
+Removing unused module `\spm._229_.base'.
+Removing unused module `\spm._230_.base'.
+Removing unused module `\spm._231_.base'.
+Removing unused module `\spm._232_.base'.
+Removing unused module `\spm._233_.base'.
+Removing unused module `\spm._234_.base'.
+Removing unused module `\spm._235_.base'.
+Removing unused module `\spm._236_.base'.
+Removing unused module `\spm._237_.base'.
+Removing unused module `\spm._238_.base'.
+Removing unused module `\spm._239_.base'.
+Removing unused module `\spm._240_.base'.
+Removing unused module `\spm._241_.base'.
+Removing unused module `\spm._242_.base'.
+Removing unused module `\spm._243_.base'.
+Removing unused module `\spm._244_.base'.
+Removing unused module `\spm._245_.base'.
+Removing unused module `\spm._246_.base'.
+Removing unused module `\spm._247_.base'.
+Removing unused module `\spm._248_.base'.
+Removing unused module `\spm._249_.base'.
+Removing unused module `\spm._250_.base'.
+Removing unused module `\spm._251_.base'.
+Removing unused module `\spm._252_.base'.
+Removing unused module `\spm._253_.base'.
+Removing unused module `\spm._254_.base'.
+Removing unused module `\spm._255_.base'.
+Removing unused module `\spm._256_.base'.
+Removing unused module `\spm._257_.base'.
+Removing unused module `\spm._258_.base'.
+Removing unused module `\spm._259_.base'.
+Removing unused module `\spm._260_.base'.
+Removing unused module `\spm._261_.base'.
+Removing unused module `\spm._262_.base'.
+Removing unused module `\spm._263_.base'.
+Removing unused module `\spm._264_.base'.
+Removing unused module `\spm._265_.base'.
+Removing unused module `\spm._266_.base'.
+Removing unused module `\spm._267_.base'.
+Removing unused module `\spm._268_.base'.
+Removing unused module `\spm._269_.base'.
+Removing unused module `\spm._270_.base'.
+Removing unused module `\spm._271_.base'.
+Removing unused module `\spm._272_.base'.
+Removing unused module `\spm._273_.base'.
+Removing unused module `\spm._274_.base'.
+Removing unused module `\spm._275_.base'.
+Removing unused module `\spm._276_.base'.
+Removing unused module `\spm._277_.base'.
+Removing unused module `\spm._278_.base'.
+Removing unused module `\spm._279_.base'.
+Removing unused module `\spm._280_.base'.
+Removing unused module `\spm._281_.base'.
+Removing unused module `\spm._282_.base'.
+Removing unused module `\spm._283_.base'.
+Removing unused module `\spm._284_.base'.
+Removing unused module `\spm._285_.base'.
+Removing unused module `\spm._286_.base'.
+Removing unused module `\spm._287_.base'.
+Removing unused module `\spm._288_.base'.
+Removing unused module `\spm._289_.base'.
+Removing unused module `\spm._290_.base'.
+Removing unused module `\spm._291_.base'.
+Removing unused module `\spm._292_.base'.
+Removing unused module `\spm._293_.base'.
+Removing unused module `\spm._294_.base'.
+Removing unused module `\spm._295_.base'.
+Removing unused module `\spm._296_.base'.
+Removing unused module `\spm._297_.base'.
+Removing unused module `\spm._298_.base'.
+Removing unused module `\spm._299_.base'.
+Removing unused module `\spm._300_.base'.
+Removing unused module `\spm._301_.base'.
+Removing unused module `\spm._302_.base'.
+Removing unused module `\spm._303_.base'.
+Removing unused module `\spm._304_.base'.
+Removing unused module `\spm._305_.base'.
+Removing unused module `\spm._306_.base'.
+Removing unused module `\spm._307_.base'.
+Removing unused module `\spm._308_.base'.
+Removing unused module `\spm._309_.base'.
+Removing unused module `\spm._310_.base'.
+Removing unused module `\spm._311_.base'.
+Removing unused module `\spm._312_.base'.
+Removing unused module `\spm._313_.base'.
+Removing unused module `\spm._314_.base'.
+Removing unused module `\spm._315_.base'.
+Removing unused module `\spm._316_.base'.
+Removing unused module `\spm._317_.base'.
+Removing unused module `\spm._318_.base'.
+Removing unused module `\spm._319_.base'.
+Removing unused module `\spm._320_.base'.
+Removing unused module `\spm._321_.base'.
+Removing unused module `\spm._322_.base'.
+Removing unused module `\spm._323_.base'.
+Removing unused module `\spm._324_.base'.
+Removing unused module `\spm._325_.base'.
+Removing unused module `\spm._326_.base'.
+Removing unused module `\spm._327_.base'.
+Removing unused module `\spm._328_.base'.
+Removing unused module `\spm._329_.base'.
+Removing unused module `\spm._330_.base'.
+Removing unused module `\spm._331_.base'.
+Removing unused module `\spm._332_.base'.
+Removing unused module `\spm._333_.base'.
+Removing unused module `\spm._334_.base'.
+Removing unused module `\spm._335_.base'.
+Removing unused module `\spm._336_.base'.
+Removing unused module `\spm._337_.base'.
+Removing unused module `\spm._338_.base'.
+Removing unused module `\spm._339_.base'.
+Removing unused module `\spm._340_.base'.
+Removing unused module `\spm._341_.base'.
+Removing unused module `\spm._342_.base'.
+Removing unused module `\spm._343_.base'.
+Removing unused module `\spm._344_.base'.
+Removing unused module `\spm._345_.base'.
+Removing unused module `\spm._346_.base'.
+Removing unused module `\spm._347_.base'.
+Removing unused module `\spm._348_.base'.
+Removing unused module `\spm._349_.base'.
+Removing unused module `\spm._350_.base'.
+Removing unused module `\spm._351_.base'.
+Removing unused module `\spm._352_.base'.
+Removing unused module `\spm._353_.base'.
+Removing unused module `\spm._354_.base'.
+Removing unused module `\spm._355_.base'.
+Removing unused module `\spm._356_.base'.
+Removing unused module `\spm._357_.base'.
+Removing unused module `\spm._358_.base'.
+Removing unused module `\spm._359_.base'.
+Removing unused module `\spm._360_.base'.
+Removing unused module `\spm._361_.base'.
+Removing unused module `\spm._362_.base'.
+Removing unused module `\spm._363_.base'.
+Removing unused module `\spm._364_.base'.
+Removing unused module `\spm._365_.base'.
+Removing unused module `\spm._366_.base'.
+Removing unused module `\spm._367_.base'.
+Removing unused module `\spm._368_.base'.
+Removing unused module `\spm._369_.base'.
+Removing unused module `\spm._370_.base'.
+Removing unused module `\spm._371_.base'.
+Removing unused module `\spm._372_.base'.
+Removing unused module `\spm._373_.base'.
+Removing unused module `\spm._374_.base'.
+Removing unused module `\spm._375_.base'.
+Removing unused module `\spm._376_.base'.
+Removing unused module `\spm._377_.base'.
+Removing unused module `\spm._378_.base'.
+Removing unused module `\spm._379_.base'.
+Removing unused module `\spm._380_.base'.
+Removing unused module `\spm._381_.base'.
+Removing unused module `\spm._382_.base'.
+Removing unused module `\spm._383_.base'.
+Removing unused module `\spm._384_.base'.
+Removing unused module `\spm._385_.base'.
+Removing unused module `\spm._386_.base'.
+Removing unused module `\spm._387_.base'.
+Removing unused module `\spm._388_.base'.
+Removing unused module `\spm._389_.base'.
+Removing unused module `\spm._390_.base'.
+Removing unused module `\spm._391_.base'.
+Removing unused module `\spm._392_.base'.
+Removing unused module `\spm._393_.base'.
+Removing unused module `\spm._394_.base'.
+Removing unused module `\spm._395_.base'.
+Removing unused module `\spm._396_.base'.
+Removing unused module `\spm._397_.base'.
+Removing unused module `\spm._398_.base'.
+Removing unused module `\spm._399_.base'.
+Removing unused module `\spm._400_.base'.
+Removing unused module `\spm._401_.base'.
+Removing unused module `\spm._402_.base'.
+Removing unused module `\spm._403_.base'.
+Removing unused module `\spm._404_.base'.
+Removing unused module `\spm._405_.base'.
+Removing unused module `\spm._406_.base'.
+Removing unused module `\spm._407_.base'.
+Removing unused module `\spm._408_.base'.
+Removing unused module `\spm._409_.base'.
+Removing unused module `\spm._410_.base'.
+Removing unused module `\spm._411_.base'.
+Removing unused module `\spm._412_.base'.
+Removing unused module `\spm._413_.base'.
+Removing unused module `\spm._414_.base'.
+Removing unused module `\spm._415_.base'.
+Removing unused module `\spm._416_.base'.
+Removing unused module `\spm._417_.base'.
+Removing unused module `\spm._418_.base'.
+Removing unused module `\spm._419_.base'.
+Removing unused module `\spm._420_.base'.
+Removing unused module `\spm._421_.base'.
+Removing unused module `\spm._422_.base'.
+Removing unused module `\spm._423_.base'.
+Removing unused module `\spm._424_.base'.
+Removing unused module `\spm._425_.base'.
+Removing unused module `\spm._426_.base'.
+Removing unused module `\spm._427_.base'.
+Removing unused module `\spm._428_.base'.
+Removing unused module `\spm._429_.base'.
+Removing unused module `\spm._430_.base'.
+Removing unused module `\spm._431_.base'.
+Removing unused module `\spm._432_.base'.
+Removing unused module `\spm._433_.base'.
+Removing unused module `\spm._434_.base'.
+Removing unused module `\spm._435_.base'.
+Removing unused module `\spm._436_.base'.
+Removing unused module `\spm._437_.base'.
+Removing unused module `\spm._438_.base'.
+Removing unused module `\spm._439_.base'.
+Removing unused module `\spm._440_.base'.
+Removing unused module `\spm._441_.base'.
+Removing unused module `\spm._442_.base'.
+Removing unused module `\spm._443_.base'.
+Removing unused module `\spm._444_.base'.
+Removing unused module `\spm._445_.base'.
+Removing unused module `\spm._446_.base'.
+Removing unused module `\spm._447_.base'.
+Removing unused module `\spm._448_.base'.
+Removing unused module `\spm._449_.base'.
+Removing unused module `\spm._450_.base'.
+Removing unused module `\spm._451_.base'.
+Removing unused module `\spm._452_.base'.
+Removing unused module `\spm._453_.base'.
+Removing unused module `\spm._454_.base'.
+Removing unused module `\spm._455_.base'.
+Removing unused module `\spm._456_.base'.
+Removing unused module `\spm._457_.base'.
+Removing unused module `\spm._458_.base'.
+Removing unused module `\spm._459_.base'.
+Removing unused module `\spm._460_.base'.
+Removing unused module `\spm._461_.base'.
+Removing unused module `\spm._462_.base'.
+Removing unused module `\spm._463_.base'.
+Removing unused module `\spm._464_.base'.
+Removing unused module `\spm._465_.base'.
+Removing unused module `\spm._466_.base'.
+Removing unused module `\spm._467_.base'.
+Removing unused module `\spm._468_.base'.
+Removing unused module `\spm._469_.base'.
+Removing unused module `\spm._470_.base'.
+Removing unused module `\spm._471_.base'.
+Removing unused module `\spm._472_.base'.
+Removing unused module `\spm._473_.base'.
+Removing unused module `\spm._474_.base'.
+Removing unused module `\spm._475_.base'.
+Removing unused module `\spm._476_.base'.
+Removing unused module `\spm._477_.base'.
+Removing unused module `\spm._478_.base'.
+Removing unused module `\spm._479_.base'.
+Removing unused module `\spm._480_.base'.
+Removing unused module `\spm._481_.base'.
+Removing unused module `\spm._482_.base'.
+Removing unused module `\spm._483_.base'.
+Removing unused module `\spm._484_.base'.
+Removing unused module `\spm._485_.base'.
+Removing unused module `\spm._486_.base'.
+Removing unused module `\spm._487_.base'.
+Removing unused module `\spm._488_.base'.
+Removing unused module `\spm._489_.base'.
+Removing unused module `\spm._490_.base'.
+Removing unused module `\spm._491_.base'.
+Removing unused module `\spm._492_.base'.
+Removing unused module `\spm._493_.base'.
+Removing unused module `\spm._494_.base'.
+Removing unused module `\spm._495_.base'.
+Removing unused module `\spm._496_.base'.
+Removing unused module `\spm._497_.base'.
+Removing unused module `\spm._498_.base'.
+Removing unused module `\spm._499_.base'.
+Removing unused module `\spm._500_.base'.
+Removing unused module `\spm._501_.base'.
+Removing unused module `\spm._502_.base'.
+Removing unused module `\spm._503_.base'.
+Removing unused module `\spm._504_.base'.
+Removing unused module `\spm._505_.base'.
+Removing unused module `\spm._506_.base'.
+Removing unused module `\spm.clkbuf_0_clk.base'.
+Removing unused module `\spm.clkbuf_3_0__f_clk.base'.
+Removing unused module `\spm.clkbuf_3_1__f_clk.base'.
+Removing unused module `\spm.clkbuf_3_2__f_clk.base'.
+Removing unused module `\spm.clkbuf_3_3__f_clk.base'.
+Removing unused module `\spm.clkbuf_3_4__f_clk.base'.
+Removing unused module `\spm.clkbuf_3_5__f_clk.base'.
+Removing unused module `\spm.clkbuf_3_6__f_clk.base'.
+Removing unused module `\spm.clkbuf_3_7__f_clk.base'.
+Removing unused module `\spm.input1.base'.
+Removing unused module `\spm.input10.base'.
+Removing unused module `\spm.input11.base'.
+Removing unused module `\spm.input12.base'.
+Removing unused module `\spm.input13.base'.
+Removing unused module `\spm.input14.base'.
+Removing unused module `\spm.input15.base'.
+Removing unused module `\spm.input16.base'.
+Removing unused module `\spm.input17.base'.
+Removing unused module `\spm.input18.base'.
+Removing unused module `\spm.input19.base'.
+Removing unused module `\spm.input2.base'.
+Removing unused module `\spm.input20.base'.
+Removing unused module `\spm.input21.base'.
+Removing unused module `\spm.input22.base'.
+Removing unused module `\spm.input23.base'.
+Removing unused module `\spm.input24.base'.
+Removing unused module `\spm.input25.base'.
+Removing unused module `\spm.input26.base'.
+Removing unused module `\spm.input27.base'.
+Removing unused module `\spm.input28.base'.
+Removing unused module `\spm.input29.base'.
+Removing unused module `\spm.input3.base'.
+Removing unused module `\spm.input30.base'.
+Removing unused module `\spm.input31.base'.
+Removing unused module `\spm.input32.base'.
+Removing unused module `\spm.input33.base'.
+Removing unused module `\spm.input34.base'.
+Removing unused module `\spm.input4.base'.
+Removing unused module `\spm.input5.base'.
+Removing unused module `\spm.input6.base'.
+Removing unused module `\spm.input7.base'.
+Removing unused module `\spm.input8.base'.
+Removing unused module `\spm.input9.base'.
+Removing unused module `\spm.output35.base'.
+Removing unused module `\spm._506_.base.dff0'.
+Removing unused module `\spm._505_.base.dff0'.
+Removing unused module `\spm._504_.base.dff0'.
+Removing unused module `\spm._503_.base.dff0'.
+Removing unused module `\spm._502_.base.dff0'.
+Removing unused module `\spm._501_.base.dff0'.
+Removing unused module `\spm._500_.base.dff0'.
+Removing unused module `\spm._499_.base.dff0'.
+Removing unused module `\spm._498_.base.dff0'.
+Removing unused module `\spm._497_.base.dff0'.
+Removing unused module `\spm._496_.base.dff0'.
+Removing unused module `\spm._495_.base.dff0'.
+Removing unused module `\spm._494_.base.dff0'.
+Removing unused module `\spm._493_.base.dff0'.
+Removing unused module `\spm._492_.base.dff0'.
+Removing unused module `\spm._491_.base.dff0'.
+Removing unused module `\spm._490_.base.dff0'.
+Removing unused module `\spm._489_.base.dff0'.
+Removing unused module `\spm._488_.base.dff0'.
+Removing unused module `\spm._487_.base.dff0'.
+Removing unused module `\spm._486_.base.dff0'.
+Removing unused module `\spm._485_.base.dff0'.
+Removing unused module `\spm._484_.base.dff0'.
+Removing unused module `\spm._483_.base.dff0'.
+Removing unused module `\spm._482_.base.dff0'.
+Removed 754 unused modules.
+
+11. Executing MITER pass (creating miter circuit).
+Creating miter cell "miter" with gold cell "gold.spm" and gate cell "gate.spm".
+
+12. Executing RTLIL backend.
+Output filename: spm/combined.il
+
+End of script. Logfile hash: d7154c08ee, CPU: user 0.12s system 0.02s
+Yosys 0.41+108 (git sha1 557968567, aarch64-apple-darwin21.4-clang++ 14.0.0-1ubuntu1.1 -fPIC -Os)
+Time spent: 23% 2x write_ilang (0 sec), 23% 2x flatten (0 sec), ...

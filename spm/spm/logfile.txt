@@ -1,0 +1,305 @@
+EQY 16:53:24 [spm] read_gold: starting process "yosys -ql spm/gold.log spm/gold.ys"
+EQY 16:53:24 [spm] read_gold: finished (returncode=0)
+EQY 16:53:24 [spm] read_gate: starting process "yosys -ql spm/gate.log spm/gate.ys"
+EQY 16:53:24 [spm] read_gate: Fatal Python error: Failed to import encodings module
+EQY 16:53:24 [spm] read_gate: Python runtime state: core initialized
+EQY 16:53:24 [spm] read_gate: ModuleNotFoundError: No module named 'encodings'
+EQY 16:53:24 [spm] read_gate: Current thread 0x00000001df6c5ec0 (most recent call first):
+EQY 16:53:24 [spm] read_gate: <no Python frame>
+EQY 16:53:24 [spm] read_gate: finished (returncode=0)
+EQY 16:53:24 [spm] combine: starting process "yosys -ql spm/combine.log spm/combine.ys"
+EQY 16:53:26 [spm] combine: finished (returncode=0)
+EQY 16:53:27 [spm] partition: starting process "cd spm; yosys -ql partition.log partition.ys"
+EQY 16:53:28 [spm] partition: finished (returncode=0)
+EQY 16:53:28 [spm] run: starting process "make -C spm -f strategies.mk"
+EQY 16:53:28 [spm] run: Running strategy 'sat' on 'spm.csa0.hsum2'..
+EQY 16:53:28 [spm] run: Proved equivalence of partition 'spm.csa0.hsum2' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.csa0.sc'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.csa0.sc' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.csa0.y'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.csa0.y' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.1.csa.hsum2'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.1.csa.hsum2' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.1.csa.sc'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.1.csa.sc' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.1.csa.y'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.1.csa.y' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.10.csa.hsum2'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.10.csa.hsum2' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.10.csa.sc'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.10.csa.sc' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.10.csa.sum'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.10.csa.sum' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.10.csa.y'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.10.csa.y' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.11.csa.hsum2'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.11.csa.hsum2' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.11.csa.sc'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.11.csa.sc' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.11.csa.y'..
+EQY 16:53:29 [spm] run: Proved equivalence of partition 'spm.genblk1.11.csa.y' using strategy 'sat'
+EQY 16:53:29 [spm] run: Running strategy 'sat' on 'spm.genblk1.12.csa.hsum2'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.12.csa.hsum2' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.12.csa.sc'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.12.csa.sc' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.12.csa.y'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.12.csa.y' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.13.csa.hsum2'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.13.csa.hsum2' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.13.csa.sc'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.13.csa.sc' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.13.csa.y'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.13.csa.y' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.14.csa.hsum2'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.14.csa.hsum2' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.14.csa.sc'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.14.csa.sc' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.14.csa.y'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.14.csa.y' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.15.csa.hsum2'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.15.csa.hsum2' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.15.csa.sc'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.15.csa.sc' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.15.csa.y'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.15.csa.y' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.16.csa.hsum2'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.16.csa.hsum2' using strategy 'sat'
+EQY 16:53:30 [spm] run: Running strategy 'sat' on 'spm.genblk1.16.csa.sc'..
+EQY 16:53:30 [spm] run: Proved equivalence of partition 'spm.genblk1.16.csa.sc' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.16.csa.y'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.16.csa.y' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.17.csa.hsum2'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.17.csa.hsum2' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.17.csa.sc'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.17.csa.sc' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.17.csa.y'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.17.csa.y' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.18.csa.hsum2'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.18.csa.hsum2' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.18.csa.sc'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.18.csa.sc' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.18.csa.y'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.18.csa.y' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.19.csa.hsum2'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.19.csa.hsum2' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.19.csa.sc'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.19.csa.sc' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.19.csa.y'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.19.csa.y' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.2.csa.hsum2'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.2.csa.hsum2' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.2.csa.sc'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.2.csa.sc' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.2.csa.y'..
+EQY 16:53:31 [spm] run: Proved equivalence of partition 'spm.genblk1.2.csa.y' using strategy 'sat'
+EQY 16:53:31 [spm] run: Running strategy 'sat' on 'spm.genblk1.20.csa.hsum2'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.20.csa.hsum2' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.20.csa.sc'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.20.csa.sc' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.20.csa.y'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.20.csa.y' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.21.csa.hsum2'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.21.csa.hsum2' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.21.csa.sc'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.21.csa.sc' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.21.csa.y'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.21.csa.y' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.22.csa.hsum2'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.22.csa.hsum2' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.22.csa.sc'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.22.csa.sc' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.22.csa.y'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.22.csa.y' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.23.csa.hsum2'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.23.csa.hsum2' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.23.csa.sc'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.23.csa.sc' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.23.csa.y'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.23.csa.y' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.24.csa.hsum2'..
+EQY 16:53:32 [spm] run: Proved equivalence of partition 'spm.genblk1.24.csa.hsum2' using strategy 'sat'
+EQY 16:53:32 [spm] run: Running strategy 'sat' on 'spm.genblk1.24.csa.sc'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.24.csa.sc' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.24.csa.y'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.24.csa.y' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.25.csa.hsum2'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.25.csa.hsum2' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.25.csa.sc'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.25.csa.sc' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.25.csa.y'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.25.csa.y' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.26.csa.hsum2'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.26.csa.hsum2' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.26.csa.sc'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.26.csa.sc' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.26.csa.y'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.26.csa.y' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.27.csa.hsum2'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.27.csa.hsum2' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.27.csa.sc'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.27.csa.sc' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.27.csa.y'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.27.csa.y' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.28.csa.hsum2'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.28.csa.hsum2' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.28.csa.sc'..
+EQY 16:53:33 [spm] run: Proved equivalence of partition 'spm.genblk1.28.csa.sc' using strategy 'sat'
+EQY 16:53:33 [spm] run: Running strategy 'sat' on 'spm.genblk1.28.csa.y'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.28.csa.y' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.29.csa.hsum2'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.29.csa.hsum2' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.29.csa.sc'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.29.csa.sc' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.29.csa.y'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.29.csa.y' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.3.csa.hsum2'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.3.csa.hsum2' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.3.csa.sc'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.3.csa.sc' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.3.csa.y'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.3.csa.y' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.30.csa.hsum2'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.30.csa.hsum2' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.30.csa.sc'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.30.csa.sc' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.30.csa.y'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.30.csa.y' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.4.csa.hsum2'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.4.csa.hsum2' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.4.csa.sc'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.4.csa.sc' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.4.csa.y'..
+EQY 16:53:34 [spm] run: Proved equivalence of partition 'spm.genblk1.4.csa.y' using strategy 'sat'
+EQY 16:53:34 [spm] run: Running strategy 'sat' on 'spm.genblk1.5.csa.hsum2'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.5.csa.hsum2' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.5.csa.sc'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.5.csa.sc' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.5.csa.y'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.5.csa.y' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.6.csa.hsum2'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.6.csa.hsum2' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.6.csa.sc'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.6.csa.sc' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.6.csa.y'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.6.csa.y' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.7.csa.hsum2'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.7.csa.hsum2' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.7.csa.sc'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.7.csa.sc' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.7.csa.y'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.7.csa.y' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.8.csa.hsum2'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.8.csa.hsum2' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.8.csa.sc'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.8.csa.sc' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.8.csa.y'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.8.csa.y' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.9.csa.hsum2'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.9.csa.hsum2' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.genblk1.9.csa.sc'..
+EQY 16:53:35 [spm] run: Proved equivalence of partition 'spm.genblk1.9.csa.sc' using strategy 'sat'
+EQY 16:53:35 [spm] run: Running strategy 'sat' on 'spm.p'..
+EQY 16:53:36 [spm] run: Proved equivalence of partition 'spm.p' using strategy 'sat'
+EQY 16:53:36 [spm] run: Running strategy 'sat' on 'spm.tcmp.z'..
+EQY 16:53:36 [spm] run: Proved equivalence of partition 'spm.tcmp.z' using strategy 'sat'
+EQY 16:53:36 [spm] run: /Library/Developer/CommandLineTools/usr/bin/make -f strategies.mk summary
+EQY 16:53:36 [spm] run: finished (returncode=0)
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.tcmp.z
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.p
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.9.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.9.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.8.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.8.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.8.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.7.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.7.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.7.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.6.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.6.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.6.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.5.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.5.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.5.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.4.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.4.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.4.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.3.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.3.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.3.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.30.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.30.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.30.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.2.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.2.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.2.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.29.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.29.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.29.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.28.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.28.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.28.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.27.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.27.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.27.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.26.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.26.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.26.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.25.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.25.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.25.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.24.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.24.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.24.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.23.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.23.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.23.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.22.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.22.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.22.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.21.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.21.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.21.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.20.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.20.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.20.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.1.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.1.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.1.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.19.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.19.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.19.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.18.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.18.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.18.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.17.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.17.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.17.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.16.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.16.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.16.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.15.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.15.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.15.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.14.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.14.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.14.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.13.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.13.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.13.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.12.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.12.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.12.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.11.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.11.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.11.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.10.csa.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.10.csa.sum
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.10.csa.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.genblk1.10.csa.hsum2
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.csa0.y
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.csa0.sc
+EQY 16:53:36 [spm] Successfully proved equivalence of partition spm.csa0.hsum2
+EQY 16:53:36 [spm] Successfully proved designs equivalent
+EQY 16:53:36 [spm] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:12 (12)
+EQY 16:53:36 [spm] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:07 (7)
+EQY 16:53:36 [spm] DONE (PASS, rc=0)

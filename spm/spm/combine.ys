@@ -1,0 +1,11 @@
+plugin -i /Users/sriramnimmala/Desktop/oss-cad-suite/libexec/../share/yosys/plugins/eqy_combine.so
+read_ilang spm/gold.il
+uniquify
+hierarchy
+design -stash gold
+read_ilang spm/gate_recoded.il
+uniquify
+hierarchy
+design -stash gate
+eqy_combine -gold_ids spm/gold.ids -gate_ids spm/gate_recoded.ids
+write_ilang spm/combined.il

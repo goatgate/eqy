@@ -1,0 +1,21 @@
+[options]
+mode prove
+depth 2
+expect pass,fail,unknown,timeout
+
+
+[engines]
+smtbmc bitwuzla
+
+[script]
+verilog_defaults -add -D CHECK_OUTPUTS
+read_verilog -sv ../../../../../partitions/spm.csa0.y.sv
+read_ilang ../../../../../partitions/spm.csa0.y.il
+hierarchy -top miter; proc
+
+async2sync
+formalff -clk2ff -ff2anyinit gate.spm.csa0.y
+setundef -anyseq gate.spm.csa0.y
+flatten -wb; dffunmap; opt_expr -keepdc -undriven; opt_clean
+xprop -formal -split-ports -assume-def-inputs miter
+

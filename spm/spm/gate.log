@@ -1,0 +1,3152 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.41+108 (git sha1 557968567, aarch64-apple-darwin21.4-clang++ 14.0.0-1ubuntu1.1 -fPIC -Os)
+
+-- Executing script file `spm/gate.ys' --
+
+1. Executing command "python3 formal_pdk_proc.py primitives.v sky130_fd_sc_hd.v -o formal_pdk.v".
+
+2. Executing Verilog-2005 frontend: formal_pdk.v
+Parsing SystemVerilog input from `formal_pdk.v' to AST representation.
+Storing AST representation for module `$abstract\sky130_ef_sc_hd__decap_12'.
+Storing AST representation for module `$abstract\sky130_ef_sc_hd__fakediode_2'.
+Storing AST representation for module `$abstract\sky130_ef_sc_hd__fill_8'.
+Storing AST representation for module `$abstract\sky130_ef_sc_hd__fill_12'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_dff$NSR'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_dff$P'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_dff$PR'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_dff$PS'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_dlatch$lP'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_dlatch$P'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_dlatch$PR'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_mux_2to1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_mux_2to1_N'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_mux_4to2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_pwrgood$l_pp$G'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_pwrgood_pp$G'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__udp_pwrgood_pp$P'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2bb2o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2bb2o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2bb2o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2bb2o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2bb2oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2bb2oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2bb2oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2bb2oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21bo'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21bo_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21bo_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21bo_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21boi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21boi_0'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21boi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21boi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21boi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a21oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a22o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a22o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a22o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a22o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a22oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a22oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a22oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a22oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a31o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a31o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a31o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a31o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a31oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a31oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a31oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a31oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a32o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a32o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a32o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a32o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a32oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a32oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a32oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a32oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a41o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a41o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a41o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a41o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a41oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a41oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a41oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a41oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a211o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a211o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a211o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a211o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a211oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a211oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a211oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a211oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a221o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a221o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a221o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a221o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a221oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a221oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a221oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a221oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a222oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a222oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a311o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a311o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a311o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a311o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a311oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a311oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a311oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a311oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111o'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111o_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111o_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111o_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111oi'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111oi_0'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111oi_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111oi_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__a2111oi_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2_0'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and2b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and3_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and3_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and3_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and3b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and3b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and3b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and3b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4bb'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4bb_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4bb_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__and4bb_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__buf'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__buf_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__buf_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__buf_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__buf_6'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__buf_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__buf_12'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__buf_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__bufbuf'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__bufbuf_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__bufbuf_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__bufinv'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__bufinv_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__bufinv_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkbuf'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkbuf_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkbuf_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkbuf_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkbuf_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkbuf_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s15'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s15_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s15_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s18'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s18_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s18_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s25'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s25_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s25_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s50'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s50_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkdlybuf4s50_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinv'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinv_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinv_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinv_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinv_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinv_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinvlp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinvlp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__clkinvlp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__conb'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__conb_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__decap'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__decap_3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__decap_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__decap_6'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__decap_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__decap_12'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfbbn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfbbn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfbbn_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfbbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfbbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrbp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrtn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrtn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrtp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrtp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrtp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfrtp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfsbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfsbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfsbp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfstp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfstp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfstp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfstp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfxbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfxbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfxbp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfxtp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfxtp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfxtp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dfxtp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__diode'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__diode_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlclkp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlclkp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlclkp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlclkp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrbn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrbn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrbn_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrbp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrtn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrtn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrtn_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrtn_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrtp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrtp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrtp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlrtp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxbn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxbn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxbn_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxtn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxtn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxtn_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxtn_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxtp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlxtp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlygate4sd1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlygate4sd1_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlygate4sd2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlygate4sd2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlygate4sd3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlygate4sd3_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlymetal6s2s'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlymetal6s4s'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlymetal6s4s_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlymetal6s6s'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__dlymetal6s6s_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ebufn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ebufn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ebufn_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ebufn_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ebufn_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__edfxbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__edfxbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__edfxtp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__edfxtp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvn_0'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvn_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvn_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvn_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__einvp_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fa'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fa_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fa_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fa_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fah'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fah_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fahcin'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fahcin_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fahcon'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fahcon_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fill'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fill_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fill_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fill_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__fill_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ha'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ha_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ha_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__ha_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__inv'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__inv_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__inv_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__inv_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__inv_6'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__inv_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__inv_12'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__inv_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_bleeder'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_bleeder_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_6'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_12'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputiso0n'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputiso0n_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputiso0p'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputiso0p_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputiso1n'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputiso1n_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputiso1p'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputiso1p_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputisolatch'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_inputisolatch_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrckapwr'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrckapwr_16'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__macro_sparecell'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__maj3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__maj3_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__maj3_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__maj3_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2i'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2i_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2i_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux2i_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux4_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux4_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__mux4_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand2b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand3_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand3_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand3_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand3b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand3b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand3b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand3b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4bb'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4bb_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4bb_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nand4bb_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor2b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor3_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor3_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor3_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor3b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor3b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor3b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor3b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4bb'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4bb_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4bb_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__nor4bb_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2bb2a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2bb2a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2bb2a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2bb2a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2bb2ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2bb2ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2bb2ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2bb2ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ai_0'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ba'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ba_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ba_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21ba_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21bai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21bai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21bai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o21bai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o22a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o22a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o22a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o22a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o22ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o22ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o22ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o22ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o31a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o31a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o31a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o31a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o31ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o31ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o31ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o31ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o32a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o32a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o32a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o32a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o32ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o32ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o32ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o32ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o41a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o41a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o41a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o41a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o41ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o41ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o41ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o41ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o211a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o211a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o211a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o211a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o211ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o211ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o211ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o211ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o221a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o221a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o221a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o221a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o221ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o221ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o221ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o221ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311ai_0'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o311ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2111a'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2111a_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2111a_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2111a_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2111ai'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2111ai_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2111ai_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__o2111ai_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2_0'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or2b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or3_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or3_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or3_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or3b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or3b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or3b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or3b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4b'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4b_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4b_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4b_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4bb'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4bb_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4bb_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__or4bb_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__probe_p'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__probe_p_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__probec_p'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__probec_p_8'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfbbn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfbbn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfbbn_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfbbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfbbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrbp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrtn'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrtn_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrtp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrtp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrtp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfrtp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfsbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfsbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfsbp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfstp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfstp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfstp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfstp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfxbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfxbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfxbp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfxtp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfxtp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfxtp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdfxtp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdlclkp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdlclkp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdlclkp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sdlclkp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sedfxbp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sedfxbp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sedfxbp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sedfxtp'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sedfxtp_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sedfxtp_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__sedfxtp_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tap'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tap_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tap_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tapvgnd2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tapvgnd2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tapvgnd'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tapvgnd_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tapvpwrvgnd'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xnor2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xnor2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xnor2_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xnor2_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xnor3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xnor3_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xnor3_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xnor3_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xor2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xor2_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xor2_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xor2_4'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xor3'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xor3_1'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xor3_2'.
+Storing AST representation for module `$abstract\sky130_fd_sc_hd__xor3_4'.
+Storing AST representation for module `$abstract\mod_pullup'.
+Storing AST representation for module `$abstract\mod_pulldown'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: spm.nl.v
+Parsing SystemVerilog input from `spm.nl.v' to AST representation.
+Storing AST representation for module `$abstract\spm'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+5. Executing AST frontend in derive mode using pre-parsed AST for module `\spm'.
+Generating RTLIL representation for module `\spm'.
+
+5.1. Analyzing design hierarchy..
+Top module:  \spm
+
+5.2. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__buf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_2'.
+
+5.3. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__clkbuf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_1'.
+
+5.4. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+
+5.5. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__clkbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_16'.
+
+5.6. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__dfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_1'.
+
+5.7. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__inv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_2'.
+
+5.8. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__buf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_4'.
+
+5.9. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__xnor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_1'.
+
+5.10. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__nand2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_1'.
+
+5.11. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__a31o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_1'.
+
+5.12. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__and2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_1'.
+
+5.13. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__xor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_1'.
+
+5.14. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__clkbuf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_4'.
+
+5.15. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__nand3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_1'.
+
+5.16. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__a21o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_1'.
+
+5.17. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+
+5.18. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__decap_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_3'.
+
+5.19. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__decap_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_8'.
+
+5.20. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__fill_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_2'.
+
+5.21. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__decap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_4'.
+
+5.22. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__fill_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_1'.
+
+5.23. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_12'.
+
+5.24. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__decap_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_6'.
+
+5.25. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \sky130_fd_sc_hd__buf_2
+Used module:     \sky130_fd_sc_hd__clkbuf_1
+Used module:     \sky130_fd_sc_hd__dlymetal6s2s_1
+Used module:     \sky130_fd_sc_hd__clkbuf_16
+Used module:     \sky130_fd_sc_hd__dfrtp_1
+Used module:     \sky130_fd_sc_hd__inv_2
+Used module:     \sky130_fd_sc_hd__buf_4
+Used module:     \sky130_fd_sc_hd__xnor2_1
+Used module:     \sky130_fd_sc_hd__nand2_1
+Used module:     \sky130_fd_sc_hd__a31o_1
+Used module:     \sky130_fd_sc_hd__and2_1
+Used module:     \sky130_fd_sc_hd__xor2_1
+Used module:     \sky130_fd_sc_hd__clkbuf_4
+Used module:     \sky130_fd_sc_hd__nand3_1
+Used module:     \sky130_fd_sc_hd__a21o_1
+Used module:     \sky130_fd_sc_hd__tapvpwrvgnd_1
+Used module:     \sky130_fd_sc_hd__decap_3
+Used module:     \sky130_fd_sc_hd__decap_8
+Used module:     \sky130_fd_sc_hd__fill_2
+Used module:     \sky130_fd_sc_hd__decap_4
+Used module:     \sky130_fd_sc_hd__fill_1
+Used module:     \sky130_fd_sc_hd__decap_12
+Used module:     \sky130_fd_sc_hd__decap_6
+
+5.26. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__decap'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap'.
+
+5.27. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__fill'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill'.
+
+5.28. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__tapvpwrvgnd'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvpwrvgnd'.
+
+5.29. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__clkbuf'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf'.
+
+5.30. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__buf'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf'.
+
+5.31. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__xor2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2'.
+
+5.32. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__and2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2'.
+
+5.33. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__a31o'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o'.
+
+5.34. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__nand2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2'.
+
+5.35. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__xnor2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2'.
+
+5.36. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__a21o'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o'.
+
+5.37. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__nand3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3'.
+
+5.38. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__inv'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv'.
+
+5.39. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__dfrtp'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp'.
+
+5.40. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__dlymetal6s2s'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s2s'.
+
+5.41. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \sky130_fd_sc_hd__buf_2
+Used module:         \sky130_fd_sc_hd__buf
+Used module:     \sky130_fd_sc_hd__clkbuf_1
+Used module:         \sky130_fd_sc_hd__clkbuf
+Used module:     \sky130_fd_sc_hd__dlymetal6s2s_1
+Used module:         \sky130_fd_sc_hd__dlymetal6s2s
+Used module:     \sky130_fd_sc_hd__clkbuf_16
+Used module:     \sky130_fd_sc_hd__dfrtp_1
+Used module:         \sky130_fd_sc_hd__dfrtp
+Used module:     \sky130_fd_sc_hd__inv_2
+Used module:         \sky130_fd_sc_hd__inv
+Used module:     \sky130_fd_sc_hd__buf_4
+Used module:     \sky130_fd_sc_hd__xnor2_1
+Used module:         \sky130_fd_sc_hd__xnor2
+Used module:     \sky130_fd_sc_hd__nand2_1
+Used module:         \sky130_fd_sc_hd__nand2
+Used module:     \sky130_fd_sc_hd__a31o_1
+Used module:         \sky130_fd_sc_hd__a31o
+Used module:     \sky130_fd_sc_hd__and2_1
+Used module:         \sky130_fd_sc_hd__and2
+Used module:     \sky130_fd_sc_hd__xor2_1
+Used module:         \sky130_fd_sc_hd__xor2
+Used module:     \sky130_fd_sc_hd__clkbuf_4
+Used module:     \sky130_fd_sc_hd__nand3_1
+Used module:         \sky130_fd_sc_hd__nand3
+Used module:     \sky130_fd_sc_hd__a21o_1
+Used module:         \sky130_fd_sc_hd__a21o
+Used module:     \sky130_fd_sc_hd__tapvpwrvgnd_1
+Used module:         \sky130_fd_sc_hd__tapvpwrvgnd
+Used module:     \sky130_fd_sc_hd__decap_3
+Used module:         \sky130_fd_sc_hd__decap
+Used module:     \sky130_fd_sc_hd__decap_8
+Used module:     \sky130_fd_sc_hd__fill_2
+Used module:         \sky130_fd_sc_hd__fill
+Used module:     \sky130_fd_sc_hd__decap_4
+Used module:     \sky130_fd_sc_hd__fill_1
+Used module:     \sky130_fd_sc_hd__decap_12
+Used module:     \sky130_fd_sc_hd__decap_6
+
+5.42. Executing AST frontend in derive mode using pre-parsed AST for module `\sky130_fd_sc_hd__udp_dff$PR'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__udp_dff$PR'.
+
+5.43. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \sky130_fd_sc_hd__buf_2
+Used module:         \sky130_fd_sc_hd__buf
+Used module:     \sky130_fd_sc_hd__clkbuf_1
+Used module:         \sky130_fd_sc_hd__clkbuf
+Used module:     \sky130_fd_sc_hd__dlymetal6s2s_1
+Used module:         \sky130_fd_sc_hd__dlymetal6s2s
+Used module:     \sky130_fd_sc_hd__clkbuf_16
+Used module:     \sky130_fd_sc_hd__dfrtp_1
+Used module:         \sky130_fd_sc_hd__dfrtp
+Used module:             \sky130_fd_sc_hd__udp_dff$PR
+Used module:     \sky130_fd_sc_hd__inv_2
+Used module:         \sky130_fd_sc_hd__inv
+Used module:     \sky130_fd_sc_hd__buf_4
+Used module:     \sky130_fd_sc_hd__xnor2_1
+Used module:         \sky130_fd_sc_hd__xnor2
+Used module:     \sky130_fd_sc_hd__nand2_1
+Used module:         \sky130_fd_sc_hd__nand2
+Used module:     \sky130_fd_sc_hd__a31o_1
+Used module:         \sky130_fd_sc_hd__a31o
+Used module:     \sky130_fd_sc_hd__and2_1
+Used module:         \sky130_fd_sc_hd__and2
+Used module:     \sky130_fd_sc_hd__xor2_1
+Used module:         \sky130_fd_sc_hd__xor2
+Used module:     \sky130_fd_sc_hd__clkbuf_4
+Used module:     \sky130_fd_sc_hd__nand3_1
+Used module:         \sky130_fd_sc_hd__nand3
+Used module:     \sky130_fd_sc_hd__a21o_1
+Used module:         \sky130_fd_sc_hd__a21o
+Used module:     \sky130_fd_sc_hd__tapvpwrvgnd_1
+Used module:         \sky130_fd_sc_hd__tapvpwrvgnd
+Used module:     \sky130_fd_sc_hd__decap_3
+Used module:         \sky130_fd_sc_hd__decap
+Used module:     \sky130_fd_sc_hd__decap_8
+Used module:     \sky130_fd_sc_hd__fill_2
+Used module:         \sky130_fd_sc_hd__fill
+Used module:     \sky130_fd_sc_hd__decap_4
+Used module:     \sky130_fd_sc_hd__fill_1
+Used module:     \sky130_fd_sc_hd__decap_12
+Used module:     \sky130_fd_sc_hd__decap_6
+
+5.44. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \sky130_fd_sc_hd__buf_2
+Used module:         \sky130_fd_sc_hd__buf
+Used module:     \sky130_fd_sc_hd__clkbuf_1
+Used module:         \sky130_fd_sc_hd__clkbuf
+Used module:     \sky130_fd_sc_hd__dlymetal6s2s_1
+Used module:         \sky130_fd_sc_hd__dlymetal6s2s
+Used module:     \sky130_fd_sc_hd__clkbuf_16
+Used module:     \sky130_fd_sc_hd__dfrtp_1
+Used module:         \sky130_fd_sc_hd__dfrtp
+Used module:             \sky130_fd_sc_hd__udp_dff$PR
+Used module:     \sky130_fd_sc_hd__inv_2
+Used module:         \sky130_fd_sc_hd__inv
+Used module:     \sky130_fd_sc_hd__buf_4
+Used module:     \sky130_fd_sc_hd__xnor2_1
+Used module:         \sky130_fd_sc_hd__xnor2
+Used module:     \sky130_fd_sc_hd__nand2_1
+Used module:         \sky130_fd_sc_hd__nand2
+Used module:     \sky130_fd_sc_hd__a31o_1
+Used module:         \sky130_fd_sc_hd__a31o
+Used module:     \sky130_fd_sc_hd__and2_1
+Used module:         \sky130_fd_sc_hd__and2
+Used module:     \sky130_fd_sc_hd__xor2_1
+Used module:         \sky130_fd_sc_hd__xor2
+Used module:     \sky130_fd_sc_hd__clkbuf_4
+Used module:     \sky130_fd_sc_hd__nand3_1
+Used module:         \sky130_fd_sc_hd__nand3
+Used module:     \sky130_fd_sc_hd__a21o_1
+Used module:         \sky130_fd_sc_hd__a21o
+Used module:     \sky130_fd_sc_hd__tapvpwrvgnd_1
+Used module:         \sky130_fd_sc_hd__tapvpwrvgnd
+Used module:     \sky130_fd_sc_hd__decap_3
+Used module:         \sky130_fd_sc_hd__decap
+Used module:     \sky130_fd_sc_hd__decap_8
+Used module:     \sky130_fd_sc_hd__fill_2
+Used module:         \sky130_fd_sc_hd__fill
+Used module:     \sky130_fd_sc_hd__decap_4
+Used module:     \sky130_fd_sc_hd__fill_1
+Used module:     \sky130_fd_sc_hd__decap_12
+Used module:     \sky130_fd_sc_hd__decap_6
+Removing unused module `$abstract\spm'.
+Removing unused module `$abstract\mod_pulldown'.
+Removing unused module `$abstract\mod_pullup'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xor3_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xor3_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xor3_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xor3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xor2_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xor2_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xor2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xor2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xnor3_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xnor3_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xnor3_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xnor3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xnor2_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xnor2_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xnor2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__xnor2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tapvpwrvgnd'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tapvgnd_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tapvgnd'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tapvgnd2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tapvgnd2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tap_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tap_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__tap'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sedfxtp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sedfxtp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sedfxtp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sedfxtp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sedfxbp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sedfxbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sedfxbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdlclkp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdlclkp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdlclkp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdlclkp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfxtp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfxtp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfxtp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfxtp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfxbp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfxbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfxbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfstp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfstp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfstp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfstp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfsbp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfsbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfsbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrtp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrtp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrtp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrtp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrtn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrtn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrbp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfrbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfbbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfbbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfbbn_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfbbn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__sdfbbn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__probec_p_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__probec_p'.
+Removing unused module `$abstract\sky130_fd_sc_hd__probe_p_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__probe_p'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4bb_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4bb_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4bb_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4bb'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or3b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or3b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or3b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or3b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or3_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or3_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or3_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2_0'.
+Removing unused module `$abstract\sky130_fd_sc_hd__or2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2111ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2111ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2111ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2111ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2111a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2111a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2111a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2111a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311ai_0'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o311a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o221ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o221ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o221ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o221ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o221a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o221a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o221a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o221a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o211ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o211ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o211ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o211ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o211a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o211a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o211a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o211a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o41ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o41ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o41ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o41ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o41a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o41a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o41a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o41a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o32ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o32ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o32ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o32ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o32a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o32a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o32a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o32a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o31ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o31ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o31ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o31ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o31a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o31a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o31a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o31a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o22ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o22ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o22ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o22ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o22a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o22a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o22a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o22a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21bai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21bai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21bai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21bai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ba_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ba_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ba_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ba'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ai_0'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o21a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2bb2ai_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2bb2ai_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2bb2ai_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2bb2ai'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2bb2a_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2bb2a_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2bb2a_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__o2bb2a'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4bb_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4bb_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4bb_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4bb'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor3b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor3b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor3b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor3b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor3_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor3_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor3_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nor2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4bb_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4bb_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4bb_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4bb'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand3b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand3b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand3b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand3b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand3_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand3_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand3_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__nand2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux4_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux4_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux4_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2i_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2i_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2i_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2i'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__mux2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__maj3_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__maj3_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__maj3_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__maj3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__macro_sparecell'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrckapwr_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrckapwr'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_isobufsrc'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputisolatch_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputisolatch'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputiso1p_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputiso1p'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputiso1n_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputiso1n'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputiso0p_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputiso0p'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputiso0n_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_inputiso0n'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_12'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_6'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr_3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_decapkapwr'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkinvkapwr'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_clkbufkapwr'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_bleeder_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__lpflow_bleeder'.
+Removing unused module `$abstract\sky130_fd_sc_hd__inv_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__inv_12'.
+Removing unused module `$abstract\sky130_fd_sc_hd__inv_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__inv_6'.
+Removing unused module `$abstract\sky130_fd_sc_hd__inv_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__inv_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__inv_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__inv'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ha_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ha_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ha_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ha'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fill_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fill_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fill_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fill_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fill'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fahcon_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fahcon'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fahcin_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fahcin'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fah_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fah'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fa_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fa_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fa_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__fa'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvp_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvn_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvn_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvn_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvn_0'.
+Removing unused module `$abstract\sky130_fd_sc_hd__einvn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__edfxtp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__edfxtp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__edfxbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__edfxbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ebufn_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ebufn_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ebufn_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ebufn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__ebufn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlymetal6s6s_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlymetal6s6s'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlymetal6s4s_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlymetal6s4s'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlymetal6s2s'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlygate4sd3_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlygate4sd3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlygate4sd2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlygate4sd2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlygate4sd1_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlygate4sd1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxtp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxtp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxtn_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxtn_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxtn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxtn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxbn_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxbn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlxbn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrtp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrtp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrtp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrtp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrtn_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrtn_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrtn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrtn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrbp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrbn_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrbn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlrbn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlclkp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlclkp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlclkp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dlclkp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__diode_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__diode'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfxtp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfxtp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfxtp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfxtp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfxbp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfxbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfxbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfstp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfstp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfstp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfstp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfsbp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfsbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfsbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrtp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrtp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrtp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrtp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrtn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrtn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrbp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfrbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfbbp_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfbbp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfbbn_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfbbn_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__dfbbn'.
+Removing unused module `$abstract\sky130_fd_sc_hd__decap_12'.
+Removing unused module `$abstract\sky130_fd_sc_hd__decap_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__decap_6'.
+Removing unused module `$abstract\sky130_fd_sc_hd__decap_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__decap_3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__decap'.
+Removing unused module `$abstract\sky130_fd_sc_hd__conb_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__conb'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinvlp_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinvlp_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinvlp'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinv_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinv_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinv_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinv_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinv_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkinv'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s50_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s50_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s50'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s25_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s25_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s25'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s18_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s18_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s18'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s15_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s15_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkdlybuf4s15'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkbuf_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkbuf_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkbuf_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkbuf_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkbuf_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__clkbuf'.
+Removing unused module `$abstract\sky130_fd_sc_hd__bufinv_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__bufinv_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__bufinv'.
+Removing unused module `$abstract\sky130_fd_sc_hd__bufbuf_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__bufbuf_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__bufbuf'.
+Removing unused module `$abstract\sky130_fd_sc_hd__buf_16'.
+Removing unused module `$abstract\sky130_fd_sc_hd__buf_12'.
+Removing unused module `$abstract\sky130_fd_sc_hd__buf_8'.
+Removing unused module `$abstract\sky130_fd_sc_hd__buf_6'.
+Removing unused module `$abstract\sky130_fd_sc_hd__buf_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__buf_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__buf_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__buf'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4bb_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4bb_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4bb_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4bb'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and3b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and3b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and3b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and3b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and3_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and3_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and3_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and3'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2b_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2b_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2b_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2b'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2_0'.
+Removing unused module `$abstract\sky130_fd_sc_hd__and2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111oi_0'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2111o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a311oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a311oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a311oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a311oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a311o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a311o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a311o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a311o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a222oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a222oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a221oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a221oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a221oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a221oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a221o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a221o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a221o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a221o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a211oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a211oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a211oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a211oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a211o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a211o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a211o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a211o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a41oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a41oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a41oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a41oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a41o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a41o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a41o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a41o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a32oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a32oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a32oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a32oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a32o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a32o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a32o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a32o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a31oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a31oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a31oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a31oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a31o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a31o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a31o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a31o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a22oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a22oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a22oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a22oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a22o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a22o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a22o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a22o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21boi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21boi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21boi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21boi_0'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21boi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21bo_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21bo_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21bo_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a21bo'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2bb2oi_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2bb2oi_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2bb2oi_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2bb2oi'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2bb2o_4'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2bb2o_2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2bb2o_1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__a2bb2o'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_pwrgood_pp$P'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_pwrgood_pp$G'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_pwrgood$l_pp$G'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_mux_4to2'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_mux_2to1_N'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_mux_2to1'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_dlatch$PR'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_dlatch$P'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_dlatch$lP'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_dff$PS'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_dff$PR'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_dff$P'.
+Removing unused module `$abstract\sky130_fd_sc_hd__udp_dff$NSR'.
+Removing unused module `$abstract\sky130_ef_sc_hd__fill_12'.
+Removing unused module `$abstract\sky130_ef_sc_hd__fill_8'.
+Removing unused module `$abstract\sky130_ef_sc_hd__fakediode_2'.
+Removing unused module `$abstract\sky130_ef_sc_hd__decap_12'.
+Removed 619 unused modules.
+Mapping positional arguments of cell sky130_fd_sc_hd__dfrtp.dff0 (sky130_fd_sc_hd__udp_dff$PR).
+
+6. Executing PREP pass.
+
+6.1. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1.1. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \sky130_fd_sc_hd__buf_2
+Used module:         \sky130_fd_sc_hd__buf
+Used module:     \sky130_fd_sc_hd__clkbuf_1
+Used module:         \sky130_fd_sc_hd__clkbuf
+Used module:     \sky130_fd_sc_hd__dlymetal6s2s_1
+Used module:         \sky130_fd_sc_hd__dlymetal6s2s
+Used module:     \sky130_fd_sc_hd__clkbuf_16
+Used module:     \sky130_fd_sc_hd__dfrtp_1
+Used module:         \sky130_fd_sc_hd__dfrtp
+Used module:             \sky130_fd_sc_hd__udp_dff$PR
+Used module:     \sky130_fd_sc_hd__inv_2
+Used module:         \sky130_fd_sc_hd__inv
+Used module:     \sky130_fd_sc_hd__buf_4
+Used module:     \sky130_fd_sc_hd__xnor2_1
+Used module:         \sky130_fd_sc_hd__xnor2
+Used module:     \sky130_fd_sc_hd__nand2_1
+Used module:         \sky130_fd_sc_hd__nand2
+Used module:     \sky130_fd_sc_hd__a31o_1
+Used module:         \sky130_fd_sc_hd__a31o
+Used module:     \sky130_fd_sc_hd__and2_1
+Used module:         \sky130_fd_sc_hd__and2
+Used module:     \sky130_fd_sc_hd__xor2_1
+Used module:         \sky130_fd_sc_hd__xor2
+Used module:     \sky130_fd_sc_hd__clkbuf_4
+Used module:     \sky130_fd_sc_hd__nand3_1
+Used module:         \sky130_fd_sc_hd__nand3
+Used module:     \sky130_fd_sc_hd__a21o_1
+Used module:         \sky130_fd_sc_hd__a21o
+Used module:     \sky130_fd_sc_hd__tapvpwrvgnd_1
+Used module:         \sky130_fd_sc_hd__tapvpwrvgnd
+Used module:     \sky130_fd_sc_hd__decap_3
+Used module:         \sky130_fd_sc_hd__decap
+Used module:     \sky130_fd_sc_hd__decap_8
+Used module:     \sky130_fd_sc_hd__fill_2
+Used module:         \sky130_fd_sc_hd__fill
+Used module:     \sky130_fd_sc_hd__decap_4
+Used module:     \sky130_fd_sc_hd__fill_1
+Used module:     \sky130_fd_sc_hd__decap_12
+Used module:     \sky130_fd_sc_hd__decap_6
+
+6.1.2. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \sky130_fd_sc_hd__buf_2
+Used module:         \sky130_fd_sc_hd__buf
+Used module:     \sky130_fd_sc_hd__clkbuf_1
+Used module:         \sky130_fd_sc_hd__clkbuf
+Used module:     \sky130_fd_sc_hd__dlymetal6s2s_1
+Used module:         \sky130_fd_sc_hd__dlymetal6s2s
+Used module:     \sky130_fd_sc_hd__clkbuf_16
+Used module:     \sky130_fd_sc_hd__dfrtp_1
+Used module:         \sky130_fd_sc_hd__dfrtp
+Used module:             \sky130_fd_sc_hd__udp_dff$PR
+Used module:     \sky130_fd_sc_hd__inv_2
+Used module:         \sky130_fd_sc_hd__inv
+Used module:     \sky130_fd_sc_hd__buf_4
+Used module:     \sky130_fd_sc_hd__xnor2_1
+Used module:         \sky130_fd_sc_hd__xnor2
+Used module:     \sky130_fd_sc_hd__nand2_1
+Used module:         \sky130_fd_sc_hd__nand2
+Used module:     \sky130_fd_sc_hd__a31o_1
+Used module:         \sky130_fd_sc_hd__a31o
+Used module:     \sky130_fd_sc_hd__and2_1
+Used module:         \sky130_fd_sc_hd__and2
+Used module:     \sky130_fd_sc_hd__xor2_1
+Used module:         \sky130_fd_sc_hd__xor2
+Used module:     \sky130_fd_sc_hd__clkbuf_4
+Used module:     \sky130_fd_sc_hd__nand3_1
+Used module:         \sky130_fd_sc_hd__nand3
+Used module:     \sky130_fd_sc_hd__a21o_1
+Used module:         \sky130_fd_sc_hd__a21o
+Used module:     \sky130_fd_sc_hd__tapvpwrvgnd_1
+Used module:         \sky130_fd_sc_hd__tapvpwrvgnd
+Used module:     \sky130_fd_sc_hd__decap_3
+Used module:         \sky130_fd_sc_hd__decap
+Used module:     \sky130_fd_sc_hd__decap_8
+Used module:     \sky130_fd_sc_hd__fill_2
+Used module:         \sky130_fd_sc_hd__fill
+Used module:     \sky130_fd_sc_hd__decap_4
+Used module:     \sky130_fd_sc_hd__fill_1
+Used module:     \sky130_fd_sc_hd__decap_12
+Used module:     \sky130_fd_sc_hd__decap_6
+Removed 0 unused modules.
+
+6.2. Executing PROC pass (convert processes to netlists).
+
+6.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$formal_pdk.v:80$17 in module sky130_fd_sc_hd__udp_dff$PR.
+Removed a total of 0 dead cases.
+
+6.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 0 assignments to connections.
+
+6.2.4. Executing PROC_INIT pass (extract init attributes).
+
+6.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \RESET in `\sky130_fd_sc_hd__udp_dff$PR.$proc$formal_pdk.v:80$17'.
+
+6.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+6.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sky130_fd_sc_hd__udp_dff$PR.$proc$formal_pdk.v:80$17'.
+     1/1: $0\Q[0:0]
+
+6.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+6.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\sky130_fd_sc_hd__udp_dff$PR.\Q' using process `\sky130_fd_sc_hd__udp_dff$PR.$proc$formal_pdk.v:80$17'.
+  created $adff cell `$procdff$18' with positive edge clock and positive level reset.
+
+6.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `sky130_fd_sc_hd__udp_dff$PR.$proc$formal_pdk.v:80$17'.
+Cleaned up 0 empty switches.
+
+6.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__decap_4.
+Optimizing module sky130_fd_sc_hd__fill_2.
+Optimizing module sky130_fd_sc_hd__decap_8.
+Optimizing module sky130_fd_sc_hd__decap_3.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd_1.
+Optimizing module sky130_fd_sc_hd__a21o_1.
+Optimizing module sky130_fd_sc_hd__nand3_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_4.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module sky130_fd_sc_hd__and2_1.
+Optimizing module sky130_fd_sc_hd__a31o_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xnor2_1.
+Optimizing module sky130_fd_sc_hd__buf_4.
+Optimizing module sky130_fd_sc_hd__inv_2.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_16.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_1.
+Optimizing module sky130_fd_sc_hd__buf_2.
+Optimizing module spm.
+Optimizing module sky130_fd_sc_hd__udp_dff$PR.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s.
+Optimizing module sky130_fd_sc_hd__dfrtp.
+Optimizing module sky130_fd_sc_hd__inv.
+Optimizing module sky130_fd_sc_hd__nand3.
+Optimizing module sky130_fd_sc_hd__a21o.
+Optimizing module sky130_fd_sc_hd__xnor2.
+Optimizing module sky130_fd_sc_hd__nand2.
+Optimizing module sky130_fd_sc_hd__a31o.
+Optimizing module sky130_fd_sc_hd__and2.
+Optimizing module sky130_fd_sc_hd__xor2.
+Optimizing module sky130_fd_sc_hd__buf.
+Optimizing module sky130_fd_sc_hd__clkbuf.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd.
+Optimizing module sky130_fd_sc_hd__fill.
+Optimizing module sky130_fd_sc_hd__decap.
+Optimizing module sky130_fd_sc_hd__decap_6.
+Optimizing module sky130_fd_sc_hd__decap_12.
+Optimizing module sky130_fd_sc_hd__fill_1.
+
+6.3. Executing FUTURE pass.
+
+6.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__decap_4.
+Optimizing module sky130_fd_sc_hd__fill_2.
+Optimizing module sky130_fd_sc_hd__decap_8.
+Optimizing module sky130_fd_sc_hd__decap_3.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd_1.
+Optimizing module sky130_fd_sc_hd__a21o_1.
+Optimizing module sky130_fd_sc_hd__nand3_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_4.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module sky130_fd_sc_hd__and2_1.
+Optimizing module sky130_fd_sc_hd__a31o_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xnor2_1.
+Optimizing module sky130_fd_sc_hd__buf_4.
+Optimizing module sky130_fd_sc_hd__inv_2.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_16.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_1.
+Optimizing module sky130_fd_sc_hd__buf_2.
+Optimizing module spm.
+Optimizing module sky130_fd_sc_hd__udp_dff$PR.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s.
+Optimizing module sky130_fd_sc_hd__dfrtp.
+Optimizing module sky130_fd_sc_hd__inv.
+Optimizing module sky130_fd_sc_hd__nand3.
+Optimizing module sky130_fd_sc_hd__a21o.
+Optimizing module sky130_fd_sc_hd__xnor2.
+Optimizing module sky130_fd_sc_hd__nand2.
+Optimizing module sky130_fd_sc_hd__a31o.
+Optimizing module sky130_fd_sc_hd__and2.
+Optimizing module sky130_fd_sc_hd__xor2.
+Optimizing module sky130_fd_sc_hd__buf.
+Optimizing module sky130_fd_sc_hd__clkbuf.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd.
+Optimizing module sky130_fd_sc_hd__fill.
+Optimizing module sky130_fd_sc_hd__decap.
+Optimizing module sky130_fd_sc_hd__decap_6.
+Optimizing module sky130_fd_sc_hd__decap_12.
+Optimizing module sky130_fd_sc_hd__fill_1.
+
+6.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_8..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_16..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_2..
+Finding unused cells or wires in module \spm..
+Finding unused cells or wires in module \sky130_fd_sc_hd__udp_dff$PR..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_6..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_12..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_1..
+Removed 879 unused cells and 12 unused wires.
+<suppressed ~889 debug messages>
+
+6.6. Executing CHECK pass (checking for obvious problems).
+Checking module sky130_fd_sc_hd__a21o...
+Checking module sky130_fd_sc_hd__a21o_1...
+Checking module sky130_fd_sc_hd__a31o...
+Checking module sky130_fd_sc_hd__a31o_1...
+Checking module sky130_fd_sc_hd__and2...
+Checking module sky130_fd_sc_hd__and2_1...
+Checking module sky130_fd_sc_hd__buf...
+Checking module sky130_fd_sc_hd__buf_2...
+Checking module sky130_fd_sc_hd__buf_4...
+Checking module sky130_fd_sc_hd__clkbuf...
+Checking module sky130_fd_sc_hd__clkbuf_1...
+Checking module sky130_fd_sc_hd__clkbuf_16...
+Checking module sky130_fd_sc_hd__clkbuf_4...
+Checking module sky130_fd_sc_hd__decap...
+Checking module sky130_fd_sc_hd__decap_12...
+Checking module sky130_fd_sc_hd__decap_3...
+Checking module sky130_fd_sc_hd__decap_4...
+Checking module sky130_fd_sc_hd__decap_6...
+Checking module sky130_fd_sc_hd__decap_8...
+Checking module sky130_fd_sc_hd__dfrtp...
+Checking module sky130_fd_sc_hd__dfrtp_1...
+Checking module sky130_fd_sc_hd__dlymetal6s2s...
+Checking module sky130_fd_sc_hd__dlymetal6s2s_1...
+Checking module sky130_fd_sc_hd__fill...
+Checking module sky130_fd_sc_hd__fill_1...
+Checking module sky130_fd_sc_hd__fill_2...
+Checking module sky130_fd_sc_hd__inv...
+Checking module sky130_fd_sc_hd__inv_2...
+Checking module sky130_fd_sc_hd__nand2...
+Checking module sky130_fd_sc_hd__nand2_1...
+Checking module sky130_fd_sc_hd__nand3...
+Checking module sky130_fd_sc_hd__nand3_1...
+Checking module sky130_fd_sc_hd__tapvpwrvgnd...
+Checking module sky130_fd_sc_hd__tapvpwrvgnd_1...
+Checking module sky130_fd_sc_hd__udp_dff$PR...
+Checking module sky130_fd_sc_hd__xnor2...
+Checking module sky130_fd_sc_hd__xnor2_1...
+Checking module sky130_fd_sc_hd__xor2...
+Checking module sky130_fd_sc_hd__xor2_1...
+Checking module spm...
+Found and reported 0 problems.
+
+6.7. Executing OPT pass (performing simple optimizations).
+
+6.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__a21o.
+Optimizing module sky130_fd_sc_hd__a21o_1.
+Optimizing module sky130_fd_sc_hd__a31o.
+Optimizing module sky130_fd_sc_hd__a31o_1.
+Optimizing module sky130_fd_sc_hd__and2.
+Optimizing module sky130_fd_sc_hd__and2_1.
+Optimizing module sky130_fd_sc_hd__buf.
+Optimizing module sky130_fd_sc_hd__buf_2.
+Optimizing module sky130_fd_sc_hd__buf_4.
+Optimizing module sky130_fd_sc_hd__clkbuf.
+Optimizing module sky130_fd_sc_hd__clkbuf_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_16.
+Optimizing module sky130_fd_sc_hd__clkbuf_4.
+Optimizing module sky130_fd_sc_hd__decap.
+Optimizing module sky130_fd_sc_hd__decap_12.
+Optimizing module sky130_fd_sc_hd__decap_3.
+Optimizing module sky130_fd_sc_hd__decap_4.
+Optimizing module sky130_fd_sc_hd__decap_6.
+Optimizing module sky130_fd_sc_hd__decap_8.
+Optimizing module sky130_fd_sc_hd__dfrtp.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s_1.
+Optimizing module sky130_fd_sc_hd__fill.
+Optimizing module sky130_fd_sc_hd__fill_1.
+Optimizing module sky130_fd_sc_hd__fill_2.
+Optimizing module sky130_fd_sc_hd__inv.
+Optimizing module sky130_fd_sc_hd__inv_2.
+Optimizing module sky130_fd_sc_hd__nand2.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__nand3.
+Optimizing module sky130_fd_sc_hd__nand3_1.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd_1.
+Optimizing module sky130_fd_sc_hd__udp_dff$PR.
+Optimizing module sky130_fd_sc_hd__xnor2.
+Optimizing module sky130_fd_sc_hd__xnor2_1.
+Optimizing module sky130_fd_sc_hd__xor2.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module spm.
+
+6.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__a21o'.
+Finding identical cells in module `\sky130_fd_sc_hd__a21o_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__a31o'.
+Finding identical cells in module `\sky130_fd_sc_hd__a31o_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__and2'.
+Finding identical cells in module `\sky130_fd_sc_hd__and2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_16'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_12'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_3'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_6'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_8'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dlymetal6s2s'.
+Finding identical cells in module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__inv'.
+Finding identical cells in module `\sky130_fd_sc_hd__inv_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand3'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand3_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__tapvpwrvgnd'.
+Finding identical cells in module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__udp_dff$PR'.
+Finding identical cells in module `\sky130_fd_sc_hd__xnor2'.
+Finding identical cells in module `\sky130_fd_sc_hd__xnor2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\spm'.
+Removed a total of 0 cells.
+
+6.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sky130_fd_sc_hd__a21o..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__a21o_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__a31o..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__a31o_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__and2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__and2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__buf..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__buf_2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__buf_4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__clkbuf..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__clkbuf_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__clkbuf_16..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__clkbuf_4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__decap..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__decap_12..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__decap_3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__decap_4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__decap_6..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__decap_8..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__dfrtp..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__dfrtp_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__dlymetal6s2s..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__dlymetal6s2s_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__fill..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__fill_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__fill_2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__inv..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__inv_2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand3_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__tapvpwrvgnd..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__tapvpwrvgnd_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__udp_dff$PR..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__xnor2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__xnor2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__xor2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__xor2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \spm..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sky130_fd_sc_hd__a21o.
+  Optimizing cells in module \sky130_fd_sc_hd__a21o_1.
+  Optimizing cells in module \sky130_fd_sc_hd__a31o.
+  Optimizing cells in module \sky130_fd_sc_hd__a31o_1.
+  Optimizing cells in module \sky130_fd_sc_hd__and2.
+  Optimizing cells in module \sky130_fd_sc_hd__and2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__buf.
+  Optimizing cells in module \sky130_fd_sc_hd__buf_2.
+  Optimizing cells in module \sky130_fd_sc_hd__buf_4.
+  Optimizing cells in module \sky130_fd_sc_hd__clkbuf.
+  Optimizing cells in module \sky130_fd_sc_hd__clkbuf_1.
+  Optimizing cells in module \sky130_fd_sc_hd__clkbuf_16.
+  Optimizing cells in module \sky130_fd_sc_hd__clkbuf_4.
+  Optimizing cells in module \sky130_fd_sc_hd__decap.
+  Optimizing cells in module \sky130_fd_sc_hd__decap_12.
+  Optimizing cells in module \sky130_fd_sc_hd__decap_3.
+  Optimizing cells in module \sky130_fd_sc_hd__decap_4.
+  Optimizing cells in module \sky130_fd_sc_hd__decap_6.
+  Optimizing cells in module \sky130_fd_sc_hd__decap_8.
+  Optimizing cells in module \sky130_fd_sc_hd__dfrtp.
+  Optimizing cells in module \sky130_fd_sc_hd__dfrtp_1.
+  Optimizing cells in module \sky130_fd_sc_hd__dlymetal6s2s.
+  Optimizing cells in module \sky130_fd_sc_hd__dlymetal6s2s_1.
+  Optimizing cells in module \sky130_fd_sc_hd__fill.
+  Optimizing cells in module \sky130_fd_sc_hd__fill_1.
+  Optimizing cells in module \sky130_fd_sc_hd__fill_2.
+  Optimizing cells in module \sky130_fd_sc_hd__inv.
+  Optimizing cells in module \sky130_fd_sc_hd__inv_2.
+  Optimizing cells in module \sky130_fd_sc_hd__nand2.
+  Optimizing cells in module \sky130_fd_sc_hd__nand2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand3.
+  Optimizing cells in module \sky130_fd_sc_hd__nand3_1.
+  Optimizing cells in module \sky130_fd_sc_hd__tapvpwrvgnd.
+  Optimizing cells in module \sky130_fd_sc_hd__tapvpwrvgnd_1.
+  Optimizing cells in module \sky130_fd_sc_hd__udp_dff$PR.
+  Optimizing cells in module \sky130_fd_sc_hd__xnor2.
+  Optimizing cells in module \sky130_fd_sc_hd__xnor2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__xor2.
+  Optimizing cells in module \sky130_fd_sc_hd__xor2_1.
+  Optimizing cells in module \spm.
+Performed a total of 0 changes.
+
+6.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__a21o'.
+Finding identical cells in module `\sky130_fd_sc_hd__a21o_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__a31o'.
+Finding identical cells in module `\sky130_fd_sc_hd__a31o_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__and2'.
+Finding identical cells in module `\sky130_fd_sc_hd__and2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_16'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_12'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_3'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_6'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_8'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dlymetal6s2s'.
+Finding identical cells in module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__inv'.
+Finding identical cells in module `\sky130_fd_sc_hd__inv_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand3'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand3_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__tapvpwrvgnd'.
+Finding identical cells in module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__udp_dff$PR'.
+Finding identical cells in module `\sky130_fd_sc_hd__xnor2'.
+Finding identical cells in module `\sky130_fd_sc_hd__xnor2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\spm'.
+Removed a total of 0 cells.
+
+6.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_16..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_12..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_6..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_8..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__udp_dff$PR..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \spm..
+
+6.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__a21o.
+Optimizing module sky130_fd_sc_hd__a21o_1.
+Optimizing module sky130_fd_sc_hd__a31o.
+Optimizing module sky130_fd_sc_hd__a31o_1.
+Optimizing module sky130_fd_sc_hd__and2.
+Optimizing module sky130_fd_sc_hd__and2_1.
+Optimizing module sky130_fd_sc_hd__buf.
+Optimizing module sky130_fd_sc_hd__buf_2.
+Optimizing module sky130_fd_sc_hd__buf_4.
+Optimizing module sky130_fd_sc_hd__clkbuf.
+Optimizing module sky130_fd_sc_hd__clkbuf_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_16.
+Optimizing module sky130_fd_sc_hd__clkbuf_4.
+Optimizing module sky130_fd_sc_hd__decap.
+Optimizing module sky130_fd_sc_hd__decap_12.
+Optimizing module sky130_fd_sc_hd__decap_3.
+Optimizing module sky130_fd_sc_hd__decap_4.
+Optimizing module sky130_fd_sc_hd__decap_6.
+Optimizing module sky130_fd_sc_hd__decap_8.
+Optimizing module sky130_fd_sc_hd__dfrtp.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s_1.
+Optimizing module sky130_fd_sc_hd__fill.
+Optimizing module sky130_fd_sc_hd__fill_1.
+Optimizing module sky130_fd_sc_hd__fill_2.
+Optimizing module sky130_fd_sc_hd__inv.
+Optimizing module sky130_fd_sc_hd__inv_2.
+Optimizing module sky130_fd_sc_hd__nand2.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__nand3.
+Optimizing module sky130_fd_sc_hd__nand3_1.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd_1.
+Optimizing module sky130_fd_sc_hd__udp_dff$PR.
+Optimizing module sky130_fd_sc_hd__xnor2.
+Optimizing module sky130_fd_sc_hd__xnor2_1.
+Optimizing module sky130_fd_sc_hd__xor2.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module spm.
+
+6.7.8. Finished OPT passes. (There is nothing left to do.)
+
+6.8. Executing WREDUCE pass (reducing word size of cells).
+
+6.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_16..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_12..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_6..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_8..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__udp_dff$PR..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \spm..
+
+6.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+6.11. Executing OPT pass (performing simple optimizations).
+
+6.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__a21o.
+Optimizing module sky130_fd_sc_hd__a21o_1.
+Optimizing module sky130_fd_sc_hd__a31o.
+Optimizing module sky130_fd_sc_hd__a31o_1.
+Optimizing module sky130_fd_sc_hd__and2.
+Optimizing module sky130_fd_sc_hd__and2_1.
+Optimizing module sky130_fd_sc_hd__buf.
+Optimizing module sky130_fd_sc_hd__buf_2.
+Optimizing module sky130_fd_sc_hd__buf_4.
+Optimizing module sky130_fd_sc_hd__clkbuf.
+Optimizing module sky130_fd_sc_hd__clkbuf_1.
+Optimizing module sky130_fd_sc_hd__clkbuf_16.
+Optimizing module sky130_fd_sc_hd__clkbuf_4.
+Optimizing module sky130_fd_sc_hd__decap.
+Optimizing module sky130_fd_sc_hd__decap_12.
+Optimizing module sky130_fd_sc_hd__decap_3.
+Optimizing module sky130_fd_sc_hd__decap_4.
+Optimizing module sky130_fd_sc_hd__decap_6.
+Optimizing module sky130_fd_sc_hd__decap_8.
+Optimizing module sky130_fd_sc_hd__dfrtp.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s.
+Optimizing module sky130_fd_sc_hd__dlymetal6s2s_1.
+Optimizing module sky130_fd_sc_hd__fill.
+Optimizing module sky130_fd_sc_hd__fill_1.
+Optimizing module sky130_fd_sc_hd__fill_2.
+Optimizing module sky130_fd_sc_hd__inv.
+Optimizing module sky130_fd_sc_hd__inv_2.
+Optimizing module sky130_fd_sc_hd__nand2.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__nand3.
+Optimizing module sky130_fd_sc_hd__nand3_1.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd.
+Optimizing module sky130_fd_sc_hd__tapvpwrvgnd_1.
+Optimizing module sky130_fd_sc_hd__udp_dff$PR.
+Optimizing module sky130_fd_sc_hd__xnor2.
+Optimizing module sky130_fd_sc_hd__xnor2_1.
+Optimizing module sky130_fd_sc_hd__xor2.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module spm.
+
+6.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__a21o'.
+Finding identical cells in module `\sky130_fd_sc_hd__a21o_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__a31o'.
+Finding identical cells in module `\sky130_fd_sc_hd__a31o_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__and2'.
+Finding identical cells in module `\sky130_fd_sc_hd__and2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__buf_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_16'.
+Finding identical cells in module `\sky130_fd_sc_hd__clkbuf_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_12'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_3'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_4'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_6'.
+Finding identical cells in module `\sky130_fd_sc_hd__decap_8'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dlymetal6s2s'.
+Finding identical cells in module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__fill_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__inv'.
+Finding identical cells in module `\sky130_fd_sc_hd__inv_2'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand3'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand3_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__tapvpwrvgnd'.
+Finding identical cells in module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__udp_dff$PR'.
+Finding identical cells in module `\sky130_fd_sc_hd__xnor2'.
+Finding identical cells in module `\sky130_fd_sc_hd__xnor2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\spm'.
+Removed a total of 0 cells.
+
+6.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_16..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_12..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_6..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_8..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__udp_dff$PR..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \spm..
+
+6.11.4. Finished fast OPT passes.
+
+6.12. Printing statistics.
+
+=== sky130_fd_sc_hd__a21o ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and                            1
+     $or                             1
+
+=== sky130_fd_sc_hd__a21o_1 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__a21o           1
+
+=== sky130_fd_sc_hd__a31o ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $and                            2
+     $or                             1
+
+=== sky130_fd_sc_hd__a31o_1 ===
+
+   Number of wires:                  9
+   Number of wire bits:              9
+   Number of public wires:           9
+   Number of public wire bits:       9
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__a31o           1
+
+=== sky130_fd_sc_hd__and2 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $and                            1
+
+=== sky130_fd_sc_hd__and2_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__and2           1
+
+=== sky130_fd_sc_hd__buf ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__buf_2 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__buf            1
+
+=== sky130_fd_sc_hd__buf_4 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__buf            1
+
+=== sky130_fd_sc_hd__clkbuf ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__clkbuf_1 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__clkbuf         1
+
+=== sky130_fd_sc_hd__clkbuf_16 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__clkbuf         1
+
+=== sky130_fd_sc_hd__clkbuf_4 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__clkbuf         1
+
+=== sky130_fd_sc_hd__decap ===
+
+   Number of wires:                  0
+   Number of wire bits:              0
+   Number of public wires:           0
+   Number of public wire bits:       0
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__decap_12 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__decap_3 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__decap_4 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__decap_6 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__decap_8 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__dfrtp ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $not                            1
+     sky130_fd_sc_hd__udp_dff$PR      1
+
+=== sky130_fd_sc_hd__dfrtp_1 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__dfrtp          1
+
+=== sky130_fd_sc_hd__dlymetal6s2s ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__dlymetal6s2s_1 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__dlymetal6s2s      1
+
+=== sky130_fd_sc_hd__fill ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__fill_1 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__fill_2 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__inv ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $not                            1
+
+=== sky130_fd_sc_hd__inv_2 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__inv            1
+
+=== sky130_fd_sc_hd__nand2 ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and                            1
+     $not                            1
+
+=== sky130_fd_sc_hd__nand2_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__nand2          1
+
+=== sky130_fd_sc_hd__nand3 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $and                            2
+     $not                            1
+
+=== sky130_fd_sc_hd__nand3_1 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__nand3          1
+
+=== sky130_fd_sc_hd__tapvpwrvgnd ===
+
+   Number of wires:                  0
+   Number of wire bits:              0
+   Number of public wires:           0
+   Number of public wire bits:       0
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__tapvpwrvgnd_1 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  0
+   Number of port bits:              0
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== sky130_fd_sc_hd__udp_dff$PR ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $adff                           1
+
+=== sky130_fd_sc_hd__xnor2 ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $not                            1
+     $xor                            1
+
+=== sky130_fd_sc_hd__xnor2_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__xnor2          1
+
+=== sky130_fd_sc_hd__xor2 ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $xor                            1
+
+=== sky130_fd_sc_hd__xor2_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__xor2           1
+
+=== spm ===
+
+   Number of wires:                349
+   Number of wire bits:            380
+   Number of public wires:         349
+   Number of public wire bits:     380
+   Number of ports:                  5
+   Number of port bits:             36
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                345
+     sky130_fd_sc_hd__a21o_1         1
+     sky130_fd_sc_hd__a31o_1        31
+     sky130_fd_sc_hd__and2_1        32
+     sky130_fd_sc_hd__buf_2          4
+     sky130_fd_sc_hd__buf_4          7
+     sky130_fd_sc_hd__clkbuf_1      29
+     sky130_fd_sc_hd__clkbuf_16      9
+     sky130_fd_sc_hd__clkbuf_4       4
+     sky130_fd_sc_hd__dfrtp_1       64
+     sky130_fd_sc_hd__dlymetal6s2s_1      6
+     sky130_fd_sc_hd__inv_2         64
+     sky130_fd_sc_hd__nand2_1       31
+     sky130_fd_sc_hd__nand3_1        1
+     sky130_fd_sc_hd__xnor2_1       31
+     sky130_fd_sc_hd__xor2_1        31
+
+=== design hierarchy ===
+
+   spm                               1
+     sky130_fd_sc_hd__a21o_1         1
+       sky130_fd_sc_hd__a21o         1
+     sky130_fd_sc_hd__a31o_1        31
+       sky130_fd_sc_hd__a31o         1
+     sky130_fd_sc_hd__and2_1        32
+       sky130_fd_sc_hd__and2         1
+     sky130_fd_sc_hd__buf_2          4
+       sky130_fd_sc_hd__buf          1
+     sky130_fd_sc_hd__buf_4          7
+       sky130_fd_sc_hd__buf          1
+     sky130_fd_sc_hd__clkbuf_1      29
+       sky130_fd_sc_hd__clkbuf       1
+     sky130_fd_sc_hd__clkbuf_16      9
+       sky130_fd_sc_hd__clkbuf       1
+     sky130_fd_sc_hd__clkbuf_4       4
+       sky130_fd_sc_hd__clkbuf       1
+     sky130_fd_sc_hd__dfrtp_1       64
+       sky130_fd_sc_hd__dfrtp        1
+         sky130_fd_sc_hd__udp_dff$PR      1
+     sky130_fd_sc_hd__dlymetal6s2s_1      6
+       sky130_fd_sc_hd__dlymetal6s2s      1
+     sky130_fd_sc_hd__inv_2         64
+       sky130_fd_sc_hd__inv          1
+     sky130_fd_sc_hd__nand2_1       31
+       sky130_fd_sc_hd__nand2        1
+     sky130_fd_sc_hd__nand3_1        1
+       sky130_fd_sc_hd__nand3        1
+     sky130_fd_sc_hd__xnor2_1       31
+       sky130_fd_sc_hd__xnor2        1
+     sky130_fd_sc_hd__xor2_1        31
+       sky130_fd_sc_hd__xor2         1
+
+   Number of wires:               4601
+   Number of wire bits:           4632
+   Number of public wires:        4506
+   Number of public wire bits:    4537
+   Number of ports:               2341
+   Number of port bits:           2372
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                477
+     $adff                          64
+     $and                          128
+     $not                          191
+     $or                            32
+     $xor                           62
+
+6.13. Executing CHECK pass (checking for obvious problems).
+Checking module sky130_fd_sc_hd__a21o...
+Checking module sky130_fd_sc_hd__a21o_1...
+Checking module sky130_fd_sc_hd__a31o...
+Checking module sky130_fd_sc_hd__a31o_1...
+Checking module sky130_fd_sc_hd__and2...
+Checking module sky130_fd_sc_hd__and2_1...
+Checking module sky130_fd_sc_hd__buf...
+Checking module sky130_fd_sc_hd__buf_2...
+Checking module sky130_fd_sc_hd__buf_4...
+Checking module sky130_fd_sc_hd__clkbuf...
+Checking module sky130_fd_sc_hd__clkbuf_1...
+Checking module sky130_fd_sc_hd__clkbuf_16...
+Checking module sky130_fd_sc_hd__clkbuf_4...
+Checking module sky130_fd_sc_hd__decap...
+Checking module sky130_fd_sc_hd__decap_12...
+Checking module sky130_fd_sc_hd__decap_3...
+Checking module sky130_fd_sc_hd__decap_4...
+Checking module sky130_fd_sc_hd__decap_6...
+Checking module sky130_fd_sc_hd__decap_8...
+Checking module sky130_fd_sc_hd__dfrtp...
+Checking module sky130_fd_sc_hd__dfrtp_1...
+Checking module sky130_fd_sc_hd__dlymetal6s2s...
+Checking module sky130_fd_sc_hd__dlymetal6s2s_1...
+Checking module sky130_fd_sc_hd__fill...
+Checking module sky130_fd_sc_hd__fill_1...
+Checking module sky130_fd_sc_hd__fill_2...
+Checking module sky130_fd_sc_hd__inv...
+Checking module sky130_fd_sc_hd__inv_2...
+Checking module sky130_fd_sc_hd__nand2...
+Checking module sky130_fd_sc_hd__nand2_1...
+Checking module sky130_fd_sc_hd__nand3...
+Checking module sky130_fd_sc_hd__nand3_1...
+Checking module sky130_fd_sc_hd__tapvpwrvgnd...
+Checking module sky130_fd_sc_hd__tapvpwrvgnd_1...
+Checking module sky130_fd_sc_hd__udp_dff$PR...
+Checking module sky130_fd_sc_hd__xnor2...
+Checking module sky130_fd_sc_hd__xnor2_1...
+Checking module sky130_fd_sc_hd__xor2...
+Checking module sky130_fd_sc_hd__xor2_1...
+Checking module spm...
+Found and reported 0 problems.
+
+7. Executing ASYNC2SYNC pass.
+Replacing sky130_fd_sc_hd__udp_dff$PR.$procdff$18 ($adff): ARST=\RESET, D=\D, Q=\Q
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a21o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o..
+Finding unused cells or wires in module \sky130_fd_sc_hd__a31o_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__and2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__buf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_16..
+Finding unused cells or wires in module \sky130_fd_sc_hd__clkbuf_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_12..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_4..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_6..
+Finding unused cells or wires in module \sky130_fd_sc_hd__decap_8..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dlymetal6s2s_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__fill_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv..
+Finding unused cells or wires in module \sky130_fd_sc_hd__inv_2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand3_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd..
+Finding unused cells or wires in module \sky130_fd_sc_hd__tapvpwrvgnd_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__udp_dff$PR..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xnor2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \spm..
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module sky130_fd_sc_hd__a21o...
+Checking module sky130_fd_sc_hd__a21o_1...
+Checking module sky130_fd_sc_hd__a31o...
+Checking module sky130_fd_sc_hd__a31o_1...
+Checking module sky130_fd_sc_hd__and2...
+Checking module sky130_fd_sc_hd__and2_1...
+Checking module sky130_fd_sc_hd__buf...
+Checking module sky130_fd_sc_hd__buf_2...
+Checking module sky130_fd_sc_hd__buf_4...
+Checking module sky130_fd_sc_hd__clkbuf...
+Checking module sky130_fd_sc_hd__clkbuf_1...
+Checking module sky130_fd_sc_hd__clkbuf_16...
+Checking module sky130_fd_sc_hd__clkbuf_4...
+Checking module sky130_fd_sc_hd__decap...
+Checking module sky130_fd_sc_hd__decap_12...
+Checking module sky130_fd_sc_hd__decap_3...
+Checking module sky130_fd_sc_hd__decap_4...
+Checking module sky130_fd_sc_hd__decap_6...
+Checking module sky130_fd_sc_hd__decap_8...
+Checking module sky130_fd_sc_hd__dfrtp...
+Checking module sky130_fd_sc_hd__dfrtp_1...
+Checking module sky130_fd_sc_hd__dlymetal6s2s...
+Checking module sky130_fd_sc_hd__dlymetal6s2s_1...
+Checking module sky130_fd_sc_hd__fill...
+Checking module sky130_fd_sc_hd__fill_1...
+Checking module sky130_fd_sc_hd__fill_2...
+Checking module sky130_fd_sc_hd__inv...
+Checking module sky130_fd_sc_hd__inv_2...
+Checking module sky130_fd_sc_hd__nand2...
+Checking module sky130_fd_sc_hd__nand2_1...
+Checking module sky130_fd_sc_hd__nand3...
+Checking module sky130_fd_sc_hd__nand3_1...
+Checking module sky130_fd_sc_hd__tapvpwrvgnd...
+Checking module sky130_fd_sc_hd__tapvpwrvgnd_1...
+Checking module sky130_fd_sc_hd__udp_dff$PR...
+Checking module sky130_fd_sc_hd__xnor2...
+Checking module sky130_fd_sc_hd__xnor2_1...
+Checking module sky130_fd_sc_hd__xor2...
+Checking module sky130_fd_sc_hd__xor2_1...
+Checking module spm...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing RTLIL backend.
+Output filename: spm/gate.il
+
+End of script. Logfile hash: 56bdb9e43e, CPU: user 0.28s system 0.01s
+Yosys 0.41+108 (git sha1 557968567, aarch64-apple-darwin21.4-clang++ 14.0.0-1ubuntu1.1 -fPIC -Os)
+Time spent: 19% 3x opt_merge (0 sec), 15% 3x read_verilog (0 sec), ...

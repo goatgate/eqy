@@ -1,0 +1,300 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.41+108 (git sha1 557968567, aarch64-apple-darwin21.4-clang++ 14.0.0-1ubuntu1.1 -fPIC -Os)
+
+-- Executing script file `spm/gold.ys' --
+
+1. Executing Verilog-2005 frontend: spm.v
+Parsing formal Verilog input from `spm.v' to AST representation.
+Generating RTLIL representation for module `\spm'.
+Generating RTLIL representation for module `\TCMP'.
+Generating RTLIL representation for module `\CSADD'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \CSADD
+Used module:     \TCMP
+
+2.2. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \CSADD
+Used module:     \TCMP
+Removed 0 unused modules.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \CSADD
+Used module:     \TCMP
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \spm
+Used module:     \CSADD
+Used module:     \TCMP
+Removed 0 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$spm.v:72$40 in module CSADD.
+Marked 1 switch rules as full_case in process $proc$spm.v:42$33 in module TCMP.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\CSADD.$proc$spm.v:72$40'.
+Found async reset \rst in `\TCMP.$proc$spm.v:42$33'.
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\CSADD.$proc$spm.v:72$40'.
+     1/2: $0\sc[0:0]
+     2/2: $0\sum[0:0]
+Creating decoders for process `\TCMP.$proc$spm.v:42$33'.
+     1/2: $0\s[0:0]
+     2/2: $0\z[0:0]
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\CSADD.\sum' using process `\CSADD.$proc$spm.v:72$40'.
+  created $adff cell `$procdff$42' with positive edge clock and positive level reset.
+Creating register for signal `\CSADD.\sc' using process `\CSADD.$proc$spm.v:72$40'.
+  created $adff cell `$procdff$43' with positive edge clock and positive level reset.
+Creating register for signal `\TCMP.\s' using process `\TCMP.$proc$spm.v:42$33'.
+  created $adff cell `$procdff$44' with positive edge clock and positive level reset.
+Creating register for signal `\TCMP.\z' using process `\TCMP.$proc$spm.v:42$33'.
+  created $adff cell `$procdff$45' with positive edge clock and positive level reset.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `CSADD.$proc$spm.v:72$40'.
+Removing empty process `TCMP.$proc$spm.v:42$33'.
+Cleaned up 0 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module CSADD.
+Optimizing module TCMP.
+Optimizing module spm.
+
+3.3. Executing FUTURE pass.
+
+3.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module CSADD.
+Optimizing module TCMP.
+Optimizing module spm.
+
+3.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \CSADD..
+Finding unused cells or wires in module \TCMP..
+Finding unused cells or wires in module \spm..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~3 debug messages>
+
+3.6. Executing CHECK pass (checking for obvious problems).
+Checking module CSADD...
+Checking module TCMP...
+Checking module spm...
+Found and reported 0 problems.
+
+3.7. Executing OPT pass (performing simple optimizations).
+
+3.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module CSADD.
+Optimizing module TCMP.
+Optimizing module spm.
+
+3.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\CSADD'.
+Finding identical cells in module `\TCMP'.
+Finding identical cells in module `\spm'.
+Removed a total of 0 cells.
+
+3.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \CSADD..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \TCMP..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \spm..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \CSADD.
+  Optimizing cells in module \TCMP.
+  Optimizing cells in module \spm.
+Performed a total of 0 changes.
+
+3.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\CSADD'.
+Finding identical cells in module `\TCMP'.
+Finding identical cells in module `\spm'.
+Removed a total of 0 cells.
+
+3.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \CSADD..
+Finding unused cells or wires in module \TCMP..
+Finding unused cells or wires in module \spm..
+
+3.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module CSADD.
+Optimizing module TCMP.
+Optimizing module spm.
+
+3.7.8. Finished OPT passes. (There is nothing left to do.)
+
+3.8. Executing WREDUCE pass (reducing word size of cells).
+
+3.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \CSADD..
+Finding unused cells or wires in module \TCMP..
+Finding unused cells or wires in module \spm..
+
+3.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.11. Executing OPT pass (performing simple optimizations).
+
+3.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module CSADD.
+Optimizing module TCMP.
+Optimizing module spm.
+
+3.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\CSADD'.
+Finding identical cells in module `\TCMP'.
+Finding identical cells in module `\spm'.
+Removed a total of 0 cells.
+
+3.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \CSADD..
+Finding unused cells or wires in module \TCMP..
+Finding unused cells or wires in module \spm..
+
+3.11.4. Finished fast OPT passes.
+
+3.12. Printing statistics.
+
+=== CSADD ===
+
+   Number of wires:                 11
+   Number of wire bits:             11
+   Number of public wires:          10
+   Number of public wire bits:      10
+   Number of ports:                  5
+   Number of port bits:              5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $adff                           2
+     $and                            2
+     $xor                            3
+
+=== TCMP ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $adff                           2
+     $or                             1
+     $xor                            1
+
+=== spm ===
+
+   Number of wires:                 38
+   Number of wire bits:             99
+   Number of public wires:           6
+   Number of public wire bits:      67
+   Number of ports:                  5
+   Number of port bits:             36
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 64
+     $and                           32
+     CSADD                          31
+     TCMP                            1
+
+=== design hierarchy ===
+
+   spm                               1
+     CSADD                          31
+     TCMP                            1
+
+   Number of wires:                386
+   Number of wire bits:            447
+   Number of public wires:         321
+   Number of public wire bits:     382
+   Number of ports:                164
+   Number of port bits:            195
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                253
+     $adff                          64
+     $and                           94
+     $or                             1
+     $xor                           94
+
+3.13. Executing CHECK pass (checking for obvious problems).
+Checking module CSADD...
+Checking module TCMP...
+Checking module spm...
+Found and reported 0 problems.
+
+4. Executing ASYNC2SYNC pass.
+Replacing CSADD.$procdff$42 ($adff): ARST=\rst, D=\hsum2, Q=\sum
+Replacing CSADD.$procdff$43 ($adff): ARST=\rst, D=$0\sc[0:0], Q=\sc
+Replacing TCMP.$procdff$44 ($adff): ARST=\rst, D=$0\s[0:0], Q=\s
+Replacing TCMP.$procdff$45 ($adff): ARST=\rst, D=$0\z[0:0], Q=\z
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \CSADD..
+Finding unused cells or wires in module \TCMP..
+Finding unused cells or wires in module \spm..
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module CSADD...
+Checking module TCMP...
+Checking module spm...
+Found and reported 0 problems.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing RTLIL backend.
+Output filename: spm/gold.il
+
+End of script. Logfile hash: ba1f77c340, CPU: user 0.04s system 0.02s
+Yosys 0.41+108 (git sha1 557968567, aarch64-apple-darwin21.4-clang++ 14.0.0-1ubuntu1.1 -fPIC -Os)
+Time spent: 21% 5x opt_clean (0 sec), 21% 5x opt_expr (0 sec), ...

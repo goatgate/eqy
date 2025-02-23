@@ -1,0 +1,661 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.41+108 (git sha1 557968567, aarch64-apple-darwin21.4-clang++ 14.0.0-1ubuntu1.1 -fPIC -Os)
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../partitions/spm.genblk1.1.csa.hsum2.sv
+Parsing SystemVerilog input from `../../../partitions/spm.genblk1.1.csa.hsum2.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.spm.genblk1.1.csa.hsum2'.
+Generating RTLIL representation for module `\gate.spm.genblk1.1.csa.hsum2'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../partitions/spm.genblk1.1.csa.hsum2.il
+Replacing existing blackbox module \gate.spm.genblk1.1.csa.hsum2.
+Replacing existing blackbox module \gold.spm.genblk1.1.csa.hsum2.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.spm.genblk1.1.csa.hsum2
+Used module:     \gold.spm.genblk1.1.csa.hsum2
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+
+3.3. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     \gate.spm.genblk1.1.csa.hsum2
+Used module:     \gold.spm.genblk1.1.csa.hsum2
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     \gate.spm.genblk1.1.csa.hsum2
+Used module:     \gold.spm.genblk1.1.csa.hsum2
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_genblk1[1].csa.hsum2__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 3 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/spm.genblk1.1.csa.hsum2.sv:70$5134'.
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/spm.genblk1.1.csa.hsum2.sv:64$5129'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\okay' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/spm.genblk1.1.csa.hsum2.sv:64$5129'.
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\i' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/spm.genblk1.1.csa.hsum2.sv:64$5129'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/spm.genblk1.1.csa.hsum2.sv:70$5134'.
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/spm.genblk1.1.csa.hsum2.sv:64$5129'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gate.spm.genblk1.1.csa.hsum2.
+Optimizing module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module gold.spm.genblk1.1.csa.hsum2.
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gate.spm.genblk1.1.csa.hsum2.
+Deleting now unused module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+Deleting now unused module gold.spm.genblk1.1.csa.hsum2.
+<suppressed ~3 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~1 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 1 unused cells and 8 unused wires.
+<suppressed ~212 debug messages>
+
+12. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_genblk1[1].csa.sc
+Import def constraint for this timestep: \__pi_x__1
+Import def constraint for this timestep: \__pi_genblk1[1].csa.y
+Import def constraint for this timestep: \__pi_y
+Imported 15 cells to SAT database.
+Import proof for assert: \__po_genblk1[1].csa.hsum2__assert.okay when 1'1.
+
+** Trying induction with length 1 **
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_genblk1[1].csa.sc
+Import def constraint for this timestep: \__pi_x__1
+Import def constraint for this timestep: \__pi_genblk1[1].csa.y
+Import def constraint for this timestep: \__pi_y
+Imported 15 cells to SAT database.
+No constraints for initial state found.
+
+Import proof for assert: \__po_genblk1[1].csa.hsum2__assert.okay when 1'1.
+Import show expression: \__pi_genblk1[1].csa.sc
+Import show expression: \__pi_genblk1[1].csa.y
+Import show expression: \__pi_x__1
+Import show expression: \__pi_y
+Import show expression: \__po_genblk1[1].csa.hsum2__assert.i
+Import show expression: \__po_genblk1[1].csa.hsum2__assert.in_gate
+Import show expression: \__po_genblk1[1].csa.hsum2__assert.in_gold
+Import show expression: \__po_genblk1[1].csa.hsum2__assert.okay
+Import show expression: \__po_genblk1[1].csa.hsum2__gate
+Import show expression: \__po_genblk1[1].csa.hsum2__gold
+Import show expression: \gate._097_
+Import show expression: \gate._098_
+Import show expression: \gate._099_
+Import show expression: \gate._105_
+Import show expression: \gate._107_
+Import show expression: \gate._122_
+Import show expression: \gate._133_
+Import show expression: \gate._154_
+Import show expression: \gate._165_
+Import show expression: \gate._206_.A
+Import show expression: \gate._206_.X
+Import show expression: \gate._206_.base.A
+Import show expression: \gate._206_.base.X
+Import show expression: \gate._206_.base.buf0_out_X
+Import show expression: \gate._207_.A
+Import show expression: \gate._207_.X
+Import show expression: \gate._207_.base.A
+Import show expression: \gate._207_.base.X
+Import show expression: \gate._207_.base.buf0_out_X
+Import show expression: \gate._208_.A
+Import show expression: \gate._208_.X
+Import show expression: \gate._208_.base.A
+Import show expression: \gate._208_.base.X
+Import show expression: \gate._208_.base.buf0_out_X
+Import show expression: \gate._211_.A1
+Import show expression: \gate._211_.base.A1
+Import show expression: \gate._212_.A
+Import show expression: \gate._212_.base.A
+Import show expression: \gate._214_.A1
+Import show expression: \gate._214_.base.A1
+Import show expression: \gate._215_.A
+Import show expression: \gate._215_.base.A
+Import show expression: \gate._218_.A
+Import show expression: \gate._218_.B
+Import show expression: \gate._218_.X
+Import show expression: \gate._218_.base.A
+Import show expression: \gate._218_.base.B
+Import show expression: \gate._218_.base.X
+Import show expression: \gate._218_.base.xor0_out_X
+Import show expression: \gate._219_.A
+Import show expression: \gate._219_.B
+Import show expression: \gate._219_.base.A
+Import show expression: \gate._219_.base.B
+Import show expression: \gate._220_.A1
+Import show expression: \gate._220_.A2
+Import show expression: \gate._220_.A3
+Import show expression: \gate._220_.base.A1
+Import show expression: \gate._220_.base.A2
+Import show expression: \gate._220_.base.A3
+Import show expression: \gate._221_.A
+Import show expression: \gate._221_.B
+Import show expression: \gate._221_.Y
+Import show expression: \gate._221_.base.A
+Import show expression: \gate._221_.base.B
+Import show expression: \gate._221_.base.Y
+Import show expression: \gate._221_.base.nand0_out_Y
+Import show expression: \gate._222_.A
+Import show expression: \gate._222_.B
+Import show expression: \gate._222_.Y
+Import show expression: \gate._222_.base.A
+Import show expression: \gate._222_.base.B
+Import show expression: \gate._222_.base.Y
+Import show expression: \gate._222_.base.xnor0_out_Y
+Import show expression: \gate._225_.A1
+Import show expression: \gate._225_.base.A1
+Import show expression: \gate._226_.A
+Import show expression: \gate._226_.base.A
+Import show expression: \gate._230_.A1
+Import show expression: \gate._230_.base.A1
+Import show expression: \gate._231_.A
+Import show expression: \gate._231_.base.A
+Import show expression: \gate._235_.A1
+Import show expression: \gate._235_.base.A1
+Import show expression: \gate._236_.A
+Import show expression: \gate._236_.base.A
+Import show expression: \gate._240_.A1
+Import show expression: \gate._240_.base.A1
+Import show expression: \gate._241_.A
+Import show expression: \gate._241_.base.A
+Import show expression: \gate._245_.A1
+Import show expression: \gate._245_.base.A1
+Import show expression: \gate._246_.A
+Import show expression: \gate._246_.X
+Import show expression: \gate._246_.base.A
+Import show expression: \gate._246_.base.X
+Import show expression: \gate._246_.base.buf0_out_X
+Import show expression: \gate._247_.A
+Import show expression: \gate._247_.base.A
+Import show expression: \gate._251_.A1
+Import show expression: \gate._251_.base.A1
+Import show expression: \gate._252_.A
+Import show expression: \gate._252_.base.A
+Import show expression: \gate._256_.A1
+Import show expression: \gate._256_.base.A1
+Import show expression: \gate._257_.A
+Import show expression: \gate._257_.base.A
+Import show expression: \gate._261_.A1
+Import show expression: \gate._261_.base.A1
+Import show expression: \gate._262_.A
+Import show expression: \gate._262_.base.A
+Import show expression: \gate._264_.A
+Import show expression: \gate._264_.X
+Import show expression: \gate._264_.base.A
+Import show expression: \gate._264_.base.X
+Import show expression: \gate._264_.base.buf0_out_X
+Import show expression: \gate._267_.A1
+Import show expression: \gate._267_.base.A1
+Import show expression: \gate._268_.A
+Import show expression: \gate._268_.base.A
+Import show expression: \gate._272_.A1
+Import show expression: \gate._272_.base.A1
+Import show expression: \gate._273_.A
+Import show expression: \gate._273_.base.A
+Import show expression: \gate._277_.A1
+Import show expression: \gate._277_.base.A1
+Import show expression: \gate._278_.A
+Import show expression: \gate._278_.base.A
+Import show expression: \gate._282_.A1
+Import show expression: \gate._282_.base.A1
+Import show expression: \gate._283_.A
+Import show expression: \gate._283_.base.A
+Import show expression: \gate._287_.A1
+Import show expression: \gate._287_.base.A1
+Import show expression: \gate._288_.A
+Import show expression: \gate._288_.base.A
+Import show expression: \gate._292_.A1
+Import show expression: \gate._292_.base.A1
+Import show expression: \gate._293_.A
+Import show expression: \gate._293_.base.A
+Import show expression: \gate._297_.A1
+Import show expression: \gate._297_.base.A1
+Import show expression: \gate._298_.A
+Import show expression: \gate._298_.X
+Import show expression: \gate._298_.base.A
+Import show expression: \gate._298_.base.X
+Import show expression: \gate._298_.base.buf0_out_X
+Import show expression: \gate._299_.A
+Import show expression: \gate._299_.base.A
+Import show expression: \gate._303_.A1
+Import show expression: \gate._303_.base.A1
+Import show expression: \gate._304_.A
+Import show expression: \gate._304_.base.A
+Import show expression: \gate._308_.A1
+Import show expression: \gate._308_.base.A1
+Import show expression: \gate._309_.A
+Import show expression: \gate._309_.base.A
+Import show expression: \gate._313_.A1
+Import show expression: \gate._313_.base.A1
+Import show expression: \gate._314_.A
+Import show expression: \gate._314_.base.A
+Import show expression: \gate._316_.A
+Import show expression: \gate._316_.X
+Import show expression: \gate._316_.base.A
+Import show expression: \gate._316_.base.X
+Import show expression: \gate._316_.base.buf0_out_X
+Import show expression: \gate._319_.A1
+Import show expression: \gate._319_.base.A1
+Import show expression: \gate._320_.A
+Import show expression: \gate._320_.base.A
+Import show expression: \gate._324_.A1
+Import show expression: \gate._324_.base.A1
+Import show expression: \gate._325_.A
+Import show expression: \gate._325_.base.A
+Import show expression: \gate._329_.A1
+Import show expression: \gate._329_.base.A1
+Import show expression: \gate._330_.A
+Import show expression: \gate._330_.base.A
+Import show expression: \gate._334_.A1
+Import show expression: \gate._334_.base.A1
+Import show expression: \gate._335_.A
+Import show expression: \gate._335_.base.A
+Import show expression: \gate._339_.A1
+Import show expression: \gate._339_.base.A1
+Import show expression: \gate._340_.A
+Import show expression: \gate._340_.base.A
+Import show expression: \gate._344_.A1
+Import show expression: \gate._344_.base.A1
+Import show expression: \gate._345_.A
+Import show expression: \gate._345_.base.A
+Import show expression: \gate._349_.A1
+Import show expression: \gate._349_.base.A1
+Import show expression: \gate._350_.A
+Import show expression: \gate._350_.base.A
+Import show expression: \gate._354_.A1
+Import show expression: \gate._354_.base.A1
+Import show expression: \gate._355_.A
+Import show expression: \gate._355_.base.A
+Import show expression: \gate._359_.A1
+Import show expression: \gate._359_.base.A1
+Import show expression: \gate._360_.A
+Import show expression: \gate._360_.base.A
+Import show expression: \gate._364_.A1
+Import show expression: \gate._364_.base.A1
+Import show expression: \gate._365_.A
+Import show expression: \gate._365_.base.A
+Import show expression: \gate._369_.A1
+Import show expression: \gate._369_.base.A1
+Import show expression: \gate._370_.A
+Import show expression: \gate._370_.base.A
+Import show expression: \gate.__pi_genblk1[1].csa.sc
+Import show expression: \gate.__pi_genblk1[1].csa.y
+Import show expression: \gate.__pi_x__1
+Import show expression: \gate.__pi_y
+Import show expression: \gate.__po_genblk1[1].csa.hsum2
+Import show expression: \gate.genblk1[1].csa.hsum2
+Import show expression: \gate.genblk1[1].csa.sc
+Import show expression: \gate.genblk1[1].csa.y
+Import show expression: \gate.input13.A
+Import show expression: \gate.input13.X
+Import show expression: \gate.input13.base.A
+Import show expression: \gate.input13.base.X
+Import show expression: \gate.input13.base.buf0_out_X
+Import show expression: \gate.input34.A
+Import show expression: \gate.input34.X
+Import show expression: \gate.input34.base.A
+Import show expression: \gate.input34.base.X
+Import show expression: \gate.input34.base.buf0_out_X
+Import show expression: \gate.net13
+Import show expression: \gate.net34
+Import show expression: \gate.x
+Import show expression: \gate.y
+Import show expression: \gold.__pi_genblk1[1].csa.sc
+Import show expression: \gold.__pi_genblk1[1].csa.y
+Import show expression: \gold.__pi_x__1
+Import show expression: \gold.__pi_y
+Import show expression: \gold.__po_genblk1[1].csa.hsum2
+Import show expression: \gold.genblk1[1].csa.hsum1
+Import show expression: \gold.genblk1[1].csa.hsum2
+Import show expression: \gold.genblk1[1].csa.sc
+Import show expression: \gold.genblk1[1].csa.x
+Import show expression: \gold.genblk1[1].csa.y
+Import show expression: \gold.x
+Import show expression: \gold.y
+
+[base case 1] Solving problem with 183 variables and 460 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_genblk1[1].csa.sc
+Import def constraint for this timestep: \__pi_x__1
+Import def constraint for this timestep: \__pi_genblk1[1].csa.y
+Import def constraint for this timestep: \__pi_y
+Imported 15 cells to SAT database.
+Import proof for assert: \__po_genblk1[1].csa.hsum2__assert.okay when 1'1.
+Import show expression: \__pi_genblk1[1].csa.sc
+Import show expression: \__pi_genblk1[1].csa.y
+Import show expression: \__pi_x__1
+Import show expression: \__pi_y
+Import show expression: \__po_genblk1[1].csa.hsum2__assert.i
+Import show expression: \__po_genblk1[1].csa.hsum2__assert.in_gate
+Import show expression: \__po_genblk1[1].csa.hsum2__assert.in_gold
+Import show expression: \__po_genblk1[1].csa.hsum2__assert.okay
+Import show expression: \__po_genblk1[1].csa.hsum2__gate
+Import show expression: \__po_genblk1[1].csa.hsum2__gold
+Import show expression: \gate._097_
+Import show expression: \gate._098_
+Import show expression: \gate._099_
+Import show expression: \gate._105_
+Import show expression: \gate._107_
+Import show expression: \gate._122_
+Import show expression: \gate._133_
+Import show expression: \gate._154_
+Import show expression: \gate._165_
+Import show expression: \gate._206_.A
+Import show expression: \gate._206_.X
+Import show expression: \gate._206_.base.A
+Import show expression: \gate._206_.base.X
+Import show expression: \gate._206_.base.buf0_out_X
+Import show expression: \gate._207_.A
+Import show expression: \gate._207_.X
+Import show expression: \gate._207_.base.A
+Import show expression: \gate._207_.base.X
+Import show expression: \gate._207_.base.buf0_out_X
+Import show expression: \gate._208_.A
+Import show expression: \gate._208_.X
+Import show expression: \gate._208_.base.A
+Import show expression: \gate._208_.base.X
+Import show expression: \gate._208_.base.buf0_out_X
+Import show expression: \gate._211_.A1
+Import show expression: \gate._211_.base.A1
+Import show expression: \gate._212_.A
+Import show expression: \gate._212_.base.A
+Import show expression: \gate._214_.A1
+Import show expression: \gate._214_.base.A1
+Import show expression: \gate._215_.A
+Import show expression: \gate._215_.base.A
+Import show expression: \gate._218_.A
+Import show expression: \gate._218_.B
+Import show expression: \gate._218_.X
+Import show expression: \gate._218_.base.A
+Import show expression: \gate._218_.base.B
+Import show expression: \gate._218_.base.X
+Import show expression: \gate._218_.base.xor0_out_X
+Import show expression: \gate._219_.A
+Import show expression: \gate._219_.B
+Import show expression: \gate._219_.base.A
+Import show expression: \gate._219_.base.B
+Import show expression: \gate._220_.A1
+Import show expression: \gate._220_.A2
+Import show expression: \gate._220_.A3
+Import show expression: \gate._220_.base.A1
+Import show expression: \gate._220_.base.A2
+Import show expression: \gate._220_.base.A3
+Import show expression: \gate._221_.A
+Import show expression: \gate._221_.B
+Import show expression: \gate._221_.Y
+Import show expression: \gate._221_.base.A
+Import show expression: \gate._221_.base.B
+Import show expression: \gate._221_.base.Y
+Import show expression: \gate._221_.base.nand0_out_Y
+Import show expression: \gate._222_.A
+Import show expression: \gate._222_.B
+Import show expression: \gate._222_.Y
+Import show expression: \gate._222_.base.A
+Import show expression: \gate._222_.base.B
+Import show expression: \gate._222_.base.Y
+Import show expression: \gate._222_.base.xnor0_out_Y
+Import show expression: \gate._225_.A1
+Import show expression: \gate._225_.base.A1
+Import show expression: \gate._226_.A
+Import show expression: \gate._226_.base.A
+Import show expression: \gate._230_.A1
+Import show expression: \gate._230_.base.A1
+Import show expression: \gate._231_.A
+Import show expression: \gate._231_.base.A
+Import show expression: \gate._235_.A1
+Import show expression: \gate._235_.base.A1
+Import show expression: \gate._236_.A
+Import show expression: \gate._236_.base.A
+Import show expression: \gate._240_.A1
+Import show expression: \gate._240_.base.A1
+Import show expression: \gate._241_.A
+Import show expression: \gate._241_.base.A
+Import show expression: \gate._245_.A1
+Import show expression: \gate._245_.base.A1
+Import show expression: \gate._246_.A
+Import show expression: \gate._246_.X
+Import show expression: \gate._246_.base.A
+Import show expression: \gate._246_.base.X
+Import show expression: \gate._246_.base.buf0_out_X
+Import show expression: \gate._247_.A
+Import show expression: \gate._247_.base.A
+Import show expression: \gate._251_.A1
+Import show expression: \gate._251_.base.A1
+Import show expression: \gate._252_.A
+Import show expression: \gate._252_.base.A
+Import show expression: \gate._256_.A1
+Import show expression: \gate._256_.base.A1
+Import show expression: \gate._257_.A
+Import show expression: \gate._257_.base.A
+Import show expression: \gate._261_.A1
+Import show expression: \gate._261_.base.A1
+Import show expression: \gate._262_.A
+Import show expression: \gate._262_.base.A
+Import show expression: \gate._264_.A
+Import show expression: \gate._264_.X
+Import show expression: \gate._264_.base.A
+Import show expression: \gate._264_.base.X
+Import show expression: \gate._264_.base.buf0_out_X
+Import show expression: \gate._267_.A1
+Import show expression: \gate._267_.base.A1
+Import show expression: \gate._268_.A
+Import show expression: \gate._268_.base.A
+Import show expression: \gate._272_.A1
+Import show expression: \gate._272_.base.A1
+Import show expression: \gate._273_.A
+Import show expression: \gate._273_.base.A
+Import show expression: \gate._277_.A1
+Import show expression: \gate._277_.base.A1
+Import show expression: \gate._278_.A
+Import show expression: \gate._278_.base.A
+Import show expression: \gate._282_.A1
+Import show expression: \gate._282_.base.A1
+Import show expression: \gate._283_.A
+Import show expression: \gate._283_.base.A
+Import show expression: \gate._287_.A1
+Import show expression: \gate._287_.base.A1
+Import show expression: \gate._288_.A
+Import show expression: \gate._288_.base.A
+Import show expression: \gate._292_.A1
+Import show expression: \gate._292_.base.A1
+Import show expression: \gate._293_.A
+Import show expression: \gate._293_.base.A
+Import show expression: \gate._297_.A1
+Import show expression: \gate._297_.base.A1
+Import show expression: \gate._298_.A
+Import show expression: \gate._298_.X
+Import show expression: \gate._298_.base.A
+Import show expression: \gate._298_.base.X
+Import show expression: \gate._298_.base.buf0_out_X
+Import show expression: \gate._299_.A
+Import show expression: \gate._299_.base.A
+Import show expression: \gate._303_.A1
+Import show expression: \gate._303_.base.A1
+Import show expression: \gate._304_.A
+Import show expression: \gate._304_.base.A
+Import show expression: \gate._308_.A1
+Import show expression: \gate._308_.base.A1
+Import show expression: \gate._309_.A
+Import show expression: \gate._309_.base.A
+Import show expression: \gate._313_.A1
+Import show expression: \gate._313_.base.A1
+Import show expression: \gate._314_.A
+Import show expression: \gate._314_.base.A
+Import show expression: \gate._316_.A
+Import show expression: \gate._316_.X
+Import show expression: \gate._316_.base.A
+Import show expression: \gate._316_.base.X
+Import show expression: \gate._316_.base.buf0_out_X
+Import show expression: \gate._319_.A1
+Import show expression: \gate._319_.base.A1
+Import show expression: \gate._320_.A
+Import show expression: \gate._320_.base.A
+Import show expression: \gate._324_.A1
+Import show expression: \gate._324_.base.A1
+Import show expression: \gate._325_.A
+Import show expression: \gate._325_.base.A
+Import show expression: \gate._329_.A1
+Import show expression: \gate._329_.base.A1
+Import show expression: \gate._330_.A
+Import show expression: \gate._330_.base.A
+Import show expression: \gate._334_.A1
+Import show expression: \gate._334_.base.A1
+Import show expression: \gate._335_.A
+Import show expression: \gate._335_.base.A
+Import show expression: \gate._339_.A1
+Import show expression: \gate._339_.base.A1
+Import show expression: \gate._340_.A
+Import show expression: \gate._340_.base.A
+Import show expression: \gate._344_.A1
+Import show expression: \gate._344_.base.A1
+Import show expression: \gate._345_.A
+Import show expression: \gate._345_.base.A
+Import show expression: \gate._349_.A1
+Import show expression: \gate._349_.base.A1
+Import show expression: \gate._350_.A
+Import show expression: \gate._350_.base.A
+Import show expression: \gate._354_.A1
+Import show expression: \gate._354_.base.A1
+Import show expression: \gate._355_.A
+Import show expression: \gate._355_.base.A
+Import show expression: \gate._359_.A1
+Import show expression: \gate._359_.base.A1
+Import show expression: \gate._360_.A
+Import show expression: \gate._360_.base.A
+Import show expression: \gate._364_.A1
+Import show expression: \gate._364_.base.A1
+Import show expression: \gate._365_.A
+Import show expression: \gate._365_.base.A
+Import show expression: \gate._369_.A1
+Import show expression: \gate._369_.base.A1
+Import show expression: \gate._370_.A
+Import show expression: \gate._370_.base.A
+Import show expression: \gate.__pi_genblk1[1].csa.sc
+Import show expression: \gate.__pi_genblk1[1].csa.y
+Import show expression: \gate.__pi_x__1
+Import show expression: \gate.__pi_y
+Import show expression: \gate.__po_genblk1[1].csa.hsum2
+Import show expression: \gate.genblk1[1].csa.hsum2
+Import show expression: \gate.genblk1[1].csa.sc
+Import show expression: \gate.genblk1[1].csa.y
+Import show expression: \gate.input13.A
+Import show expression: \gate.input13.X
+Import show expression: \gate.input13.base.A
+Import show expression: \gate.input13.base.X
+Import show expression: \gate.input13.base.buf0_out_X
+Import show expression: \gate.input34.A
+Import show expression: \gate.input34.X
+Import show expression: \gate.input34.base.A
+Import show expression: \gate.input34.base.X
+Import show expression: \gate.input34.base.buf0_out_X
+Import show expression: \gate.net13
+Import show expression: \gate.net34
+Import show expression: \gate.x
+Import show expression: \gate.y
+Import show expression: \gold.__pi_genblk1[1].csa.sc
+Import show expression: \gold.__pi_genblk1[1].csa.y
+Import show expression: \gold.__pi_x__1
+Import show expression: \gold.__pi_y
+Import show expression: \gold.__po_genblk1[1].csa.hsum2
+Import show expression: \gold.genblk1[1].csa.hsum1
+Import show expression: \gold.genblk1[1].csa.hsum2
+Import show expression: \gold.genblk1[1].csa.sc
+Import show expression: \gold.genblk1[1].csa.x
+Import show expression: \gold.genblk1[1].csa.y
+Import show expression: \gold.x
+Import show expression: \gold.y
+
+[induction step 1] Solving problem with 364 variables and 920 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: c6ee8666ce, CPU: user 0.03s system 0.00s
+Yosys 0.41+108 (git sha1 557968567, aarch64-apple-darwin21.4-clang++ 14.0.0-1ubuntu1.1 -fPIC -Os)
+Time spent: 32% 1x sat (0 sec), 23% 2x opt_expr (0 sec), ...

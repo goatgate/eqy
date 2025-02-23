@@ -1,0 +1,9 @@
+exec -- python3 formal_pdk_proc.py primitives.v sky130_fd_sc_hd.v -o formal_pdk.v
+read -sv formal_pdk.v spm.nl.v
+hierarchy -check -top spm
+prep
+async2sync
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_ilang spm/gate.il
